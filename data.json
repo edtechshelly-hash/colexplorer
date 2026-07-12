@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.4",
+    "version": "2.4.1",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1717,39 +1717,45 @@
   "searchGuides": {
     "missing money": {
       "title": "Looking for information about missing money?",
-      "answer": "The audits in this project did not report a finding that money was missing or stolen. They did identify weaknesses in financial controls, recordkeeping, and fraud-risk planning that residents may want to understand.",
+      "answer": "Auditors reported money-related records they could not fully verify. In the 2018\u201319 audit, three tested clerk-of-court fee items totaling $3,180 could not be traced to the City's general fund. In the 2020\u201321 audit, auditors identified $14,052 in court fees they could not trace. Auditors also could not test millions of dollars in utility collections because supporting records were missing or had been deleted. These findings do not prove theft, but they do mean the available records did not fully account for or verify certain money.",
       "questionIds": [
         "fraud",
-        "trust"
+        "trust",
+        "biggest"
       ],
       "topicIds": [
         "fraud-risk",
-        "adjustments",
+        "utility-support",
         "bank-reconciliations",
         "segregation"
       ]
     },
     "stolen money": {
       "title": "Looking for information about stolen money?",
-      "answer": "The audits in this project did not report a finding that money was stolen. They did identify control weaknesses that could make errors or misuse harder to prevent or detect.",
+      "answer": "The audits did not conclude that theft occurred. They did report court-fee amounts that could not be traced to the general fund and utility collections that could not be tested because records were unavailable. That is a serious accountability problem, but it is not the same as an auditor finding that someone stole the money.",
       "questionIds": [
-        "fraud"
+        "fraud",
+        "trust"
       ],
       "topicIds": [
         "fraud-risk",
-        "segregation",
-        "bank-reconciliations"
+        "utility-support",
+        "bank-reconciliations",
+        "segregation"
       ]
     },
     "corruption": {
       "title": "Looking for information about corruption?",
-      "answer": "The records summarized here do not document an auditor finding of corruption. They do document weaknesses in fraud-risk planning and financial controls.",
+      "answer": "The records summarized here do not include an auditor conclusion that corruption occurred. They do include money-related amounts that could not be traced, collections that could not be tested, and repeated weaknesses in fraud-risk planning and financial controls.",
       "questionIds": [
-        "fraud"
+        "fraud",
+        "trust"
       ],
       "topicIds": [
         "fraud-risk",
-        "segregation"
+        "utility-support",
+        "segregation",
+        "bank-reconciliations"
       ]
     },
     "failed audit": {
