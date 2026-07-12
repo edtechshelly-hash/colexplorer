@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Lincoln audit findings in plain language, with traceable supporting evidence.">
+  <title>Lincoln Audit Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .site-header{
+      position:relative !important;
+      background:#fffdf8 !important;
+      border-bottom:1px solid #d9e2de !important;
+      box-shadow:0 4px 18px rgba(23,54,49,.08) !important;
+    }
+    .header-inner{
+      min-height:96px !important;
+      padding:1.15rem 1.5rem !important;
+    }
+    .brand{
+      gap:.95rem !important;
+    }
+    .brand-mark{
+      width:62px !important;
+      height:62px !important;
+      border-radius:18px !important;
+      font-size:1.65rem !important;
+    }
+    .brand-copy{
+      display:flex !important;
+      flex-direction:column !important;
+      justify-content:center !important;
+    }
+    .brand-title{
+      font-size:2rem !important;
+      line-height:1 !important;
+      letter-spacing:-.03em !important;
+      color:#18322f !important;
+    }
+    .brand-tagline{
+      display:block !important;
+      margin-top:.35rem !important;
+      font-size:1rem !important;
+      color:#5c6d69 !important;
+    }
+    .hero-inner{
+      padding-top:4.3rem !important;
+      padding-bottom:4.5rem !important;
+    }
+    .hero h1{
+      max-width:760px !important;
+      font-size:clamp(2.25rem,5vw,4.1rem) !important;
+      margin-bottom:.85rem !important;
+    }
+    .hero-copy{
+      margin-bottom:1.6rem !important;
+    }
+    .hero-question-heading{
+      margin:0 0 1rem !important;
+      font-size:clamp(1.3rem,2vw,1.75rem) !important;
+      color:#ffffff !important;
+      line-height:1.2 !important;
+    }
+    @media(max-width:600px){
+      .header-inner{min-height:80px !important;padding:.9rem 1rem !important}
+      .brand-mark{width:50px !important;height:50px !important;font-size:1.35rem !important}
+      .brand-title{font-size:1.45rem !important}
+      .brand-tagline{font-size:.84rem !important}
+      .hero-inner{padding-top:3.2rem !important}
+    }
+  </style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Lincoln Audit Explorer home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-copy"><strong class="brand-title">Lincoln Audit Explorer</strong><small class="brand-tagline">City audits explained clearly.</small></span>
+      </a>
+      <button id="aboutButton" class="header-button">About this tool</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="homeView">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">A public guide for Lincoln residents</p>
+        <h1>Understand what Lincoln&#8217;s audits found.</h1>
+        <p class="hero-copy">Start with a question. Get a clear answer backed by the audit evidence.</p>
+        <h2 class="hero-question-heading">What would you like to know?</h2>
+        <div id="heroQuestionGrid" class="hero-question-grid"></div>
+        <a class="hero-text-link" href="#timelineSection">See the full story over time ↓</a>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="timelineSection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Independent audit history</p>
+          <h2>What changed across the completed audits?</h2>
+        </div>
+        <p>The latest completed independent audit included here covers 2022–23.</p>
+      </div>
+      <div id="auditOverviewTimeline" class="overview-timeline audit-overview-timeline"></div>
+
+      <div class="post-audit-overview">
+        <div class="section-heading post-audit-heading">
+          <div>
+            <p class="eyebrow">After the latest audit</p>
+            <h2>What do later public records show?</h2>
+          </div>
+          <p>These are documented updates, not new audit results.</p>
+        </div>
+        <div id="documentedUpdatesOverview" class="documented-updates-overview"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="topicsSection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Explore the findings</p>
+          <h2>Browse by topic</h2>
+        </div>
+        <div class="filters" aria-label="Filter topics">
+          <button class="filter active" data-filter="All">All topics</button>
+          <button class="filter" data-filter="Ongoing">Still needs attention</button>
+          <button class="filter" data-filter="Improved">Improved</button>
+          <button class="filter" data-filter="Mixed">Mixed</button>
+        </div>
+      </div>
+      <div id="topicGrid" class="topic-grid"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <h3>No matching results</h3>
+        <p>Try a broader word or clear the status filter.</p>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div>
+        <p class="eyebrow">Looking for something specific?</p>
+        <h2>What are you wondering about?</h2>
+        <p>Use everyday words. Try <strong>missing money</strong>, <strong>fraud</strong>, <strong>utility bills</strong>, or <strong>did they fix it?</strong></p>
+      </div>
+      <div class="search-wrap">
+        <label for="searchInput">Search questions and topics</label>
+        <div class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Try “missing money” or ask a question">
+          <button id="clearSearch" aria-label="Clear search">×</button>
+        </div>
+      </div>
+      <div id="searchResults" class="search-results" hidden>
+        <div id="searchGuide"></div>
+        <h3>Search results</h3>
+        <div id="questionGrid" class="question-grid"></div>
+        <div id="searchTopicGrid" class="topic-grid"></div>
+      </div>
+    </section>
+
+    <section class="method">
+      <div>
+        <p class="eyebrow">How to read this site</p>
+        <h2>Facts and interpretation stay separate.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span class="method-icon fact-icon">F</span><h3>Documented fact</h3><p>What an audit report, council record, or evidence-database entry directly states.</p></article>
+        <article><span class="method-icon interpretation-icon">I</span><h3>Supported interpretation</h3><p>A careful explanation based on the documented pattern. It is not an auditor conclusion.</p></article>
+        <article><span class="method-icon question-icon">?</span><h3>Open question</h3><p>Something the available records do not yet answer.</p></article>
+      </div>
+    </section>
+    </div>
+
+    <section id="pageView" class="page-view" hidden aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Lincoln Audit Explorer</strong>
+      <p>The public records is the authoritative source for every public statement in this application.</p>
+    </div>
+    <div style="display:flex;gap:.75rem;align-items:center;"><a href="methodology.html" style="color:white;text-decoration:none;font-weight:700;">Methodology &amp; Sources</a><button id="footerAbout">About this tool</button></div>
+  
+    <div class="site-disclaimer">
+      <div class="site-disclaimer-inner">
+        <p><strong>Independent public information project.</strong> Lincoln Audit Explorer is not affiliated with, endorsed by, or approved by the City of Lincoln.</p>
+      </div>
+    </div>
+    </footer>
+    
+
+  <dialog id="aboutDialog" class="about-dialog">
+    <button class="dialog-close" data-close aria-label="Close">×</button>
+    <p class="eyebrow">About this project</p>
+    <h2>What this tool does—and does not do</h2>
+    <p>This site helps Lincoln residents understand the City's audits and the public records related to them using plain-language explanations, timelines, and topic guides.</p>
+    <h3>Built from public records</h3>
+    <p>Every public statement should connect to the <strong>public records</strong>, a curated database built from publicly available records. The database is the authoritative source used by this application.</p>
+
+    <h3>Review the original public records</h3>
+    <p>You are encouraged to review the original public records, including independent audit reports, City Council agendas, meeting packets, approved minutes, ordinances, financial reports, and video recordings of City Council meetings available on the City's public website.</p>
+
+    <h3>Project independence</h3>
+    <p>Lincoln Audit Explorer is an independent public information project. It is not affiliated with, endorsed by, or approved by the City of Lincoln or any government agency.</p>
+    <h3>Important limitation</h3>
+    <p>Council minutes can document discussion and action, but they do not automatically prove that an audit finding was corrected or that a control worked. Later audit testing is stronger evidence of effectiveness.</p>
+    <h3>Reading labels</h3>
+    <p><strong>Documented fact</strong> means the record directly supports the statement. <strong>Supported interpretation</strong> means the conclusion is based on documented evidence but is not itself an auditor’s conclusion.</p>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
