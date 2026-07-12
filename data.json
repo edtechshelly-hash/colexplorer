@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.6",
+    "version": "2.7",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1795,13 +1795,12 @@
         "where did problems start"
       ],
       "leadership": {
-        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
         "periods": [
           {
             "label": "During the 2016\u201317 audit period",
             "mayor": "Gerald Wise",
             "council": [],
-            "note": "The mayor is verified in the public records used for this project. A complete council list for this period is still being verified from archived meeting minutes."
+            "note": "A complete council list for this period is still being verified from archived meeting minutes."
           }
         ]
       }
@@ -1831,13 +1830,12 @@
         "bank difference"
       ],
       "leadership": {
-        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
         "periods": [
           {
             "label": "During the 2018\u201319 audit period",
             "mayor": "Gerald Wise",
             "council": [],
-            "note": "The mayor is verified in the public records used for this project. A complete council list for this period is still being verified from archived meeting minutes."
+            "note": "A complete council list for this period is still being verified from archived meeting minutes."
           }
         ]
       }
@@ -1866,7 +1864,6 @@
         "208089 bank difference"
       ],
       "leadership": {
-        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
         "periods": [
           {
             "label": "Council documented in December 2020 minutes",
@@ -1908,7 +1905,6 @@
         "six findings"
       ],
       "leadership": {
-        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
         "periods": [
           {
             "label": "Early 2022",

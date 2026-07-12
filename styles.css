@@ -1375,3 +1375,54 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
 @media(max-width:650px){
   .leadership-grid{grid-template-columns:1fr}
 }
+
+
+/* Version 2.7 — clearer two-year audit periods and cleaner context */
+.audit-period-note{
+  display:flex;
+  align-items:flex-start;
+  gap:.7rem;
+  margin:0 0 1.25rem;
+  padding:.95rem 1.05rem;
+  border-radius:15px;
+  background:#f1f6f4;
+  border:1px solid #d8e5e0;
+  color:#405651;
+}
+.audit-period-note strong{
+  flex:0 0 auto;
+  color:var(--ink);
+}
+.audit-period-note span{
+  line-height:1.45;
+}
+.audit-period-explainer{
+  display:flex;
+  flex-direction:column;
+  gap:.25rem;
+  margin:0 0 1.3rem;
+  padding:.9rem 1rem;
+  border-radius:14px;
+  background:#f7f9f8;
+  border:1px solid var(--line);
+}
+.audit-period-explainer strong{
+  color:var(--ink);
+}
+.audit-period-explainer span{
+  color:var(--muted);
+}
+.fact-interpretation-heading{
+  display:block;
+}
+.leadership-details summary small,
+.leadership-context,
+.leadership-clarifier{
+  display:none !important;
+}
+@media(max-width:650px){
+  .audit-period-note{
+    flex-direction:column;
+    gap:.25rem;
+  }
+}
