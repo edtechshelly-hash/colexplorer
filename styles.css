@@ -1735,3 +1735,23 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
 #searchTopicGrid.topic-grid{
   display:block;
 }
+
+/* Version 4.0 — workbook-driven Resident Answer Library */
+.resident-answer-result{padding:1.55rem;border:1px solid #cfe0d9;border-radius:20px;background:#fff;box-shadow:0 12px 28px rgba(23,55,48,.08)}
+.resident-answer-result>h2{margin:0 0 1rem;font-size:1.75rem;line-height:1.2}
+.resident-answer-short{padding:1.1rem 1.2rem;border-radius:15px;background:#eaf4ef;border-left:5px solid var(--brand)}
+.resident-answer-short h3,.resident-answer-section h3{margin:0 0 .45rem;font-size:1.1rem}
+.resident-answer-short p,.resident-answer-section p{margin:0;color:#344b47;line-height:1.62}
+.resident-answer-short p{font-size:1.08rem;font-weight:650}
+.resident-answer-section{padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.resident-answer-section:last-of-type{border-bottom:0}
+.records-section h3{color:#2f6f58}.matters-section h3{color:#75571d}.limits-section h3{color:#596864}
+.resident-answer-years{margin:1rem 0 0;color:var(--muted);font-size:.9rem}
+.answer-review-note{margin:1rem 0 0;padding:.8rem .9rem;border-radius:12px;background:#fff7e8;color:#68491c;font-size:.87rem}
+.answer-followup-section{margin-top:1rem;padding:1rem;border:1px solid var(--line);border-radius:16px;background:#fafcfb}
+.answer-followup-section h3,.answer-topic-labels h3{margin:0 0 .7rem;font-size:1.05rem}
+.answer-followup-list{display:grid;gap:.55rem}
+.answer-followup-question{display:flex;justify-content:space-between;align-items:center;gap:1rem;width:100%;padding:.8rem .9rem;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);text-align:left;cursor:pointer}
+.answer-followup-question:hover,.answer-followup-question:focus-visible{border-color:#9fbbb2;background:#f5f9f7}
+.answer-topic-labels{margin-top:1rem}.answer-topic-labels>div{display:flex;flex-wrap:wrap;gap:.5rem}
+.answer-topic-labels span{padding:.45rem .65rem;border-radius:999px;background:#edf3f1;color:#36554d;font-size:.82rem;font-weight:700}

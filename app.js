@@ -1,5 +1,6 @@
 
 let appData;
+let answerLibrary = { answers: [] };
 let activeFilter = "All";
 let searchTerm = "";
 
@@ -9,8 +10,12 @@ const statusClass = s => `status-${s.toLowerCase().replace(/\s+/g,"-")}`;
 const displayStatus = s => s === "Ongoing" ? "Still needs attention" : s;
 
 async function init(){
-  const response = await fetch("data.json");
-  appData = await response.json();
+  const [dataResponse, answerResponse] = await Promise.all([
+    fetch("data.json"),
+    fetch("answer-library.json")
+  ]);
+  appData = await dataResponse.json();
+  answerLibrary = await answerResponse.json();
   renderHeroQuestions();
   renderOverviewTimeline();
   renderAuditYears();
@@ -222,6 +227,54 @@ function dedupeById(items){
   return [...new Map(items.map(x=>[x.id,x])).values()];
 }
 
+function answerSearchText(answer){
+  return normalizeSearch([
+    answer.question,
+    answer.shortAnswer,
+    answer.whyPeopleAsk,
+    answer.recordsShow,
+    answer.whyItMatters,
+    answer.recordsDoNotEstablish,
+    ...(answer.searchPhrases || []),
+    ...(answer.relatedTopics || [])
+  ].filter(Boolean).join(" "));
+}
+
+function answerSearchScore(answer, term){
+  const needle=normalizeSearch(term);
+  if(!needle) return 0;
+  const question=normalizeSearch(answer.question);
+  const phrases=(answer.searchPhrases || []).map(normalizeSearch);
+  const text=answerSearchText(answer);
+  const words=needle.split(" ").filter(Boolean);
+  let score=0;
+  if(question===needle) score+=220;
+  if(question.includes(needle) || needle.includes(question)) score+=115;
+  if(phrases.some(p=>p===needle)) score+=190;
+  if(phrases.some(p=>p.includes(needle) || needle.includes(p))) score+=105;
+  if(text.includes(needle)) score+=70;
+  words.forEach(word=>{
+    if(question.includes(word)) score+=20;
+    if(phrases.some(p=>p.includes(word))) score+=17;
+    if(text.includes(word)) score+=6;
+  });
+  if(words.every(word=>text.includes(word))) score+=30;
+  if(answer.readyForApp) score+=8;
+  return score;
+}
+
+function findAnswerById(id){
+  return (answerLibrary.answers || []).find(a=>a.id===id);
+}
+
+function setSearchQuestion(question){
+  const input=$("#searchInput");
+  input.value=question;
+  searchTerm=question.trim().toLowerCase();
+  renderSearch();
+  input.scrollIntoView({behavior:"smooth",block:"center"});
+}
+
 function renderSearch(){
   const box=$("#searchResults");
   const guideBox=$("#searchGuide");
@@ -236,117 +289,65 @@ function renderSearch(){
     return;
   }
 
-  const guideMatch=findSearchGuide(searchTerm);
-  const rankedQuestions=appData.questions
-    .map(q=>({item:q,score:searchScore(q,searchTerm)}))
+  const rankedAnswers=(answerLibrary.answers || [])
+    .map(answer=>({answer,score:answerSearchScore(answer,searchTerm)}))
     .filter(x=>x.score>0)
     .sort((a,b)=>b.score-a.score);
 
-  const rankedTopics=appData.topics
-    .map(t=>({item:t,score:searchScore(t,searchTerm)}))
-    .filter(x=>x.score>0)
-    .sort((a,b)=>b.score-a.score);
-
-  const guide=guideMatch?.guide || null;
-  const guideQuestions=guide
-    ? appData.questions.filter(q=>(guide.questionIds || []).includes(q.id))
-    : [];
-  const guideTopics=guide
-    ? appData.topics.filter(t=>(guide.topicIds || []).includes(t.id))
-    : [];
-
-  const bestQuestion=guideQuestions[0] || rankedQuestions[0]?.item || null;
-  const bestTopic=!bestQuestion ? (guideTopics[0] || rankedTopics[0]?.item || null) : null;
-
+  const bestAnswer=rankedAnswers[0]?.answer || null;
   box.hidden=false;
 
-  if(guide){
+  if(bestAnswer){
     guideBox.innerHTML=`
-      <section class="search-answer-panel">
-        <p class="search-answer-label">Best answer</p>
-        <h2>${esc(guide.title)}</h2>
-        <p class="search-answer-text">${esc(guide.answer)}</p>
-        ${bestQuestion ? `
-          <button class="search-primary-action" data-search-question="${esc(bestQuestion.id)}">
-            Read the full answer <span aria-hidden="true">→</span>
-          </button>` : ""}
-      </section>`;
-  }else if(bestQuestion){
-    guideBox.innerHTML=`
-      <section class="search-answer-panel">
-        <p class="search-answer-label">Best answer</p>
-        <h2>${esc(bestQuestion.question)}</h2>
-        <p class="search-answer-text">${esc(bestQuestion.shortAnswer || bestQuestion.answer)}</p>
-        <button class="search-primary-action" data-search-question="${esc(bestQuestion.id)}">
-          Read the full answer <span aria-hidden="true">→</span>
-        </button>
-      </section>`;
-  }else if(bestTopic){
-    guideBox.innerHTML=`
-      <section class="search-answer-panel">
-        <p class="search-answer-label">Closest topic</p>
-        <h2>${esc(bestTopic.plainTitle)}</h2>
-        <p class="search-answer-text">${esc(bestTopic.summary)}</p>
-        <button class="search-primary-action" data-search-topic="${esc(bestTopic.id)}">
-          Explore this topic <span aria-hidden="true">→</span>
-        </button>
-      </section>`;
+      <article class="resident-answer-result">
+        <p class="search-answer-label">Resident answer</p>
+        <h2>${esc(bestAnswer.question)}</h2>
+        <section class="resident-answer-short">
+          <h3>Short answer</h3>
+          <p>${esc(bestAnswer.shortAnswer)}</p>
+        </section>
+        ${bestAnswer.whyPeopleAsk ? `<section class="resident-answer-section"><h3>Why people ask this</h3><p>${esc(bestAnswer.whyPeopleAsk)}</p></section>` : ""}
+        ${bestAnswer.recordsShow ? `<section class="resident-answer-section records-section"><h3>What the public records show</h3><p>${esc(bestAnswer.recordsShow)}</p></section>` : ""}
+        ${bestAnswer.whyItMatters ? `<section class="resident-answer-section matters-section"><h3>Why it matters</h3><p>${esc(bestAnswer.whyItMatters)}</p></section>` : ""}
+        ${bestAnswer.recordsDoNotEstablish ? `<section class="resident-answer-section limits-section"><h3>What the records do not establish</h3><p>${esc(bestAnswer.recordsDoNotEstablish)}</p></section>` : ""}
+        ${bestAnswer.auditYears ? `<p class="resident-answer-years"><strong>Audit years:</strong> ${esc(bestAnswer.auditYears)}</p>` : ""}
+        ${!bestAnswer.readyForApp ? `<p class="answer-review-note">This answer is still being reviewed and may be refined as additional evidence is mapped.</p>` : ""}
+      </article>`;
   }else{
     guideBox.innerHTML=`
       <section class="search-answer-panel search-no-answer">
-        <p class="search-answer-label">No clear answer yet</p>
-        <h2>Try asking in a different way.</h2>
-        <p class="search-answer-text">Try words such as <strong>missing money</strong>, <strong>fraud</strong>, <strong>utility bills</strong>, <strong>taxes</strong>, or <strong>did the City improve?</strong></p>
+        <p class="search-answer-label">No direct answer yet</p>
+        <h2>We do not have a finished answer for that question yet.</h2>
+        <p class="search-answer-text">Try asking about <strong>missing money</strong>, <strong>stolen money</strong>, <strong>fraud</strong>, <strong>taxes</strong>, <strong>utility bills</strong>, <strong>qualified opinion</strong>, or <strong>whether the City improved</strong>.</p>
       </section>`;
   }
 
-  const relatedQuestions=dedupeById([
-    ...guideQuestions,
-    ...rankedQuestions.map(x=>x.item)
-  ]).filter(q=>q.id!==bestQuestion?.id).slice(0,4);
+  const relatedAnswerIds=bestAnswer?.relatedQuestions || [];
+  const relatedAnswers=[
+    ...relatedAnswerIds.map(findAnswerById).filter(Boolean),
+    ...rankedAnswers.slice(1).map(x=>x.answer)
+  ];
+  const uniqueRelated=[...new Map(relatedAnswers.map(x=>[x.id,x])).values()].slice(0,5);
 
-  const relatedTopics=dedupeById([
-    ...guideTopics,
-    ...rankedTopics.map(x=>x.item)
-  ]).filter(t=>t.id!==bestTopic?.id).slice(0,4);
-
-  questionBox.innerHTML=relatedQuestions.length ? `
-    <div class="search-related-heading">
+  questionBox.innerHTML=uniqueRelated.length ? `
+    <section class="answer-followup-section">
       <h3>Related questions</h3>
-      <p>These may help you explore the issue further.</p>
-    </div>
-    <div class="search-related-list">
-      ${relatedQuestions.map(q=>`
-        <button class="search-related-item" data-search-question="${esc(q.id)}">
-          <span>
-            <strong>${esc(q.question)}</strong>
-            <small>${esc(q.shortAnswer)}</small>
-          </span>
-          <span aria-hidden="true">→</span>
-        </button>`).join("")}
-    </div>` : "";
+      <div class="answer-followup-list">
+        ${uniqueRelated.map(a=>`
+          <button class="answer-followup-question" data-answer-question="${esc(a.question)}">
+            <span>${esc(a.question)}</span><span aria-hidden="true">→</span>
+          </button>`).join("")}
+      </div>
+    </section>` : "";
 
-  topicBox.innerHTML=relatedTopics.length ? `
-    <div class="search-related-heading">
-      <h3>Related topics</h3>
-      <p>Explore the audit issues connected to your question.</p>
-    </div>
-    <div class="search-related-list">
-      ${relatedTopics.map(t=>`
-        <button class="search-related-item" data-search-topic="${esc(t.id)}">
-          <span>
-            <strong>${esc(t.plainTitle)}</strong>
-            <small>${esc(t.summary)}</small>
-          </span>
-          <span aria-hidden="true">→</span>
-        </button>`).join("")}
-    </div>` : "";
+  topicBox.innerHTML=(bestAnswer?.relatedTopics || []).length ? `
+    <section class="answer-topic-labels">
+      <h3>Related audit topics</h3>
+      <div>${bestAnswer.relatedTopics.map(topic=>`<span>${esc(topic)}</span>`).join("")}</div>
+    </section>` : "";
 
-  document.querySelectorAll("[data-search-question]").forEach(b=>
-    b.addEventListener("click",()=>go(`question/${b.dataset.searchQuestion}`))
-  );
-  document.querySelectorAll("[data-search-topic]").forEach(b=>
-    b.addEventListener("click",()=>go(`topic/${b.dataset.searchTopic}`))
+  document.querySelectorAll("[data-answer-question]").forEach(button=>
+    button.addEventListener("click",()=>setSearchQuestion(button.dataset.answerQuestion))
   );
 }
 
