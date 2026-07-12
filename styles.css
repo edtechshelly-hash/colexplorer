@@ -1633,3 +1633,105 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
 }
 
 .audit-period-note,.audit-period-explainer{display:none!important;}
+
+
+/* Version 3.4 — question-engine search */
+.search-results{
+  margin-top:1.25rem;
+}
+.search-answer-panel{
+  padding:1.5rem;
+  border:1px solid #cfe0d9;
+  border-left:6px solid var(--brand);
+  border-radius:20px;
+  background:linear-gradient(135deg,#f4f9f6,#ffffff);
+  box-shadow:0 12px 28px rgba(23,55,48,.08);
+}
+.search-answer-label{
+  margin:0 0 .35rem;
+  color:var(--brand);
+  font-size:.74rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.search-answer-panel h2{
+  margin:0 0 .75rem;
+  font-size:1.65rem;
+  line-height:1.2;
+}
+.search-answer-text{
+  max-width:860px;
+  margin:0;
+  color:#344b47;
+  font-size:1.08rem;
+  line-height:1.6;
+}
+.search-primary-action{
+  margin-top:1rem;
+  padding:.8rem 1rem;
+  border:0;
+  border-radius:12px;
+  background:var(--brand);
+  color:white;
+  font-weight:850;
+  cursor:pointer;
+}
+.search-primary-action:hover,
+.search-primary-action:focus-visible{
+  transform:translateY(-1px);
+}
+.search-no-answer{
+  border-left-color:#8b9691;
+}
+.search-related-heading{
+  margin:1.5rem 0 .75rem;
+}
+.search-related-heading h3{
+  margin:0;
+  font-size:1.2rem;
+}
+.search-related-heading p{
+  margin:.25rem 0 0;
+  color:var(--muted);
+  font-size:.93rem;
+}
+.search-related-list{
+  display:grid;
+  gap:.65rem;
+}
+.search-related-item{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding:1rem 1.1rem;
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:white;
+  color:var(--ink);
+  text-align:left;
+  cursor:pointer;
+}
+.search-related-item:hover,
+.search-related-item:focus-visible{
+  border-color:#a7c1b9;
+  background:#f8fbf9;
+}
+.search-related-item span:first-child{
+  min-width:0;
+}
+.search-related-item strong,
+.search-related-item small{
+  display:block;
+}
+.search-related-item small{
+  margin-top:.25rem;
+  color:var(--muted);
+  line-height:1.4;
+}
+#questionGrid.question-grid,
+#searchTopicGrid.topic-grid{
+  display:block;
+}

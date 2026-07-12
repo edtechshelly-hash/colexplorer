@@ -155,10 +155,8 @@ function normalizeSearch(value){
     .trim();
 }
 
-function matches(obj){
-  if(!searchTerm) return true;
-  const needle=normalizeSearch(searchTerm);
-  const haystack=normalizeSearch([
+function searchableText(obj){
+  return normalizeSearch([
     obj.question,
     obj.title,
     obj.plainTitle,
@@ -166,73 +164,189 @@ function matches(obj){
     obj.answer,
     obj.summary,
     obj.whyItMatters,
+    obj.fact,
+    obj.interpretation,
     ...(obj.searchAliases || [])
   ].filter(Boolean).join(" "));
-  return haystack.includes(needle) || needle.split(" ").every(word=>haystack.includes(word));
+}
+
+function searchScore(obj, term){
+  const needle=normalizeSearch(term);
+  if(!needle) return 0;
+
+  const words=needle.split(" ").filter(Boolean);
+  const question=normalizeSearch(obj.question || obj.plainTitle || obj.title || "");
+  const aliases=(obj.searchAliases || []).map(normalizeSearch);
+  const text=searchableText(obj);
+
+  let score=0;
+
+  if(question===needle) score+=120;
+  if(question.includes(needle)) score+=70;
+  if(aliases.some(a=>a===needle)) score+=100;
+  if(aliases.some(a=>a.includes(needle) || needle.includes(a))) score+=65;
+  if(text.includes(needle)) score+=45;
+
+  words.forEach(word=>{
+    if(question.includes(word)) score+=14;
+    if(aliases.some(a=>a.includes(word))) score+=12;
+    if(text.includes(word)) score+=5;
+  });
+
+  if(words.every(word=>text.includes(word))) score+=20;
+  return score;
 }
 
 function findSearchGuide(term){
   const normalized=normalizeSearch(term);
   const guides=appData.searchGuides || {};
+  let best=null;
+  let bestScore=0;
+
   for(const [key,guide] of Object.entries(guides)){
     const normalizedKey=normalizeSearch(key);
-    if(normalized.includes(normalizedKey) || normalizedKey.includes(normalized)){
-      return guide;
+    let score=0;
+    if(normalized===normalizedKey) score=120;
+    else if(normalized.includes(normalizedKey)) score=90;
+    else if(normalizedKey.includes(normalized)) score=60;
+
+    if(score>bestScore){
+      best={key,guide};
+      bestScore=score;
     }
   }
-  return null;
+  return best;
+}
+
+function dedupeById(items){
+  return [...new Map(items.map(x=>[x.id,x])).values()];
 }
 
 function renderSearch(){
   const box=$("#searchResults");
   const guideBox=$("#searchGuide");
+  const questionBox=$("#questionGrid");
+  const topicBox=$("#searchTopicGrid");
+
   if(!searchTerm){
     box.hidden=true;
     guideBox.innerHTML="";
-    $("#questionGrid").innerHTML="";
-    $("#searchTopicGrid").innerHTML="";
+    questionBox.innerHTML="";
+    topicBox.innerHTML="";
     return;
   }
 
-  const guide=findSearchGuide(searchTerm);
-  const qs=appData.questions.filter(matches);
-  const ts=appData.topics.filter(matches);
+  const guideMatch=findSearchGuide(searchTerm);
+  const rankedQuestions=appData.questions
+    .map(q=>({item:q,score:searchScore(q,searchTerm)}))
+    .filter(x=>x.score>0)
+    .sort((a,b)=>b.score-a.score);
+
+  const rankedTopics=appData.topics
+    .map(t=>({item:t,score:searchScore(t,searchTerm)}))
+    .filter(x=>x.score>0)
+    .sort((a,b)=>b.score-a.score);
+
+  const guide=guideMatch?.guide || null;
+  const guideQuestions=guide
+    ? appData.questions.filter(q=>(guide.questionIds || []).includes(q.id))
+    : [];
+  const guideTopics=guide
+    ? appData.topics.filter(t=>(guide.topicIds || []).includes(t.id))
+    : [];
+
+  const bestQuestion=guideQuestions[0] || rankedQuestions[0]?.item || null;
+  const bestTopic=!bestQuestion ? (guideTopics[0] || rankedTopics[0]?.item || null) : null;
+
   box.hidden=false;
 
   if(guide){
     guideBox.innerHTML=`
-      <section class="search-guide-card">
-        <p class="eyebrow">Plain-language search</p>
-        <h3>${esc(guide.title)}</h3>
-        <p>${esc(guide.answer)}</p>
+      <section class="search-answer-panel">
+        <p class="search-answer-label">Best answer</p>
+        <h2>${esc(guide.title)}</h2>
+        <p class="search-answer-text">${esc(guide.answer)}</p>
+        ${bestQuestion ? `
+          <button class="search-primary-action" data-search-question="${esc(bestQuestion.id)}">
+            Read the full answer <span aria-hidden="true">→</span>
+          </button>` : ""}
+      </section>`;
+  }else if(bestQuestion){
+    guideBox.innerHTML=`
+      <section class="search-answer-panel">
+        <p class="search-answer-label">Best answer</p>
+        <h2>${esc(bestQuestion.question)}</h2>
+        <p class="search-answer-text">${esc(bestQuestion.shortAnswer || bestQuestion.answer)}</p>
+        <button class="search-primary-action" data-search-question="${esc(bestQuestion.id)}">
+          Read the full answer <span aria-hidden="true">→</span>
+        </button>
+      </section>`;
+  }else if(bestTopic){
+    guideBox.innerHTML=`
+      <section class="search-answer-panel">
+        <p class="search-answer-label">Closest topic</p>
+        <h2>${esc(bestTopic.plainTitle)}</h2>
+        <p class="search-answer-text">${esc(bestTopic.summary)}</p>
+        <button class="search-primary-action" data-search-topic="${esc(bestTopic.id)}">
+          Explore this topic <span aria-hidden="true">→</span>
+        </button>
       </section>`;
   }else{
-    guideBox.innerHTML="";
+    guideBox.innerHTML=`
+      <section class="search-answer-panel search-no-answer">
+        <p class="search-answer-label">No clear answer yet</p>
+        <h2>Try asking in a different way.</h2>
+        <p class="search-answer-text">Try words such as <strong>missing money</strong>, <strong>fraud</strong>, <strong>utility bills</strong>, <strong>taxes</strong>, or <strong>did the City improve?</strong></p>
+      </section>`;
   }
 
-  const guideQuestions=guide ? appData.questions.filter(q=>guide.questionIds.includes(q.id)) : [];
-  const guideTopics=guide ? appData.topics.filter(t=>guide.topicIds.includes(t.id)) : [];
-  const finalQuestions=[...new Map([...guideQuestions,...qs].map(x=>[x.id,x])).values()];
-  const finalTopics=[...new Map([...guideTopics,...ts].map(x=>[x.id,x])).values()];
+  const relatedQuestions=dedupeById([
+    ...guideQuestions,
+    ...rankedQuestions.map(x=>x.item)
+  ]).filter(q=>q.id!==bestQuestion?.id).slice(0,4);
 
-  $("#questionGrid").innerHTML=finalQuestions.map(q=>`
-    <button class="question-card" data-search-question="${esc(q.id)}">
-      <h3>${esc(q.question)}</h3>
-      <p>${esc(q.shortAnswer)}</p>
-      <span class="card-arrow">Read the answer →</span>
-    </button>`).join("");
+  const relatedTopics=dedupeById([
+    ...guideTopics,
+    ...rankedTopics.map(x=>x.item)
+  ]).filter(t=>t.id!==bestTopic?.id).slice(0,4);
 
-  $("#searchTopicGrid").innerHTML=finalTopics.map(topicCard).join("");
+  questionBox.innerHTML=relatedQuestions.length ? `
+    <div class="search-related-heading">
+      <h3>Related questions</h3>
+      <p>These may help you explore the issue further.</p>
+    </div>
+    <div class="search-related-list">
+      ${relatedQuestions.map(q=>`
+        <button class="search-related-item" data-search-question="${esc(q.id)}">
+          <span>
+            <strong>${esc(q.question)}</strong>
+            <small>${esc(q.shortAnswer)}</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </button>`).join("")}
+    </div>` : "";
 
-  if(!finalQuestions.length && !finalTopics.length){
-    $("#questionGrid").innerHTML=`<div class="empty-state"><h3>No matching results</h3><p>Try another word.</p></div>`;
-  }
+  topicBox.innerHTML=relatedTopics.length ? `
+    <div class="search-related-heading">
+      <h3>Related topics</h3>
+      <p>Explore the audit issues connected to your question.</p>
+    </div>
+    <div class="search-related-list">
+      ${relatedTopics.map(t=>`
+        <button class="search-related-item" data-search-topic="${esc(t.id)}">
+          <span>
+            <strong>${esc(t.plainTitle)}</strong>
+            <small>${esc(t.summary)}</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </button>`).join("")}
+    </div>` : "";
 
   document.querySelectorAll("[data-search-question]").forEach(b=>
     b.addEventListener("click",()=>go(`question/${b.dataset.searchQuestion}`))
   );
-  document.querySelectorAll("[data-topic]").forEach(b=>
-    b.addEventListener("click",()=>go(`topic/${b.dataset.topic}`))
+  document.querySelectorAll("[data-search-topic]").forEach(b=>
+    b.addEventListener("click",()=>go(`topic/${b.dataset.searchTopic}`))
   );
 }
 
