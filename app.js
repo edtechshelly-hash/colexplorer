@@ -75,6 +75,7 @@ function renderHeroQuestions(){
     <button class="hero-question-card" data-question="${esc(q.id)}">
       <strong>${esc(q.question)}</strong>
       <span>${esc(q.shortAnswer)}</span>
+      <span class="hero-card-cta">Explore this question <span aria-hidden="true">→</span></span>
     </button>`).join("");
 
   document.querySelectorAll("[data-question]").forEach(b=>
