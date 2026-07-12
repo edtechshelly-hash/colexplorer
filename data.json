@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.5",
+    "version": "2.6",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1793,7 +1793,18 @@
         "2017 audit",
         "first audit",
         "where did problems start"
-      ]
+      ],
+      "leadership": {
+        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
+        "periods": [
+          {
+            "label": "During the 2016\u201317 audit period",
+            "mayor": "Gerald Wise",
+            "council": [],
+            "note": "The mayor is verified in the public records used for this project. A complete council list for this period is still being verified from archived meeting minutes."
+          }
+        ]
+      }
     },
     {
       "id": "2018-19",
@@ -1818,7 +1829,18 @@
         "disclaimer opinion",
         "court fees",
         "bank difference"
-      ]
+      ],
+      "leadership": {
+        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
+        "periods": [
+          {
+            "label": "During the 2018\u201319 audit period",
+            "mayor": "Gerald Wise",
+            "council": [],
+            "note": "The mayor is verified in the public records used for this project. A complete council list for this period is still being verified from archived meeting minutes."
+          }
+        ]
+      }
     },
     {
       "id": "2020-21",
@@ -1842,7 +1864,23 @@
         "2021 audit",
         "14052 court fees",
         "208089 bank difference"
-      ]
+      ],
+      "leadership": {
+        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
+        "periods": [
+          {
+            "label": "Council documented in December 2020 minutes",
+            "mayor": "Gerald Wise",
+            "council": [
+              "Akre",
+              "Volk",
+              "Schock",
+              "Leingang"
+            ],
+            "note": "Council membership may have changed during the two-year audit period. These names are taken from a documented public meeting."
+          }
+        ]
+      }
     },
     {
       "id": "2022-23",
@@ -1868,7 +1906,34 @@
         "latest audit",
         "clean audit",
         "six findings"
-      ]
+      ],
+      "leadership": {
+        "contextNote": "This information is included for historical context only. It does not assign responsibility for any audit finding.",
+        "periods": [
+          {
+            "label": "Early 2022",
+            "mayor": "Gerald Wise",
+            "council": [
+              "Brandon Schock",
+              "Carrie Praska",
+              "Volk",
+              "Jamie Leingang"
+            ],
+            "note": "Public meeting records show changes in council membership during 2022."
+          },
+          {
+            "label": "Late 2022 and early 2023",
+            "mayor": "Gerald Wise through December 2022; Carrie Praska served as Interim Mayor in early 2023",
+            "council": [
+              "Ryan Glass",
+              "Amanda Davis",
+              "Jamie Leingang",
+              "Carrie Praska"
+            ],
+            "note": "A special election was scheduled in 2023, so leadership changed during this audit period."
+          }
+        ]
+      }
     }
   ]
 }

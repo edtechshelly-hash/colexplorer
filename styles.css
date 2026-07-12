@@ -1265,3 +1265,113 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
   .audit-navigation{grid-template-columns:1fr}
   .audit-navigation button:last-child{text-align:left}
 }
+
+
+/* Version 2.6 — neutral city leadership context */
+.audit-leadership-section{
+  margin-top:1rem;
+}
+.leadership-details{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fbfcfb;
+  overflow:hidden;
+}
+.leadership-details summary{
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding:1.15rem 1.25rem;
+  cursor:pointer;
+}
+.leadership-details summary::-webkit-details-marker{
+  display:none;
+}
+.leadership-details summary strong,
+.leadership-details summary small{
+  display:block;
+}
+.leadership-details summary strong{
+  font-size:1.15rem;
+  color:var(--ink);
+}
+.leadership-details summary small{
+  margin-top:.2rem;
+  color:var(--muted);
+  font-size:.83rem;
+}
+.details-arrow{
+  color:var(--brand);
+  font-size:1.35rem;
+  transition:transform .2s ease;
+}
+.leadership-details[open] .details-arrow{
+  transform:rotate(180deg);
+}
+.leadership-content{
+  padding:0 1.25rem 1.25rem;
+  border-top:1px solid var(--line);
+}
+.leadership-context{
+  margin:1rem 0;
+  padding:.9rem 1rem;
+  border-radius:14px;
+  background:#eef5f2;
+  color:#405651;
+}
+.leadership-period{
+  padding:1rem 0;
+  border-top:1px solid var(--line);
+}
+.leadership-period:first-of-type{
+  border-top:0;
+}
+.leadership-period h3{
+  margin:0 0 .8rem;
+  font-size:1.05rem;
+}
+.leadership-grid{
+  display:grid;
+  grid-template-columns:minmax(180px,.7fr) 1.3fr;
+  gap:1rem;
+}
+.leadership-grid>div{
+  padding:1rem;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:white;
+}
+.leadership-role{
+  display:block;
+  margin-bottom:.35rem;
+  color:var(--brand);
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+.leadership-grid ul{
+  margin:.3rem 0 0 1.1rem;
+  padding:0;
+}
+.leadership-grid li{
+  margin:.25rem 0;
+}
+.leadership-note{
+  margin:.75rem 0 0;
+  color:var(--muted);
+  font-size:.9rem;
+}
+.leadership-clarifier{
+  margin:1rem 0 0;
+  padding:.9rem 1rem;
+  border-radius:14px;
+  background:#fff6e8;
+  color:#68491c;
+  font-size:.92rem;
+}
+@media(max-width:650px){
+  .leadership-grid{grid-template-columns:1fr}
+}

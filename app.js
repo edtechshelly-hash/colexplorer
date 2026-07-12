@@ -358,6 +358,38 @@ function renderAuditPage(id){
       <p>${esc(a.whatChangedNext)}</p>
     </section>
 
+    <section class="answer-section audit-leadership-section">
+      <details class="leadership-details">
+        <summary>
+          <span>
+            <strong>City leadership during this audit</strong>
+            <small>Historical context only</small>
+          </span>
+          <span class="details-arrow" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="leadership-content">
+          <p class="leadership-context">${esc(a.leadership.contextNote)}</p>
+          ${(a.leadership.periods || []).map(period=>`
+            <article class="leadership-period">
+              <h3>${esc(period.label)}</h3>
+              <div class="leadership-grid">
+                <div>
+                  <span class="leadership-role">Mayor</span>
+                  <strong>${esc(period.mayor)}</strong>
+                </div>
+                ${period.council.length ? `
+                  <div>
+                    <span class="leadership-role">Council members documented in public minutes</span>
+                    <ul>${period.council.map(name=>`<li>${esc(name)}</li>`).join("")}</ul>
+                  </div>` : ""}
+              </div>
+              ${period.note ? `<p class="leadership-note">${esc(period.note)}</p>` : ""}
+            </article>`).join("")}
+          <p class="leadership-clarifier"><strong>Important:</strong> Listing a person here does not mean that person caused, knew about, or was responsible for an audit finding.</p>
+        </div>
+      </details>
+    </section>
+
     <section class="answer-section related-section">
       <h2>Keep following the story</h2>
       <div class="audit-navigation">
