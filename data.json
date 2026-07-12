@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.9",
+    "version": "3.1",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -36,8 +36,7 @@
       ],
       "residentContext": {
         "concern": "The audits found serious recordkeeping and financial-control problems. That is a reason to pay attention, but it is not the same as proof that money was stolen.",
-        "meaning": "The findings were mainly about how the City tracked, checked, approved, and reported public money. They did not automatically change taxes, utility rates, or City services.",
-        "money": "The City receives money from several places, including property taxes, utility payments, grants, permits, fees, and other local revenue. The audits review how those dollars are recorded, managed, and reported."
+        "meaning": "The findings were mainly about how the City tracked, checked, approved, and reported public money. They did not automatically change taxes, utility rates, or City services."
       }
     },
     {
@@ -170,8 +169,7 @@
       ],
       "residentContext": {
         "concern": "The audits did not conclude that fraud occurred. They did report weaknesses that could make errors or misuse harder to prevent or detect.",
-        "meaning": "The key issue is whether the City has strong enough checks, records, and review procedures to protect public money and explain where it went.",
-        "money": "Public money includes taxes, utility payments, grants, fees, and other City revenue. Fraud-risk planning should consider how each type of money is collected, recorded, approved, and reviewed."
+        "meaning": "The key issue is whether the City has strong enough checks, records, and review procedures to protect public money and explain where it went."
       }
     },
     {

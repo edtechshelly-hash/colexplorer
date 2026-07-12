@@ -274,16 +274,16 @@ function renderQuestionPage(id){
 
     <section class="evidence-comparison">
       <div class="evidence-comparison-heading">
-        <p class="eyebrow">What the public records show</p>
-        <h2>Fact and plain-language explanation</h2>
+        <p class="eyebrow">What the public records say</p>
+        <h2>Audit record and everyday meaning</h2>
       </div>
       <div class="evidence-comparison-grid">
         <div class="evidence-comparison-cell fact-cell">
-          <span class="comparison-label">Documented fact</span>
+          <span class="comparison-label">What the audit documented</span>
           <p>${esc(q.fact)}</p>
         </div>
         <div class="evidence-comparison-cell explanation-cell">
-          <span class="comparison-label">Plain-language explanation</span>
+          <span class="comparison-label">What that means</span>
           <p>${esc(q.interpretation)}</p>
         </div>
       </div>
@@ -292,21 +292,21 @@ function renderQuestionPage(id){
     ${q.residentContext?.concern ? `
       <section class="answer-section resident-context-card concern-card">
         <p class="eyebrow">Putting the finding in context</p>
-        <h2>What should residents know?</h2>
+        <h2>What this means</h2>
         <p>${esc(q.residentContext.concern)}</p>
       </section>` : ""}
 
     ${q.residentContext?.meaning ? `
       <section class="answer-section resident-context-card meaning-card">
         <p class="eyebrow">Why this matters</p>
-        <h2>What does this mean for residents?</h2>
+        <h2>Why it matters</h2>
         <p>${esc(q.residentContext.meaning)}</p>
       </section>` : ""}
 
     ${q.residentContext?.money ? `
       <section class="answer-section city-money-card">
         <p class="eyebrow">Helpful background</p>
-        <h2>What City money is involved?</h2>
+        <h2>Where does this money come from?</h2>
         <p>${esc(q.residentContext.money)}</p>
       </section>` : ""}
 
@@ -480,8 +480,8 @@ function renderTopicPage(id){
 
     ${t.residentContext?.meaning ? `
       <section class="answer-section city-money-card">
-        <p class="eyebrow">What this means for residents</p>
-        <h2>Why this money matters</h2>
+        <p class="eyebrow">Helpful background</p>
+        <h2>Where does this money come from?</h2>
         <p>${esc(t.residentContext.meaning)}</p>
       </section>` : ""}
 
@@ -489,16 +489,16 @@ function renderTopicPage(id){
       <div class="section-title-row fact-interpretation-heading">
         <div>
           <p class="eyebrow">How we explain the evidence</p>
-          <h2>Fact and plain-language explanation</h2>
+          <h2>Audit record and everyday meaning</h2>
         </div>
       </div>
       <div class="evidence-comparison-grid topic-evidence-comparison">
         <div class="evidence-comparison-cell fact-cell">
-          <span class="comparison-label">Documented fact</span>
+          <span class="comparison-label">What the audit documented</span>
           <p>${esc(t.fact)}</p>
         </div>
         <div class="evidence-comparison-cell explanation-cell">
-          <span class="comparison-label">Plain-language explanation</span>
+          <span class="comparison-label">What that means</span>
           <p>${esc(t.interpretation)}</p>
         </div>
       </div>
