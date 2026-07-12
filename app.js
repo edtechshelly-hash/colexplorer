@@ -272,21 +272,27 @@ function renderQuestionPage(id){
       <p>${esc(q.answer)}</p>
     </section>
 
-    <div class="evidence-pair">
-      <div class="evidence-box fact-box">
-        <strong>Documented fact</strong>
-        <p>${esc(q.fact)}</p>
+    <section class="evidence-comparison">
+      <div class="evidence-comparison-heading">
+        <p class="eyebrow">What the public records show</p>
+        <h2>Fact and plain-language explanation</h2>
       </div>
-      <div class="evidence-box interpretation-box">
-        <strong>Supported interpretation</strong>
-        <p>${esc(q.interpretation)}</p>
+      <div class="evidence-comparison-grid">
+        <div class="evidence-comparison-cell fact-cell">
+          <span class="comparison-label">Documented fact</span>
+          <p>${esc(q.fact)}</p>
+        </div>
+        <div class="evidence-comparison-cell explanation-cell">
+          <span class="comparison-label">Plain-language explanation</span>
+          <p>${esc(q.interpretation)}</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     ${q.residentContext?.concern ? `
       <section class="answer-section resident-context-card concern-card">
         <p class="eyebrow">Putting the finding in context</p>
-        <h2>Should residents be concerned?</h2>
+        <h2>What should residents know?</h2>
         <p>${esc(q.residentContext.concern)}</p>
       </section>` : ""}
 
@@ -483,18 +489,16 @@ function renderTopicPage(id){
       <div class="section-title-row fact-interpretation-heading">
         <div>
           <p class="eyebrow">How we explain the evidence</p>
-          <h2>Fact and interpretation</h2>
+          <h2>Fact and plain-language explanation</h2>
         </div>
       </div>
-      <div class="evidence-pair evidence-pair-featured">
-        <div class="evidence-box fact-box">
-          <span class="proof-label">F</span>
-          <strong>Documented fact</strong>
+      <div class="evidence-comparison-grid topic-evidence-comparison">
+        <div class="evidence-comparison-cell fact-cell">
+          <span class="comparison-label">Documented fact</span>
           <p>${esc(t.fact)}</p>
         </div>
-        <div class="evidence-box interpretation-box">
-          <span class="proof-label">I</span>
-          <strong>Supported interpretation</strong>
+        <div class="evidence-comparison-cell explanation-cell">
+          <span class="comparison-label">Plain-language explanation</span>
           <p>${esc(t.interpretation)}</p>
         </div>
       </div>

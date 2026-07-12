@@ -1458,3 +1458,86 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
   background:#f4f7fb;
   border-left:5px solid #5577a8;
 }
+
+
+/* Version 3.0 — streamlined evidence and resident callouts */
+.evidence-comparison{
+  margin:1.4rem 0 1.6rem;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:white;
+}
+.evidence-comparison-heading{
+  padding:1rem 1.2rem .8rem;
+  background:#f7faf8;
+  border-bottom:1px solid var(--line);
+}
+.evidence-comparison-heading h2{
+  margin:.15rem 0 0;
+  font-size:1.35rem;
+}
+.evidence-comparison-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.evidence-comparison-cell{
+  padding:1.2rem 1.25rem;
+  min-height:150px;
+}
+.evidence-comparison-cell + .evidence-comparison-cell{
+  border-left:1px solid var(--line);
+}
+.comparison-label{
+  display:block;
+  margin-bottom:.55rem;
+  font-size:.78rem;
+  font-weight:900;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.fact-cell{
+  background:#fbfdfc;
+  box-shadow:inset 5px 0 0 #2f8b5b;
+}
+.fact-cell .comparison-label{
+  color:#2f8b5b;
+}
+.explanation-cell{
+  background:#fbfcff;
+  box-shadow:inset 5px 0 0 #4b6fa7;
+}
+.explanation-cell .comparison-label{
+  color:#4b6fa7;
+}
+.evidence-comparison-cell p{
+  margin:0;
+  color:#344b47;
+  font-size:1.02rem;
+}
+.topic-evidence-comparison{
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:white;
+}
+.resident-context-card{
+  box-shadow:none;
+}
+.concern-card{
+  background:#fffaf1;
+  border-left:5px solid #c9882f;
+}
+.meaning-card{
+  background:#eef6f2;
+  border-left:5px solid var(--brand);
+}
+@media(max-width:720px){
+  .evidence-comparison-grid{
+    grid-template-columns:1fr;
+  }
+  .evidence-comparison-cell + .evidence-comparison-cell{
+    border-left:0;
+    border-top:1px solid var(--line);
+  }
+}
