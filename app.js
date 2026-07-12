@@ -13,6 +13,7 @@ async function init(){
   appData = await response.json();
   renderHeroQuestions();
   renderOverviewTimeline();
+  renderAuditYears();
   renderTopics();
   bind();
   handleRoute();
@@ -66,6 +67,7 @@ function handleRoute(){
   const [type,id] = route.split("/");
   if(type === "question") return renderQuestionPage(id);
   if(type === "topic") return renderTopicPage(id);
+  if(type === "audit") return renderAuditPage(id);
   if(type === "evidence") return renderEvidencePage(id);
   showHome();
 }
@@ -80,6 +82,21 @@ function renderHeroQuestions(){
 
   document.querySelectorAll("[data-question]").forEach(b=>
     b.addEventListener("click",()=>go(`question/${b.dataset.question}`))
+  );
+}
+
+function renderAuditYears(){
+  $("#auditYearGrid").innerHTML=appData.audits.map((a,i)=>`
+    <button class="audit-year-card" data-audit="${esc(a.id)}">
+      <span class="audit-year-number">${String(i+1).padStart(2,"0")}</span>
+      <span class="audit-year-date">${esc(a.years)} Audit</span>
+      <h3>${esc(a.theme)}</h3>
+      <p>${esc(a.cardSummary)}</p>
+      <span class="audit-year-cta">Explore this audit <span aria-hidden="true">→</span></span>
+    </button>`).join("");
+
+  document.querySelectorAll("[data-audit]").forEach(b=>
+    b.addEventListener("click",()=>go(`audit/${b.dataset.audit}`))
   );
 }
 
@@ -295,6 +312,70 @@ function renderQuestionPage(id){
     eyebrow:"Resident question",
     title:q.question,
     lead:q.shortAnswer,
+    body
+  });
+}
+
+function renderAuditPage(id){
+  const a=appData.audits.find(x=>x.id===id);
+  if(!a) return showHome();
+
+  const currentIndex=appData.audits.findIndex(x=>x.id===id);
+  const previous=currentIndex>0 ? appData.audits[currentIndex-1] : null;
+  const next=currentIndex<appData.audits.length-1 ? appData.audits[currentIndex+1] : null;
+
+  const body=`
+    <section class="audit-page-snapshot">
+      <div class="audit-snapshot-main">
+        <span class="audit-snapshot-label">In one sentence</span>
+        <p>${esc(a.oneSentence)}</p>
+      </div>
+      <div class="audit-snapshot-count">
+        <strong>${esc(a.findingCount)}</strong>
+        <span>problems reported</span>
+      </div>
+    </section>
+
+    <section class="answer-section">
+      <h2>What did the auditors say overall?</h2>
+      <p>${esc(a.opinionPlain)}</p>
+    </section>
+
+    <section class="answer-section audit-why-card">
+      <h2>Why did this matter?</h2>
+      <p>${esc(a.whyItMattered)}</p>
+    </section>
+
+    <section class="answer-section">
+      <h2>What did the auditors find?</h2>
+      <ul class="audit-key-points">
+        ${a.keyPoints.map(x=>`<li>${esc(x)}</li>`).join("")}
+      </ul>
+    </section>
+
+    <section class="answer-section audit-next-card">
+      <h2>What happened after this audit?</h2>
+      <p>${esc(a.whatChangedNext)}</p>
+    </section>
+
+    <section class="answer-section related-section">
+      <h2>Keep following the story</h2>
+      <div class="audit-navigation">
+        ${previous ? `<button data-page-audit="${esc(previous.id)}"><span>← Earlier audit</span><strong>${esc(previous.years)}</strong></button>` : ""}
+        ${next ? `<button data-page-audit="${esc(next.id)}"><span>Next audit →</span><strong>${esc(next.years)}</strong></button>` : ""}
+      </div>
+    </section>
+
+    <div class="public-records-note">
+      <strong>About this summary</strong>
+      <p>This page explains the audit in everyday language. It does not replace the original independent audit report.</p>
+    </div>
+  `;
+
+  pageShell({
+    eyebrow:"Audit year summary",
+    title:`What happened in the ${a.years} audit?`,
+    lead:a.theme,
     body
   });
 }
@@ -541,6 +622,9 @@ function bindPageLinks(){
   );
   document.querySelectorAll("[data-page-topic]").forEach(b=>
     b.addEventListener("click",()=>go(`topic/${b.dataset.pageTopic}`))
+  );
+  document.querySelectorAll("[data-page-audit]").forEach(b=>
+    b.addEventListener("click",()=>go(`audit/${b.dataset.pageAudit}`))
   );
   document.querySelectorAll("[data-page-evidence]").forEach(b=>
     b.addEventListener("click",()=>go(`evidence/${b.dataset.pageEvidence}`))

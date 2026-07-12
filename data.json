@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.4.1",
+    "version": "2.5",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1769,5 +1769,106 @@
         "utility-support"
       ]
     }
-  }
+  },
+  "audits": [
+    {
+      "id": "2016-17",
+      "years": "2016\u201317",
+      "theme": "Where the story begins",
+      "cardSummary": "Auditors reported 10 problems involving financial records, approvals, utility billing, bank records, and other basic safeguards.",
+      "oneSentence": "Auditors found several serious weaknesses in how the City tracked money, approved spending, kept records, and prepared financial information.",
+      "findingCount": 10,
+      "opinionPlain": "Auditors could not give a fully clean opinion on some City-run utility operations because important billing and collection records were missing.",
+      "whyItMattered": "When records are missing or financial duties are not checked by another person, mistakes can be harder to find and public money can be harder to track.",
+      "keyPoints": [
+        "Too few people handled too many financial duties.",
+        "The City could not show Council approval for 21 of 45 tested expenses.",
+        "Auditors had to suggest entries needed to complete the financial statements.",
+        "Utility records were missing, so auditors could not fully test $2.7 million in collections.",
+        "Bank-record errors caused the City's cash balance to be understated."
+      ],
+      "whatChangedNext": "Many of these problems were reported again in the next audit, showing that the fixes were not yet complete.",
+      "searchAliases": [
+        "2016 audit",
+        "2017 audit",
+        "first audit",
+        "where did problems start"
+      ]
+    },
+    {
+      "id": "2018-19",
+      "years": "2018\u201319",
+      "theme": "Problems continued",
+      "cardSummary": "Auditors again reported 10 problems. Missing records and bank differences made parts of the City's finances impossible to fully verify.",
+      "oneSentence": "Many earlier problems continued, and auditors could not give an opinion on the City's 2019 financial statements because reliable evidence was not available.",
+      "findingCount": 10,
+      "opinionPlain": "For 2019, auditors said they did not have enough reliable information to express an opinion on the financial statements.",
+      "whyItMattered": "The City was approving bills and receiving reports, but the underlying records still did not fully match or provide enough proof for the auditors.",
+      "keyPoints": [
+        "Most of the problems from the earlier audit were reported again.",
+        "Utility billing records were deleted because the software ran out of storage.",
+        "Three tested court-fee items totaling $3,180 could not be traced to the City's general fund.",
+        "The year-end bank records did not match the City's accounting records.",
+        "Even after large corrections, a $118,634 difference remained."
+      ],
+      "whatChangedNext": "The next audit showed some improvement in the audit opinion, but several financial-control problems continued.",
+      "searchAliases": [
+        "2018 audit",
+        "2019 audit",
+        "disclaimer opinion",
+        "court fees",
+        "bank difference"
+      ]
+    },
+    {
+      "id": "2020-21",
+      "years": "2020\u201321",
+      "theme": "Some progress, serious gaps remained",
+      "cardSummary": "Auditors reported 8 problems. Some parts of the audit improved, while missing support and money that could not be traced remained concerns.",
+      "oneSentence": "The audit showed partial improvement, but the City still had serious problems with records, financial checks, court fees, and bank matching.",
+      "findingCount": 8,
+      "opinionPlain": "Auditors gave a clean opinion on the main government finances, but not on several utility-related funds because some older accounting changes could not be verified.",
+      "whyItMattered": "Some records were improving, but auditors still could not confirm important information needed to fully trust every part of the financial statements.",
+      "keyPoints": [
+        "Too few staff still handled duties that should have been divided among different people.",
+        "Auditors again had to suggest entries needed to complete the financial statements.",
+        "Important invoices, asset records, and accounting support were missing.",
+        "Auditors could not trace $14,052 in court fees to the general fund.",
+        "The City's accounting records were $208,089 higher than the reconciled bank cash."
+      ],
+      "whatChangedNext": "By the 2022\u201323 audit, several long-running problems were no longer reported as findings.",
+      "searchAliases": [
+        "2020 audit",
+        "2021 audit",
+        "14052 court fees",
+        "208089 bank difference"
+      ]
+    },
+    {
+      "id": "2022-23",
+      "years": "2022\u201323",
+      "theme": "Clear improvement, with new concerns",
+      "cardSummary": "Auditors reported 6 problems. Several older problems disappeared, while new issues involved fund transfers, debt rules, conflicts, and accounting entries.",
+      "oneSentence": "The latest completed audit showed real improvement, but it also found six problems that still needed attention.",
+      "findingCount": 6,
+      "opinionPlain": "Auditors gave clean opinions on the financial statements, meaning they had enough evidence and found the statements fairly presented under the City's accounting method.",
+      "whyItMattered": "A cleaner audit opinion was an important improvement, but it did not mean every financial rule or safety check was working correctly.",
+      "keyPoints": [
+        "Several earlier findings were no longer reported.",
+        "Utility-fund transfers exceeded the legal limit by $252,181.",
+        "The City did not follow two requirements tied to a $1.858 million water bond.",
+        "Auditors still had to suggest entries needed to complete the financial statements.",
+        "The City still had not completed a full fraud-risk review.",
+        "Some bank-transfer entries were recorded incorrectly and required major corrections."
+      ],
+      "whatChangedNext": "Public records from 2024 and 2025 show continued policy, staffing, purchasing, budgeting, and financial-process work after this audit.",
+      "searchAliases": [
+        "2022 audit",
+        "2023 audit",
+        "latest audit",
+        "clean audit",
+        "six findings"
+      ]
+    }
+  ]
 }

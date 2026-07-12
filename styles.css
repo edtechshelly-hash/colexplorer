@@ -1080,3 +1080,188 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
   opacity:1;
   transform:translateX(3px);
 }
+
+
+/* Version 2.5 — Audit Year Summaries */
+.audit-year-section{
+  padding-top:4.4rem;
+  padding-bottom:4.4rem;
+}
+.audit-year-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1rem;
+}
+.audit-year-card{
+  position:relative;
+  min-height:300px;
+  padding:1.3rem;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:white;
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  transition:.2s ease;
+  overflow:hidden;
+}
+.audit-year-card:hover,
+.audit-year-card:focus-visible{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+  border-color:#a7c1b9;
+}
+.audit-year-number{
+  position:absolute;
+  right:1rem;
+  top:.85rem;
+  font-size:2.1rem;
+  font-weight:900;
+  color:#e5ece9;
+}
+.audit-year-date{
+  display:inline-flex;
+  padding:.35rem .6rem;
+  border-radius:999px;
+  background:#e7f1ed;
+  color:var(--brand);
+  font-size:.77rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.audit-year-card h3{
+  margin:1.1rem 0 .7rem;
+  font-size:1.3rem;
+  line-height:1.2;
+}
+.audit-year-card p{
+  margin:0;
+  color:var(--muted);
+}
+.audit-year-cta{
+  margin-top:auto;
+  padding-top:1.2rem;
+  color:var(--brand);
+  font-weight:850;
+}
+.audit-page-snapshot{
+  display:grid;
+  grid-template-columns:1fr 170px;
+  gap:1rem;
+  margin:1.2rem 0 1.8rem;
+}
+.audit-snapshot-main{
+  padding:1.35rem;
+  border-radius:20px;
+  background:#edf5f1;
+  border-left:5px solid var(--brand);
+}
+.audit-snapshot-label{
+  display:block;
+  color:var(--brand);
+  font-size:.75rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.audit-snapshot-main p{
+  margin:.55rem 0 0;
+  font-size:1.18rem;
+  font-weight:720;
+  color:var(--ink);
+}
+.audit-snapshot-count{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:1rem;
+  border-radius:20px;
+  background:var(--brand);
+  color:white;
+  text-align:center;
+}
+.audit-snapshot-count strong{
+  font-size:3rem;
+  line-height:1;
+}
+.audit-snapshot-count span{
+  margin-top:.45rem;
+  font-size:.88rem;
+}
+.audit-why-card,
+.audit-next-card{
+  padding:1.25rem 1.35rem;
+  border-radius:18px;
+  border:1px solid var(--line);
+  background:white;
+}
+.audit-key-points{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:.65rem;
+}
+.audit-key-points li{
+  position:relative;
+  padding:1rem 1rem 1rem 2.8rem;
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:#fafcfb;
+}
+.audit-key-points li:before{
+  content:"✓";
+  position:absolute;
+  left:1rem;
+  top:1rem;
+  width:22px;
+  height:22px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#e5f4eb;
+  color:var(--improved);
+  font-weight:900;
+}
+.audit-navigation{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.8rem;
+}
+.audit-navigation button{
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:white;
+  padding:1rem;
+  text-align:left;
+  color:var(--ink);
+}
+.audit-navigation button:last-child{
+  text-align:right;
+}
+.audit-navigation span,
+.audit-navigation strong{
+  display:block;
+}
+.audit-navigation span{
+  color:var(--brand);
+  font-size:.82rem;
+  font-weight:850;
+}
+.audit-navigation strong{
+  margin-top:.25rem;
+  font-size:1.1rem;
+}
+@media(max-width:980px){
+  .audit-year-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .audit-year-grid{grid-template-columns:1fr}
+  .audit-year-card{min-height:auto}
+  .audit-page-snapshot{grid-template-columns:1fr}
+  .audit-navigation{grid-template-columns:1fr}
+  .audit-navigation button:last-child{text-align:left}
+}
