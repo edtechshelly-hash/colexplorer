@@ -1611,3 +1611,23 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
     min-height:auto;
   }
 }
+
+
+/* Version 3.2 — clearer conversational headings */
+.evidence-comparison-heading{
+  padding:1rem 1.1rem;
+}
+.evidence-comparison-heading .eyebrow{
+  display:none;
+}
+.evidence-comparison-heading h2{
+  margin:0;
+  font-size:1.35rem;
+}
+.resident-context-card > .eyebrow{
+  display:none;
+}
+.resident-context-card h2{
+  margin:0 0 .55rem;
+  font-size:1.35rem;
+}

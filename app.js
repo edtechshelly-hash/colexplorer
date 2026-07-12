@@ -274,16 +274,15 @@ function renderQuestionPage(id){
 
     <section class="evidence-comparison">
       <div class="evidence-comparison-heading">
-        <p class="eyebrow">What the public records say</p>
-        <h2>Audit record and everyday meaning</h2>
+        <h2>What the audit found</h2>
       </div>
       <div class="evidence-comparison-grid">
         <div class="evidence-comparison-cell fact-cell">
-          <span class="comparison-label">What the audit documented</span>
+          <span class="comparison-label">The audit documented</span>
           <p>${esc(q.fact)}</p>
         </div>
         <div class="evidence-comparison-cell explanation-cell">
-          <span class="comparison-label">What that means</span>
+          <span class="comparison-label">In plain language</span>
           <p>${esc(q.interpretation)}</p>
         </div>
       </div>
@@ -291,15 +290,13 @@ function renderQuestionPage(id){
 
     ${q.residentContext?.concern ? `
       <section class="answer-section resident-context-card concern-card">
-        <p class="eyebrow">Putting the finding in context</p>
-        <h2>What this means</h2>
+        <h2>Should this concern residents?</h2>
         <p>${esc(q.residentContext.concern)}</p>
       </section>` : ""}
 
     ${q.residentContext?.meaning ? `
       <section class="answer-section resident-context-card meaning-card">
-        <p class="eyebrow">Why this matters</p>
-        <h2>Why it matters</h2>
+        <h2>How could this affect residents?</h2>
         <p>${esc(q.residentContext.meaning)}</p>
       </section>` : ""}
 
@@ -489,16 +486,16 @@ function renderTopicPage(id){
       <div class="section-title-row fact-interpretation-heading">
         <div>
           <p class="eyebrow">How we explain the evidence</p>
-          <h2>Audit record and everyday meaning</h2>
+          <h2>What the audit found</h2>
         </div>
       </div>
       <div class="evidence-comparison-grid topic-evidence-comparison">
         <div class="evidence-comparison-cell fact-cell">
-          <span class="comparison-label">What the audit documented</span>
+          <span class="comparison-label">The audit documented</span>
           <p>${esc(t.fact)}</p>
         </div>
         <div class="evidence-comparison-cell explanation-cell">
-          <span class="comparison-label">What that means</span>
+          <span class="comparison-label">In plain language</span>
           <p>${esc(t.interpretation)}</p>
         </div>
       </div>
