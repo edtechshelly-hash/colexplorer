@@ -283,6 +283,27 @@ function renderQuestionPage(id){
       </div>
     </div>
 
+    ${q.residentContext?.concern ? `
+      <section class="answer-section resident-context-card concern-card">
+        <p class="eyebrow">Putting the finding in context</p>
+        <h2>Should residents be concerned?</h2>
+        <p>${esc(q.residentContext.concern)}</p>
+      </section>` : ""}
+
+    ${q.residentContext?.meaning ? `
+      <section class="answer-section resident-context-card meaning-card">
+        <p class="eyebrow">Why this matters</p>
+        <h2>What does this mean for residents?</h2>
+        <p>${esc(q.residentContext.meaning)}</p>
+      </section>` : ""}
+
+    ${q.residentContext?.money ? `
+      <section class="answer-section city-money-card">
+        <p class="eyebrow">Helpful background</p>
+        <h2>What City money is involved?</h2>
+        <p>${esc(q.residentContext.money)}</p>
+      </section>` : ""}
+
     <section class="answer-section">
       <h2>Explore the related topics</h2>
       <div class="topic-grid">
@@ -450,6 +471,13 @@ function renderTopicPage(id){
         <p>${esc(t.whatRemains)}</p>
       </article>
     </section>
+
+    ${t.residentContext?.meaning ? `
+      <section class="answer-section city-money-card">
+        <p class="eyebrow">What this means for residents</p>
+        <h2>Why this money matters</h2>
+        <p>${esc(t.residentContext.meaning)}</p>
+      </section>` : ""}
 
     <section class="topic-proof-section">
       <div class="section-title-row fact-interpretation-heading">

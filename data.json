@@ -5,7 +5,7 @@
     "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "2.7",
+    "version": "2.9",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -33,7 +33,12 @@
         "are the books accurate",
         "financial problems",
         "wrong numbers"
-      ]
+      ],
+      "residentContext": {
+        "concern": "The audits found serious recordkeeping and financial-control problems. That is a reason to pay attention, but it is not the same as proof that money was stolen.",
+        "meaning": "The findings were mainly about how the City tracked, checked, approved, and reported public money. They did not automatically change taxes, utility rates, or City services.",
+        "money": "The City receives money from several places, including property taxes, utility payments, grants, permits, fees, and other local revenue. The audits review how those dollars are recorded, managed, and reported."
+      }
     },
     {
       "id": "many-findings",
@@ -56,7 +61,11 @@
         "small office",
         "not enough staff",
         "bookkeeping problems"
-      ]
+      ],
+      "residentContext": {
+        "concern": "A long list of findings can look alarming. Many of the findings were connected to the same underlying problems, such as too few people handling too many financial duties and missing records.",
+        "meaning": "One weak process can create several findings. For example, poor recordkeeping can affect bank matching, approvals, financial statements, and utility billing at the same time."
+      }
     },
     {
       "id": "improved",
@@ -78,7 +87,11 @@
         "is it better now",
         "did things improve",
         "what changed"
-      ]
+      ],
+      "residentContext": {
+        "concern": "Improvement matters, but it does not mean every problem is solved. Residents should look at both what disappeared from later audits and what was still reported.",
+        "meaning": "The later audits reported fewer problems. That suggests progress in several areas, while some major issues still needed attention."
+      }
     },
     {
       "id": "biggest",
@@ -99,7 +112,11 @@
         "worst findings",
         "most serious issues",
         "major financial problems"
-      ]
+      ],
+      "residentContext": {
+        "concern": "The most serious issues involved missing support, money that could not be fully traced, financial statements that needed major corrections, and weak fraud-risk planning.",
+        "meaning": "These issues matter because they affect how confidently residents can rely on the City's financial records and how quickly mistakes can be found."
+      }
     },
     {
       "id": "still-attention",
@@ -121,7 +138,11 @@
         "unfinished problems",
         "ongoing concerns",
         "what still needs attention"
-      ]
+      ],
+      "residentContext": {
+        "concern": "Ongoing findings deserve attention because repeated problems can continue to create risk even when no theft or fraud has been proven.",
+        "meaning": "Residents may want to watch whether later audits confirm that the City's newer policies and procedures are working as intended."
+      }
     },
     {
       "id": "fraud",
@@ -146,7 +167,12 @@
         "where did the money go",
         "was money stolen",
         "dishonest employees"
-      ]
+      ],
+      "residentContext": {
+        "concern": "The audits did not conclude that fraud occurred. They did report weaknesses that could make errors or misuse harder to prevent or detect.",
+        "meaning": "The key issue is whether the City has strong enough checks, records, and review procedures to protect public money and explain where it went.",
+        "money": "Public money includes taxes, utility payments, grants, fees, and other City revenue. Fraud-risk planning should consider how each type of money is collected, recorded, approved, and reviewed."
+      }
     },
     {
       "id": "qualified",
@@ -167,7 +193,12 @@
         "clean audit",
         "audit opinion",
         "what does qualified mean"
-      ]
+      ],
+      "residentContext": {
+        "concern": "A qualified opinion is important, but it does not mean the entire audit failed. It means auditors could not fully verify a specific part of the financial information.",
+        "meaning": "For residents, this means there was an important limit on how much confidence auditors could place in that part of the City's records.",
+        "money": "In this case, the issue involved utility operations. Utility money comes from water and sewer customers and is kept separate from other City money."
+      }
     }
   ],
   "topics": [
@@ -374,7 +405,8 @@
         "audit corrections",
         "auditors fixed the books",
         "financial statements"
-      ]
+      ],
+      "residentContext": {}
     },
     {
       "id": "fraud-risk",
@@ -561,7 +593,8 @@
         "embezzlement",
         "fraud prevention",
         "fraud controls"
-      ]
+      ],
+      "residentContext": {}
     },
     {
       "id": "segregation",
@@ -747,7 +780,8 @@
         "too few employees",
         "conflict of duties",
         "same person handling money"
-      ]
+      ],
+      "residentContext": {}
     },
     {
       "id": "expenditures",
@@ -932,7 +966,8 @@
         "who approved spending",
         "purchases",
         "payables"
-      ]
+      ],
+      "residentContext": {}
     },
     {
       "id": "utility-support",
@@ -1081,7 +1116,10 @@
         "missing utility records",
         "utility money",
         "collections"
-      ]
+      ],
+      "residentContext": {
+        "meaning": "Utility money comes from water and sewer customers. It is used to operate and maintain those services. The audit problem was that important billing and collection records were unavailable, so auditors could not fully test the money collected."
+      }
     },
     {
       "id": "budgeted-cash",
@@ -1266,7 +1304,10 @@
         "beginning cash",
         "ending cash",
         "budget mistakes"
-      ]
+      ],
+      "residentContext": {
+        "meaning": "City budgets estimate how much money will be available and how it will be used. Property taxes, utility payments, grants, permits, fees, and other revenue can all appear in different parts of the budget."
+      }
     },
     {
       "id": "bank-reconciliations",
@@ -1453,7 +1494,8 @@
         "checks",
         "reconciliation",
         "cash mismatch"
-      ]
+      ],
+      "residentContext": {}
     },
     {
       "id": "documentation",
@@ -1639,7 +1681,8 @@
         "paperwork",
         "record keeping",
         "documents"
-      ]
+      ],
+      "residentContext": {}
     }
   ],
   "overviewTimeline": [
