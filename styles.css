@@ -1631,3 +1631,5 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
   margin:0 0 .55rem;
   font-size:1.35rem;
 }
+
+.audit-period-note,.audit-period-explainer{display:none!important;}

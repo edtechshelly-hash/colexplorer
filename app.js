@@ -360,11 +360,6 @@ function renderAuditPage(id){
       </div>
     </section>
 
-    <div class="audit-period-explainer">
-      <strong>This audit covers two calendar years.</strong>
-      <span>${esc(a.years)} means the audit reviewed the years shown together. The next audit begins with the next calendar year.</span>
-    </div>
-
     <section class="answer-section">
       <h2>What did the auditors say overall?</h2>
       <p>${esc(a.opinionPlain)}</p>
