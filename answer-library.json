@@ -1,9 +1,10 @@
 {
   "meta": {
-    "version": "1.0",
-    "source": "Lincoln Audit Explorer Resident Answer Library v3",
+    "version": "4.1",
+    "source": "Lincoln Audit Explorer Resident Answer Library v4.1",
     "answerCount": 26,
-    "readyCount": 15
+    "readyCount": 17,
+    "latestFollowUpYear": "2026"
   },
   "answers": [
     {
@@ -190,11 +191,11 @@
     {
       "id": "RQ-010",
       "question": "Could this happen again?",
-      "shortAnswer": "Some risk can remain unless the City keeps strong records, divides financial duties, and regularly checks whether its safeguards are working.",
-      "whyPeopleAsk": "Residents want to know whether improvements are permanent.",
-      "recordsShow": "Later audits showed that several findings were no longer repeated, while some concerns continued or new issues appeared.",
-      "whyItMatters": "A finding disappearing from one audit is encouraging, but ongoing monitoring helps show whether the improvement lasts.",
-      "recordsDoNotEstablish": "No audit can guarantee that a problem will never happen again.",
+      "shortAnswer": "Some risk remains unless the City keeps strong records, divides financial duties, and checks that its safeguards are working. Public records from 2026 show continued follow-up, but they also document a temporary bank-reconciliation delay during a finance-office transition.",
+      "whyPeopleAsk": "Residents want to know whether earlier improvements will last through staffing, software, and process changes.",
+      "recordsShow": "Later audits showed that several findings were no longer repeated. In 2026, Council records documented continued fraud-risk-assessment work, monthly audit-status reporting, finance-office staffing transitions, and an incomplete February bank reconciliation that was followed by later financial-report approvals.",
+      "whyItMatters": "Ongoing follow-up is encouraging, but only a later independent audit can confirm whether the City's corrective actions are working consistently.",
+      "recordsDoNotEstablish": "The 2026 Council records are follow-up evidence, not a new independent audit, and they do not guarantee that a problem cannot happen again.",
       "relatedQuestions": [
         "RQ-031",
         "RQ-033",
@@ -210,11 +211,11 @@
         "can this happen again",
         "still at risk"
       ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
+      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
     },
     {
       "id": "RQ-011",
@@ -308,11 +309,11 @@
     {
       "id": "RQ-018",
       "question": "What happened after the audit?",
-      "shortAnswer": "Later public records show policy, staffing, purchasing, budgeting, and financial-process changes, and later audits show whether some findings continued.",
-      "whyPeopleAsk": "Residents want to know whether the audit led to action.",
-      "recordsShow": "Council records and later audit reports document corrective actions and whether earlier findings were repeated.",
-      "whyItMatters": "The most useful evidence of progress is a combination of documented action and later independent audit testing.",
-      "recordsDoNotEstablish": "A policy change alone does not prove that a problem was fully corrected.",
+      "shortAnswer": "Public records show continued audit follow-up into 2026, including fraud-risk-assessment work, monthly audit-status reporting, finance-office staffing changes, utility-collection planning, and continued financial reporting.",
+      "whyPeopleAsk": "Residents want to know whether the audit led to action after the report was issued.",
+      "recordsShow": "Council records from 2024–2026 document policy, staffing, purchasing, budgeting, and financial-process changes. In January 2026, the mayor requested monthly audit-status updates and Council members reported continued fraud-risk-assessment work. Later records document a planned third-party collections process and ongoing financial-report activity.",
+      "whyItMatters": "Corrective actions show that audit findings remained an active public concern, while future independent audits provide the strongest evidence that the changes worked.",
+      "recordsDoNotEstablish": "Council actions and staff reports do not replace independent audit testing and do not by themselves prove that every finding was fully resolved.",
       "relatedQuestions": [
         "RQ-031",
         "RQ-037",
@@ -330,7 +331,7 @@
         "did they act",
         "follow up"
       ],
-      "auditYears": "2016–2025",
+      "auditYears": "2016–2026",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -479,11 +480,11 @@
     {
       "id": "RQ-031",
       "question": "Has the City improved?",
-      "shortAnswer": "Yes. Later audits reported fewer findings and did not repeat several earlier problems, although some important concerns remained.",
-      "whyPeopleAsk": "Residents want a clear answer about whether conditions got better.",
-      "recordsShow": "The completed audits show a decline from 10 findings in 2016–17 and 2018–19, to 8 in 2020–21, and 6 in 2022–23.",
-      "whyItMatters": "Fewer repeated findings are evidence of progress, but residents should also look at the seriousness of the remaining and new findings.",
-      "recordsDoNotEstablish": "Improvement does not mean every financial safeguard will continue working without ongoing attention.",
+      "shortAnswer": "Yes. Later audits reported fewer findings, and public records from 2026 show that audit-related follow-up continued, although only a future independent audit can confirm whether all corrective actions were effective.",
+      "whyPeopleAsk": "Residents want a clear answer about whether conditions improved after years of repeated findings.",
+      "recordsShow": "Completed audits declined from 10 findings in 2016–17 and 2018–19, to 8 in 2020–21, and 6 in 2022–23. Public records from 2026 also document continued fraud-risk-assessment work, monthly audit-status reporting, utility-collection planning, and financial-office continuity efforts.",
+      "whyItMatters": "Fewer findings and continued corrective work are signs of progress, but lasting improvement should be confirmed through later independent audit results.",
+      "recordsDoNotEstablish": "The 2026 follow-up records are not a new audit and do not prove that every safeguard is operating effectively.",
       "relatedQuestions": [
         "RQ-032",
         "RQ-033",
@@ -500,7 +501,7 @@
         "progress",
         "city doing better"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -597,11 +598,11 @@
     {
       "id": "RQ-049",
       "question": "Why was the Utility Fund mentioned so often?",
-      "shortAnswer": "Utility operations appeared repeatedly because auditors had trouble verifying some billing, collection, transfer, and accounting records.",
-      "whyPeopleAsk": "Residents may not understand why one part of City finances appears in several audits.",
-      "recordsShow": "The audits reported missing utility support, limits on audit opinions, fund-transfer issues, and other utility-related accounting concerns.",
-      "whyItMatters": "Utility payments are a major source of City revenue and must be tracked separately and accurately.",
-      "recordsDoNotEstablish": "Frequent mention does not mean every utility transaction was wrong.",
+      "shortAnswer": "Utility operations appeared repeatedly because auditors had trouble verifying some billing, collection, transfer, and accounting records. In 2026, Council records also documented work toward a third-party process for delinquent accounts.",
+      "whyPeopleAsk": "Residents may not understand why utility money appears in several audits and later follow-up records.",
+      "recordsShow": "Earlier audits reported missing utility support, limits on audit opinions, and utility-related accounting concerns. The finding was not repeated in 2022–23. In February 2026, the administration reported reviewing collection-agency quotes and moving toward a third-party collections process.",
+      "whyItMatters": "Utility payments are a major source of City revenue and should be billed, collected, deposited, and reported through reliable procedures.",
+      "recordsDoNotEstablish": "The 2026 minutes document planning and selection work, but they do not document implementation results or prove that every collection control was operating effectively.",
       "relatedQuestions": [
         "RQ-042",
         "RQ-047",
@@ -618,7 +619,7 @@
         "sewer money",
         "why utility"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -713,11 +714,11 @@
     {
       "id": "RQ-091",
       "question": "Did the City fix this?",
-      "shortAnswer": "Later audits show that several earlier findings were no longer repeated, while some issues continued and new concerns appeared.",
-      "whyPeopleAsk": "Residents want to know whether corrective actions actually worked.",
-      "recordsShow": "Later audit reports are the strongest independent evidence that a finding was no longer present, while council records can document actions taken between audits.",
-      "whyItMatters": "A complete answer requires looking at both what the City did and what later auditors found.",
-      "recordsDoNotEstablish": "A policy or procedure change alone does not prove that the problem was fully fixed.",
+      "shortAnswer": "Several earlier findings were no longer repeated in later audits, and 2026 public records show continued corrective work. Some issues still require future independent audit testing.",
+      "whyPeopleAsk": "Residents want to know whether the City's actions actually resolved the problems.",
+      "recordsShow": "Later audits show that several earlier findings disappeared. Council records from 2026 document continued fraud-risk-assessment work, monthly audit-status reporting, finance-office continuity efforts, and utility-collection planning. They also document a temporary February bank-reconciliation delay during the staffing transition.",
+      "whyItMatters": "The clearest evidence of a fix is both documented corrective action and a later independent audit that does not repeat the finding.",
+      "recordsDoNotEstablish": "The 2026 records do not constitute a new audit and do not confirm that every corrective action was fully effective.",
       "relatedQuestions": [
         "RQ-031",
         "RQ-032",
@@ -733,7 +734,7 @@
         "resolved",
         "corrected"
       ],
-      "auditYears": "2016–2025",
+      "auditYears": "2016–2026",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -742,11 +743,11 @@
     {
       "id": "RQ-100",
       "question": "What should residents watch in future audits?",
-      "shortAnswer": "Residents should watch whether recurring findings disappear, whether new problems appear, and whether later auditors confirm that financial safeguards are working.",
-      "whyPeopleAsk": "The most recent completed audit is not the end of the story.",
-      "recordsShow": "The audit history shows that some findings improved while others repeated across multiple cycles.",
-      "whyItMatters": "Future audits provide independent evidence about whether corrective actions lasted through staffing, software, and process changes.",
-      "recordsDoNotEstablish": "Council actions between audits are useful context but are not a substitute for later audit testing.",
+      "shortAnswer": "Residents should watch whether recurring findings disappear, whether bank reconciliations and financial reports stay timely, and whether a future audit confirms that fraud-risk and utility-collection improvements are working.",
+      "whyPeopleAsk": "The most recent completed audit does not show whether every later corrective action lasted.",
+      "recordsShow": "The audit history shows improvement in several areas. In 2026, Council records documented continued fraud-risk work and monthly audit-status reporting, but also a temporary reconciliation delay and a later tabled financial report.",
+      "whyItMatters": "Future audits can independently test whether newer policies, staffing arrangements, and procedures continue to work over time.",
+      "recordsDoNotEstablish": "Routine Council approvals or planned procedures do not by themselves prove that an audit finding is resolved.",
       "relatedQuestions": [
         "RQ-010",
         "RQ-031",
@@ -763,11 +764,11 @@
         "what to watch",
         "still a problem"
       ],
-      "auditYears": "Future",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
+      "auditYears": "Future audits; 2026 follow-up",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
     }
   ]
 }

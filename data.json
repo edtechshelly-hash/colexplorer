@@ -2,10 +2,10 @@
   "meta": {
     "title": "Lincoln Audit Explorer",
     "subtitle": "A plain-language guide to what Lincoln's audits found, what improved, and what still needs attention.",
-    "coverage": "Public audit and City records organized in the public records for 2016\u20132025",
+    "coverage": "Public audit and City records organized in the public records for 2016–2025",
     "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "3.1",
+    "version": "4.1",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -17,7 +17,7 @@
       "question": "Can I trust the City's finances?",
       "shortAnswer": "The evidence shows real improvement, but not every important weakness has been fully resolved.",
       "answer": "Later audits stopped repeating several earlier findings, including weak separation of duties, missing expenditure approvals, budgeted-cash problems, parking-ticket controls, and some documentation issues. However, the latest completed audit still found that auditors had to propose accounting entries to prepare complete financial statements. That means the overall direction improved, but residents should still expect continued oversight.",
-      "fact": "Several findings were not repeated in the 2022\u201323 audit.",
+      "fact": "Several findings were not repeated in the 2022–23 audit.",
       "interpretation": "That is evidence of improvement, not proof that every control will continue working during staffing or system changes.",
       "topicIds": [
         "segregation",
@@ -70,7 +70,7 @@
       "id": "improved",
       "question": "Has the City improved?",
       "shortAnswer": "Yes. The latest completed audit did not repeat many earlier findings, but some high-risk areas remain.",
-      "answer": "The strongest evidence of improvement is that several recurring findings disappeared from the 2022\u201323 audit. Council records also show new policies, spending thresholds, contract review, competitive purchasing, ethics requirements, and a fraud-policy framework. The remaining question is whether these changes will work consistently over future audit cycles.",
+      "answer": "The strongest evidence of improvement is that several recurring findings disappeared from the 2022–23 audit. Council records also show new policies, spending thresholds, contract review, competitive purchasing, ethics requirements, and a fraud-policy framework. The remaining question is whether these changes will work consistently over future audit cycles.",
       "fact": "The public records classifies the overall trend as improving while noting residual risk.",
       "interpretation": "A finding disappearing is meaningful, but one clean cycle does not guarantee permanent correction.",
       "topicIds": [
@@ -97,7 +97,7 @@
       "question": "What were the biggest problems?",
       "shortAnswer": "The most serious recurring problems involved financial-statement preparation, fraud-risk planning, staff duty conflicts, and bank reconciliations.",
       "answer": "The audit-adjustment finding and fraud-risk-assessment finding continued through every completed audit cycle in the public records. Other major weaknesses included incompatible duties, incomplete approval records, missing utility-billing support, and inaccurate or delayed reconciliations.",
-      "fact": "Audit adjustments and the missing fraud risk assessment recurred through the 2022\u201323 audit.",
+      "fact": "Audit adjustments and the missing fraud risk assessment recurred through the 2022–23 audit.",
       "interpretation": "These issues matter because they affect whether financial information can be prepared accurately and independently.",
       "topicIds": [
         "adjustments",
@@ -210,49 +210,49 @@
       "whyItMatters": "Residents and council members need financial statements that are complete, timely, and prepared through reliable City processes.",
       "whatImproved": "Records show audit preparation, fund corrections, staffing changes, and increased review.",
       "whatRemains": "The latest completed audit still repeated the finding, and later records show delayed or tabled financial statements and reconciliations.",
-      "fact": "Material weakness in 2016\u201317, 2018\u201319, 2020\u201321, and 2022\u201323.",
+      "fact": "Material weakness in 2016–17, 2018–19, 2020–21, and 2022–23.",
       "interpretation": "Corrective work is visible, but effectiveness has not yet been established by a later completed audit.",
       "evidence": [
-        "Recurring Findings  \u2014 Audit adjustments / year-end close",
-        "2016-17 Audit Findings \u2014 2017-003",
-        "2018-19 Audit Findings \u2014 audit adjustments",
-        "2020-21 Audit Findings \u2014 audit adjustments",
-        "2022-23 Audit Findings \u2014 audit adjustments",
-        "2024 Council Evidence \u2014 financial statement timing",
-        "2025 Council Evidence \u2014 deferred statements, reconciliation, and finance restructuring"
+        "Recurring Findings  — Audit adjustments / year-end close",
+        "2016-17 Audit Findings — 2017-003",
+        "2018-19 Audit Findings — audit adjustments",
+        "2020-21 Audit Findings — audit adjustments",
+        "2022-23 Audit Findings — audit adjustments",
+        "2024 Council Evidence — financial statement timing",
+        "2025 Council Evidence — deferred statements, reconciliation, and finance restructuring"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Auditors proposed entries needed to complete the statements."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "The weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "The weakness continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Repeated",
           "Still present in the latest completed audit."
         ],
         [
-          "2024\u201325",
+          "2024–25",
           "Corrective activity",
           "Records show corrections, preparation work, and staffing changes, but also delays."
         ]
       ],
-      "icon": "\ud83d\udcca",
+      "icon": "📊",
       "evidenceRecords": [
         {
           "id": "adjustments-e1",
-          "label": "Recurring Findings  \u2014 Audit adjustments / year-end close",
+          "label": "Recurring Findings  — Audit adjustments / year-end close",
           "sheet": "Recurring Findings ",
           "locator": "A4:F4",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -260,14 +260,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A4:F4",
-          "publicLabel": "Recurring Findings  \u2014 Audit adjustments / year-end close",
+          "publicLabel": "Recurring Findings  — Audit adjustments / year-end close",
           "publicType": "Independent Audit Report",
-          "publicTitle": "Recurring Findings \u2014 Audit adjustments / year-end close",
+          "publicTitle": "Recurring Findings — Audit adjustments / year-end close",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "adjustments-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-003",
+          "label": "2016-17 Audit Findings — 2017-003",
           "sheet": "2016-17 Audit Findings",
           "locator": "A4:I4",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -275,14 +275,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A4:I4",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-003",
+          "publicLabel": "2016-17 Audit Findings — 2017-003",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-003",
+          "publicTitle": "2016-17 Audit Report — 2017-003",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "adjustments-e3",
-          "label": "2018-19 Audit Findings \u2014 audit adjustments",
+          "label": "2018-19 Audit Findings — audit adjustments",
           "sheet": "2018-19 Audit Findings",
           "locator": "Audit adjustments row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -290,14 +290,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Audit adjustments row",
-          "publicLabel": "2018-19 Audit Findings \u2014 audit adjustments",
+          "publicLabel": "2018-19 Audit Findings — audit adjustments",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 audit adjustments",
+          "publicTitle": "2018-19 Audit Report — audit adjustments",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "adjustments-e4",
-          "label": "2020-21 Audit Findings \u2014 audit adjustments",
+          "label": "2020-21 Audit Findings — audit adjustments",
           "sheet": "2020-21 Audit Findings",
           "locator": "Audit adjustments row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -305,14 +305,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Audit adjustments row",
-          "publicLabel": "2020-21 Audit Findings \u2014 audit adjustments",
+          "publicLabel": "2020-21 Audit Findings — audit adjustments",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 audit adjustments",
+          "publicTitle": "2020-21 Audit Report — audit adjustments",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "adjustments-e5",
-          "label": "2022-23 Audit Findings \u2014 audit adjustments",
+          "label": "2022-23 Audit Findings — audit adjustments",
           "sheet": "2022-23 Audit Findings",
           "locator": "Audit adjustments row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -320,14 +320,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Audit adjustments row",
-          "publicLabel": "2022-23 Audit Findings \u2014 audit adjustments",
+          "publicLabel": "2022-23 Audit Findings — audit adjustments",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 audit adjustments",
+          "publicTitle": "2022-23 Audit Report — audit adjustments",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "adjustments-e6",
-          "label": "2024 Council Evidence \u2014 financial statement timing",
+          "label": "2024 Council Evidence — financial statement timing",
           "sheet": "2024 Council Evidence",
           "locator": "A56:I56",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -335,14 +335,14 @@
           "database": "public records",
           "section": "2024 Council Evidence",
           "reference": "A56:I56",
-          "publicLabel": "2024 Council Evidence \u2014 financial statement timing",
+          "publicLabel": "2024 Council Evidence — financial statement timing",
           "publicType": "City Council Record",
-          "publicTitle": "2024 City Council Record \u2014 financial statement timing",
+          "publicTitle": "2024 City Council Record — financial statement timing",
           "publicDescription": "City Council public record supporting this topic."
         },
         {
           "id": "adjustments-e7",
-          "label": "2025 Council Evidence \u2014 deferred statements, reconciliation, and finance restructuring",
+          "label": "2025 Council Evidence — deferred statements, reconciliation, and finance restructuring",
           "sheet": "2025 Council Evidence",
           "locator": "A18:I18; A28:I28; A40:I40; A45:I48; A57:I57; A74:I74",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -350,30 +350,30 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "A18:I18; A28:I28; A40:I40; A45:I48; A57:I57; A74:I74",
-          "publicLabel": "2025 Council Evidence \u2014 deferred statements, reconciliation, and finance restructuring",
+          "publicLabel": "2025 Council Evidence — deferred statements, reconciliation, and finance restructuring",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 deferred statements, reconciliation, and finance restructuring",
+          "publicTitle": "2025 City Council Record — deferred statements, reconciliation, and finance restructuring",
           "publicDescription": "City Council public record supporting this topic."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Auditors proposed entries needed to complete the statements."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "The weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "The weakness continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Repeated",
           "Still present in the latest completed audit."
         ]
@@ -390,7 +390,7 @@
           "detail": "Records show corrections, review work, finance restructuring, and some delayed or tabled financial items."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
+      "latestCompletedAudit": "2022–23",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "missing money",
@@ -414,36 +414,37 @@
       "risk": "High",
       "summary": "Auditors repeatedly found that the City had not completed an organization-wide fraud risk assessment.",
       "whyItMatters": "A formal assessment helps leaders identify opportunities for fraud and assign controls before a loss occurs.",
-      "whatImproved": "In December 2025, Council approved a fraud policy and identified participants for an assessment.",
-      "whatRemains": "The public records does not document that the assessment was completed, approved, or turned into assigned corrective actions.",
-      "fact": "Material weakness in every completed audit cycle through 2022\u201323.",
+      "whatImproved": "Council approved a fraud policy and assessment framework in late 2025. In January 2026, Council members reported continued work with the city office, and the mayor requested monthly audit-status updates.",
+      "whatRemains": "The public records reviewed do not include a completed fraud-risk assessment, formal conclusions, or a later independent audit confirming that the finding was resolved.",
+      "fact": "Material weakness in every completed audit cycle through 2022–23.",
       "interpretation": "The policy is a meaningful first step, but a policy is not the same as a completed and operating risk assessment.",
       "evidence": [
-        "Recurring Findings  \u2014 Fraud risk assessment",
-        "2016-17 Audit Findings \u2014 2017-004",
-        "2018-19 Audit Findings \u2014 fraud risk assessment",
-        "2020-21 Audit Findings \u2014 fraud risk assessment",
-        "2022-23 Audit Findings \u2014 fraud risk assessment",
-        "2025 Council Evidence \u2014 December 18 fraud policy and assessment framework"
+        "Recurring Findings  — Fraud risk assessment",
+        "2016-17 Audit Findings — 2017-004",
+        "2018-19 Audit Findings — fraud risk assessment",
+        "2020-21 Audit Findings — fraud risk assessment",
+        "2022-23 Audit Findings — fraud risk assessment",
+        "2025 Council Evidence — December 18 fraud policy and assessment framework",
+        "2026 Council Evidence — January 8 and January 22 fraud-risk work and monthly audit-status reporting"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "No organization-wide fraud risk assessment."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Assessment still not completed."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Assessment still not completed."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Repeated",
           "Finding remained."
         ],
@@ -451,13 +452,18 @@
           "Dec. 2025",
           "Framework approved",
           "Council approved a policy and participation plan; completion is not documented."
+        ],
+        [
+          "Jan. 2026",
+          "Work continued",
+          "Council records document continued fraud-risk-assessment work and monthly audit-status reporting."
         ]
       ],
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "evidenceRecords": [
         {
           "id": "fraud-risk-e1",
-          "label": "Recurring Findings  \u2014 Fraud risk assessment",
+          "label": "Recurring Findings  — Fraud risk assessment",
           "sheet": "Recurring Findings ",
           "locator": "A5:F5",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -465,14 +471,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A5:F5",
-          "publicLabel": "Recurring Findings  \u2014 Fraud risk assessment",
+          "publicLabel": "Recurring Findings  — Fraud risk assessment",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Fraud risk assessment",
+          "publicTitle": "Recurring Findings — Fraud risk assessment",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "fraud-risk-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-004",
+          "label": "2016-17 Audit Findings — 2017-004",
           "sheet": "2016-17 Audit Findings",
           "locator": "A5:I5",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -480,14 +486,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A5:I5",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-004",
+          "publicLabel": "2016-17 Audit Findings — 2017-004",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-004",
+          "publicTitle": "2016-17 Audit Report — 2017-004",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "fraud-risk-e3",
-          "label": "2018-19 Audit Findings \u2014 fraud risk assessment",
+          "label": "2018-19 Audit Findings — fraud risk assessment",
           "sheet": "2018-19 Audit Findings",
           "locator": "Fraud risk assessment row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -495,14 +501,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Fraud risk assessment row",
-          "publicLabel": "2018-19 Audit Findings \u2014 fraud risk assessment",
+          "publicLabel": "2018-19 Audit Findings — fraud risk assessment",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 fraud risk assessment",
+          "publicTitle": "2018-19 Audit Report — fraud risk assessment",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "fraud-risk-e4",
-          "label": "2020-21 Audit Findings \u2014 fraud risk assessment",
+          "label": "2020-21 Audit Findings — fraud risk assessment",
           "sheet": "2020-21 Audit Findings",
           "locator": "Fraud risk assessment row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -510,14 +516,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Fraud risk assessment row",
-          "publicLabel": "2020-21 Audit Findings \u2014 fraud risk assessment",
+          "publicLabel": "2020-21 Audit Findings — fraud risk assessment",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 fraud risk assessment",
+          "publicTitle": "2020-21 Audit Report — fraud risk assessment",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "fraud-risk-e5",
-          "label": "2022-23 Audit Findings \u2014 fraud risk assessment",
+          "label": "2022-23 Audit Findings — fraud risk assessment",
           "sheet": "2022-23 Audit Findings",
           "locator": "Fraud risk assessment row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -525,14 +531,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Fraud risk assessment row",
-          "publicLabel": "2022-23 Audit Findings \u2014 fraud risk assessment",
+          "publicLabel": "2022-23 Audit Findings — fraud risk assessment",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 fraud risk assessment",
+          "publicTitle": "2022-23 Audit Report — fraud risk assessment",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "fraud-risk-e6",
-          "label": "2025 Council Evidence \u2014 December 18 fraud policy and assessment framework",
+          "label": "2025 Council Evidence — December 18 fraud policy and assessment framework",
           "sheet": "2025 Council Evidence",
           "locator": "A76:I78",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -540,30 +546,45 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "A76:I78",
-          "publicLabel": "2025 Council Evidence \u2014 December 18 fraud policy and assessment framework",
+          "publicLabel": "2025 Council Evidence — December 18 fraud policy and assessment framework",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 December 18 fraud policy and assessment framework",
+          "publicTitle": "2025 City Council Record — December 18 fraud policy and assessment framework",
           "publicDescription": "City Council public record supporting this topic."
+        },
+        {
+          "id": "fraud-risk-e7",
+          "label": "2026 Council Evidence — January fraud-risk work and audit-status reporting",
+          "sheet": "2026 Council Evidence",
+          "locator": "A4:I7",
+          "workbook": "Lincoln_Audit_Master_Workbook_2026_Updated.xlsx",
+          "type": "City Council record",
+          "database": "public records",
+          "section": "2026 Council Evidence",
+          "reference": "A4:I7",
+          "publicLabel": "2026 Council Evidence — January fraud-risk work and audit-status reporting",
+          "publicType": "City Council Record",
+          "publicTitle": "2026 City Council Record — Fraud-risk work and audit-status reporting",
+          "publicDescription": "City Council records documenting continued audit follow-up."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "No organization-wide fraud risk assessment."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Assessment still not completed."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Assessment still not completed."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Repeated",
           "Finding remained."
         ]
@@ -578,10 +599,15 @@
           "year": "2025",
           "title": "Fraud policy framework approved",
           "detail": "Council approved a fraud policy and identified participants for an assessment. Completion of the full assessment is not documented."
+        },
+        {
+          "year": "2026",
+          "title": "Fraud-risk work continued",
+          "detail": "Council records document continued work with the city office and a request for monthly audit-status updates. A completed assessment is not included in the records reviewed."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
-      "latestDocumentedUpdate": "2025",
+      "latestCompletedAudit": "2022–23",
+      "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "missing money",
         "stolen money",
@@ -602,36 +628,36 @@
       "risk": "High",
       "summary": "Earlier audits found that too few people handled incompatible accounting duties.",
       "whyItMatters": "Separating approval, recordkeeping, custody of money, and reconciliation makes errors or misuse easier to prevent and detect.",
-      "whatImproved": "The finding was not repeated in the 2022\u201323 audit after the City reported separating duties among four administrative staff.",
+      "whatImproved": "The finding was not repeated in the 2022–23 audit after the City reported separating duties among four administrative staff.",
       "whatRemains": "Later staffing transitions and proposed role changes make the durability of the control uncertain.",
-      "fact": "Material weakness through 2020\u201321; not repeated in 2022\u201323.",
+      "fact": "Material weakness through 2020–21; not repeated in 2022–23.",
       "interpretation": "The audit outcome improved, but future audits must show the control survives vacancies and restructuring.",
       "evidence": [
-        "Recurring Findings  \u2014 Segregation of duties",
-        "2016-17 Audit Findings \u2014 2017-001",
-        "2018-19 Audit Findings \u2014 segregation of duties",
-        "2020-21 Audit Findings \u2014 segregation of duties",
-        "2022-23 Audit Findings \u2014 finding not repeated",
-        "2025 Council Evidence \u2014 administrative restructuring"
+        "Recurring Findings  — Segregation of duties",
+        "2016-17 Audit Findings — 2017-001",
+        "2018-19 Audit Findings — segregation of duties",
+        "2020-21 Audit Findings — segregation of duties",
+        "2022-23 Audit Findings — finding not repeated",
+        "2025 Council Evidence — administrative restructuring"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Too few people handled incompatible duties."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Weakness continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ],
@@ -641,11 +667,11 @@
           "Final management and finance role design is not documented."
         ]
       ],
-      "icon": "\ud83d\udc65",
+      "icon": "👥",
       "evidenceRecords": [
         {
           "id": "segregation-e1",
-          "label": "Recurring Findings  \u2014 Segregation of duties",
+          "label": "Recurring Findings  — Segregation of duties",
           "sheet": "Recurring Findings ",
           "locator": "A2:F2",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -653,14 +679,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A2:F2",
-          "publicLabel": "Recurring Findings  \u2014 Segregation of duties",
+          "publicLabel": "Recurring Findings  — Segregation of duties",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Segregation of duties",
+          "publicTitle": "Recurring Findings — Segregation of duties",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "segregation-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-001",
+          "label": "2016-17 Audit Findings — 2017-001",
           "sheet": "2016-17 Audit Findings",
           "locator": "A2:I2",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -668,14 +694,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A2:I2",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-001",
+          "publicLabel": "2016-17 Audit Findings — 2017-001",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-001",
+          "publicTitle": "2016-17 Audit Report — 2017-001",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "segregation-e3",
-          "label": "2018-19 Audit Findings \u2014 segregation of duties",
+          "label": "2018-19 Audit Findings — segregation of duties",
           "sheet": "2018-19 Audit Findings",
           "locator": "Segregation of duties row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -683,14 +709,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Segregation of duties row",
-          "publicLabel": "2018-19 Audit Findings \u2014 segregation of duties",
+          "publicLabel": "2018-19 Audit Findings — segregation of duties",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 segregation of duties",
+          "publicTitle": "2018-19 Audit Report — segregation of duties",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "segregation-e4",
-          "label": "2020-21 Audit Findings \u2014 segregation of duties",
+          "label": "2020-21 Audit Findings — segregation of duties",
           "sheet": "2020-21 Audit Findings",
           "locator": "Segregation of duties row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -698,14 +724,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Segregation of duties row",
-          "publicLabel": "2020-21 Audit Findings \u2014 segregation of duties",
+          "publicLabel": "2020-21 Audit Findings — segregation of duties",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 segregation of duties",
+          "publicTitle": "2020-21 Audit Report — segregation of duties",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "segregation-e5",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -713,14 +739,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "segregation-e6",
-          "label": "2025 Council Evidence \u2014 administrative restructuring",
+          "label": "2025 Council Evidence — administrative restructuring",
           "sheet": "2025 Council Evidence",
           "locator": "Administrative restructuring records",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -728,30 +754,30 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "Administrative restructuring records",
-          "publicLabel": "2025 Council Evidence \u2014 administrative restructuring",
+          "publicLabel": "2025 Council Evidence — administrative restructuring",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 administrative restructuring",
+          "publicTitle": "2025 City Council Record — administrative restructuring",
           "publicDescription": "City Council public record supporting this topic."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Too few people handled incompatible duties."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Weakness continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ]
@@ -768,7 +794,7 @@
           "detail": "Administrative restructuring raised questions about whether duties would remain clearly separated during transitions."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
+      "latestCompletedAudit": "2022–23",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "one person doing everything",
@@ -789,36 +815,36 @@
       "risk": "Medium",
       "summary": "Earlier audits found missing evidence that some tested expenditures received Council approval.",
       "whyItMatters": "Public spending should have clear support, correct coding, and approval by the proper authority.",
-      "whatImproved": "The finding was not repeated in the 2020\u201321 or 2022\u201323 audits. Later records show roll-call approvals, revised purchasing thresholds, legal review, and competitive purchasing.",
+      "whatImproved": "The finding was not repeated in the 2020–21 or 2022–23 audits. Later records show roll-call approvals, revised purchasing thresholds, legal review, and competitive purchasing.",
       "whatRemains": "The public records cannot verify that every transaction file is complete or that every deferred payable was later approved.",
-      "fact": "21 of 45 tested expenditures totaling $247,214 lacked approval evidence in 2016\u201317; a later cycle also repeated the problem.",
+      "fact": "21 of 45 tested expenditures totaling $247,214 lacked approval evidence in 2016–17; a later cycle also repeated the problem.",
       "interpretation": "Visible Council action supports improvement, but transaction-level completeness still requires audit testing.",
       "evidence": [
-        "Recurring Findings  \u2014 Council approval of expenditures",
-        "2016-17 Audit Findings \u2014 2017-002",
-        "2018-19 Audit Findings \u2014 expenditure approval",
-        "2020-21 Audit Findings \u2014 finding not repeated",
-        "2022-23 Audit Findings \u2014 finding not repeated",
-        "2025 Council Evidence \u2014 procurement thresholds and roll-call approvals"
+        "Recurring Findings  — Council approval of expenditures",
+        "2016-17 Audit Findings — 2017-002",
+        "2018-19 Audit Findings — expenditure approval",
+        "2020-21 Audit Findings — finding not repeated",
+        "2022-23 Audit Findings — finding not repeated",
+        "2025 Council Evidence — procurement thresholds and roll-call approvals"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Approval evidence missing for 21 of 45 tested expenditures."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Approval evidence was again incomplete in tested items."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Not repeated",
           "Audit result improved."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Improvement continued."
         ],
@@ -828,11 +854,11 @@
           "Revised thresholds and documented approvals appear in Council records."
         ]
       ],
-      "icon": "\ud83e\uddfe",
+      "icon": "🧾",
       "evidenceRecords": [
         {
           "id": "expenditures-e1",
-          "label": "Recurring Findings  \u2014 Council approval of expenditures",
+          "label": "Recurring Findings  — Council approval of expenditures",
           "sheet": "Recurring Findings ",
           "locator": "A3:F3",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -840,14 +866,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A3:F3",
-          "publicLabel": "Recurring Findings  \u2014 Council approval of expenditures",
+          "publicLabel": "Recurring Findings  — Council approval of expenditures",
           "publicType": "City Council Record",
-          "publicTitle": "Recurring Findings \u2014 Council approval of expenditures",
+          "publicTitle": "Recurring Findings — Council approval of expenditures",
           "publicDescription": "City Council public record supporting this topic."
         },
         {
           "id": "expenditures-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-002",
+          "label": "2016-17 Audit Findings — 2017-002",
           "sheet": "2016-17 Audit Findings",
           "locator": "A3:I3",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -855,14 +881,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A3:I3",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-002",
+          "publicLabel": "2016-17 Audit Findings — 2017-002",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-002",
+          "publicTitle": "2016-17 Audit Report — 2017-002",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "expenditures-e3",
-          "label": "2018-19 Audit Findings \u2014 expenditure approval",
+          "label": "2018-19 Audit Findings — expenditure approval",
           "sheet": "2018-19 Audit Findings",
           "locator": "Council approval of expenditures row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -870,14 +896,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Council approval of expenditures row",
-          "publicLabel": "2018-19 Audit Findings \u2014 expenditure approval",
+          "publicLabel": "2018-19 Audit Findings — expenditure approval",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 expenditure approval",
+          "publicTitle": "2018-19 Audit Report — expenditure approval",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "expenditures-e4",
-          "label": "2020-21 Audit Findings \u2014 finding not repeated",
+          "label": "2020-21 Audit Findings — finding not repeated",
           "sheet": "2020-21 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -885,14 +911,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2020-21 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2020-21 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2020-21 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "expenditures-e5",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -900,14 +926,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "expenditures-e6",
-          "label": "2025 Council Evidence \u2014 procurement thresholds and roll-call approvals",
+          "label": "2025 Council Evidence — procurement thresholds and roll-call approvals",
           "sheet": "2025 Council Evidence",
           "locator": "Procurement thresholds and roll-call approvals",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -915,30 +941,30 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "Procurement thresholds and roll-call approvals",
-          "publicLabel": "2025 Council Evidence \u2014 procurement thresholds and roll-call approvals",
+          "publicLabel": "2025 Council Evidence — procurement thresholds and roll-call approvals",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 procurement thresholds and roll-call approvals",
+          "publicTitle": "2025 City Council Record — procurement thresholds and roll-call approvals",
           "publicDescription": "City Council public record supporting this topic."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Approval evidence missing for 21 of 45 tested expenditures."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Approval evidence was again incomplete in tested items."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Not repeated",
           "Audit result improved."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Improvement continued."
         ]
@@ -955,7 +981,7 @@
           "detail": "Public records show revised spending thresholds, legal review, competitive purchasing, and roll-call approvals."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
+      "latestCompletedAudit": "2022–23",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "spending approval",
@@ -975,43 +1001,49 @@
       "risk": "Medium",
       "summary": "Missing or deleted utility records prevented auditors from testing whether billings and deposits were proper.",
       "whyItMatters": "Utility records should show what customers were billed, what was collected, what changed, and what was deposited.",
-      "whatImproved": "The finding was not repeated in the 2022\u201323 audit, and the City said storage capacity was expanded.",
-      "whatRemains": "The public records does not directly document the current system's retention, backup, adjustment, and reconciliation controls.",
-      "fact": "The 2016\u201317 audit cited $2,725,278 in collections that could not be fully tested because support was not retained.",
+      "whatImproved": "The finding was not repeated in the 2022–23 audit. In February 2026, Council records documented work toward selecting a third-party collections agency for delinquent accounts.",
+      "whatRemains": "The 2026 minutes document planning and selection work, but they do not document implementation results or independently verify the current billing, collection, retention, backup, and reconciliation controls.",
+      "fact": "The 2016–17 audit cited $2,725,278 in collections that could not be fully tested because support was not retained.",
       "interpretation": "The later audit outcome supports improvement, but the exact permanent control design remains unclear.",
       "evidence": [
-        "Recurring Findings  \u2014 Utility billing and collection support",
-        "2016-17 Audit Findings \u2014 2017-006",
-        "2018-19 Audit Findings \u2014 utility support",
-        "2022-23 Audit Findings \u2014 finding not repeated"
+        "Recurring Findings  — Utility billing and collection support",
+        "2016-17 Audit Findings — 2017-006",
+        "2018-19 Audit Findings — utility support",
+        "2022-23 Audit Findings — finding not repeated",
+        "2026 Council Evidence — February 19 delinquent-account collections process"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Support was unavailable for utility and enterprise collections."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "The problem continued and affected the audit opinion."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Opinion improved",
           "Related audit results changed."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "Feb. 2026",
+          "Collections follow-up",
+          "Council records document review of collection-agency quotes and a planned selection process."
         ]
       ],
-      "icon": "\ud83d\udca7",
+      "icon": "💧",
       "evidenceRecords": [
         {
           "id": "utility-support-e1",
-          "label": "Recurring Findings  \u2014 Utility billing and collection support",
+          "label": "Recurring Findings  — Utility billing and collection support",
           "sheet": "Recurring Findings ",
           "locator": "A7:F7",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1019,14 +1051,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A7:F7",
-          "publicLabel": "Recurring Findings  \u2014 Utility billing and collection support",
+          "publicLabel": "Recurring Findings  — Utility billing and collection support",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Utility billing and collection support",
+          "publicTitle": "Recurring Findings — Utility billing and collection support",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "utility-support-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-006",
+          "label": "2016-17 Audit Findings — 2017-006",
           "sheet": "2016-17 Audit Findings",
           "locator": "A7:I7",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1034,14 +1066,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A7:I7",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-006",
+          "publicLabel": "2016-17 Audit Findings — 2017-006",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-006",
+          "publicTitle": "2016-17 Audit Report — 2017-006",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "utility-support-e3",
-          "label": "2018-19 Audit Findings \u2014 utility support",
+          "label": "2018-19 Audit Findings — utility support",
           "sheet": "2018-19 Audit Findings",
           "locator": "Utility billing and collection support row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1049,14 +1081,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Utility billing and collection support row",
-          "publicLabel": "2018-19 Audit Findings \u2014 utility support",
+          "publicLabel": "2018-19 Audit Findings — utility support",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 utility support",
+          "publicTitle": "2018-19 Audit Report — utility support",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "utility-support-e4",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1064,30 +1096,45 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
+        },
+        {
+          "id": "utility-support-e5",
+          "label": "2026 Council Evidence — February 19 collections planning",
+          "sheet": "2026 Council Evidence",
+          "locator": "A9:I9",
+          "workbook": "Lincoln_Audit_Master_Workbook_2026_Updated.xlsx",
+          "type": "City Council record",
+          "database": "public records",
+          "section": "2026 Council Evidence",
+          "reference": "A9:I9",
+          "publicLabel": "2026 Council Evidence — Delinquent-account collections process",
+          "publicType": "City Council Record",
+          "publicTitle": "2026 City Council Record — Delinquent-account collections process",
+          "publicDescription": "City Council record documenting a planned third-party collections process."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Support was unavailable for utility and enterprise collections."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "The problem continued and affected the audit opinion."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Opinion improved",
           "Related audit results changed."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ]
@@ -1102,10 +1149,15 @@
           "year": "2025",
           "title": "No separate topic-specific update linked",
           "detail": "No later topic-specific public-record update is currently linked beyond the latest completed audit."
+        },
+        {
+          "year": "2026",
+          "title": "Third-party collections process planned",
+          "detail": "The administration reported reviewing collection-agency quotes and moving toward selection of an agency for delinquent accounts. Implementation results are not documented."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
-      "latestDocumentedUpdate": "No later update linked",
+      "latestCompletedAudit": "2022–23",
+      "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "utility bills",
         "water bills",
@@ -1127,36 +1179,36 @@
       "risk": "Medium",
       "summary": "Earlier budgets omitted estimated cash amounts required for budget and tax-levy calculations.",
       "whyItMatters": "Cash estimates help show how much money is already available and how much must be raised.",
-      "whatImproved": "The finding was not repeated in 2022\u201323. Later records show detailed budget work sessions and formal adoption steps.",
+      "whatImproved": "The finding was not repeated in 2022–23. Later records show detailed budget work sessions and formal adoption steps.",
       "whatRemains": "Direct verification still requires reviewing the adopted budget schedules by fund.",
-      "fact": "The finding affected budget years 2016\u20132021 and included material noncompliance.",
+      "fact": "The finding affected budget years 2016–2021 and included material noncompliance.",
       "interpretation": "The latest audit result is positive, but public meeting minutes alone cannot verify every required schedule.",
       "evidence": [
-        "Recurring Findings  \u2014 Estimated budgeted cash",
-        "2016-17 Audit Findings \u2014 2017-007",
-        "2018-19 Audit Findings \u2014 estimated cash",
-        "2020-21 Audit Findings \u2014 estimated cash",
-        "2022-23 Audit Findings \u2014 finding not repeated",
-        "2025 Council Evidence \u2014 budget work sessions and adoption"
+        "Recurring Findings  — Estimated budgeted cash",
+        "2016-17 Audit Findings — 2017-007",
+        "2018-19 Audit Findings — estimated cash",
+        "2020-21 Audit Findings — estimated cash",
+        "2022-23 Audit Findings — finding not repeated",
+        "2025 Council Evidence — budget work sessions and adoption"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Required estimated cash was omitted."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Budget compliance problem continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Problem continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ],
@@ -1166,11 +1218,11 @@
           "Council records show line-item review, hearing, and adoption."
         ]
       ],
-      "icon": "\ud83d\udcb5",
+      "icon": "💵",
       "evidenceRecords": [
         {
           "id": "budgeted-cash-e1",
-          "label": "Recurring Findings  \u2014 Estimated budgeted cash",
+          "label": "Recurring Findings  — Estimated budgeted cash",
           "sheet": "Recurring Findings ",
           "locator": "A8:F8",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1178,14 +1230,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A8:F8",
-          "publicLabel": "Recurring Findings  \u2014 Estimated budgeted cash",
+          "publicLabel": "Recurring Findings  — Estimated budgeted cash",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Estimated budgeted cash",
+          "publicTitle": "Recurring Findings — Estimated budgeted cash",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "budgeted-cash-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-007",
+          "label": "2016-17 Audit Findings — 2017-007",
           "sheet": "2016-17 Audit Findings",
           "locator": "A8:I8",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1193,14 +1245,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A8:I8",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-007",
+          "publicLabel": "2016-17 Audit Findings — 2017-007",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-007",
+          "publicTitle": "2016-17 Audit Report — 2017-007",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "budgeted-cash-e3",
-          "label": "2018-19 Audit Findings \u2014 estimated cash",
+          "label": "2018-19 Audit Findings — estimated cash",
           "sheet": "2018-19 Audit Findings",
           "locator": "Estimated budgeted cash row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1208,14 +1260,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Estimated budgeted cash row",
-          "publicLabel": "2018-19 Audit Findings \u2014 estimated cash",
+          "publicLabel": "2018-19 Audit Findings — estimated cash",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 estimated cash",
+          "publicTitle": "2018-19 Audit Report — estimated cash",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "budgeted-cash-e4",
-          "label": "2020-21 Audit Findings \u2014 estimated cash",
+          "label": "2020-21 Audit Findings — estimated cash",
           "sheet": "2020-21 Audit Findings",
           "locator": "Estimated budgeted cash row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1223,14 +1275,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Estimated budgeted cash row",
-          "publicLabel": "2020-21 Audit Findings \u2014 estimated cash",
+          "publicLabel": "2020-21 Audit Findings — estimated cash",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 estimated cash",
+          "publicTitle": "2020-21 Audit Report — estimated cash",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "budgeted-cash-e5",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1238,14 +1290,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "budgeted-cash-e6",
-          "label": "2025 Council Evidence \u2014 budget work sessions and adoption",
+          "label": "2025 Council Evidence — budget work sessions and adoption",
           "sheet": "2025 Council Evidence",
           "locator": "A2:I15; A53:I60",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1253,30 +1305,30 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "A2:I15; A53:I60",
-          "publicLabel": "2025 Council Evidence \u2014 budget work sessions and adoption",
+          "publicLabel": "2025 Council Evidence — budget work sessions and adoption",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 budget work sessions and adoption",
+          "publicTitle": "2025 City Council Record — budget work sessions and adoption",
           "publicDescription": "City Council public record supporting this topic."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Required estimated cash was omitted."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Budget compliance problem continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Problem continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ]
@@ -1293,7 +1345,7 @@
           "detail": "Council records show detailed work sessions, a public hearing, and formal budget adoption steps."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
+      "latestCompletedAudit": "2022–23",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "budget",
@@ -1315,36 +1367,37 @@
       "risk": "High",
       "summary": "Earlier audits found wrong-period checks, cleared checks left outstanding, and inaccurate cash balances.",
       "whyItMatters": "Monthly reconciliation is a basic check that the bank and accounting records agree.",
-      "whatImproved": "The finding was not repeated in 2022\u201323.",
-      "whatRemains": "2025 records show statements, cash balances, reconciliations, and payables being removed or tabled, raising timeliness questions.",
-      "fact": "The 2016\u201317 audit cited $203,758 in wrong-year checks and $32,708 in already-cleared checks.",
+      "whatImproved": "The finding was not repeated in 2022–23.",
+      "whatRemains": "Public records from 2025 and 2026 show that timeliness still deserves monitoring. In March 2026, the February bank reconciliation was reported incomplete during an interim staffing transition. Later records show financial reports were again presented and approved, but do not state the exact reconciliation completion date.",
+      "fact": "The 2016–17 audit cited $203,758 in wrong-year checks and $32,708 in already-cleared checks.",
       "interpretation": "The formal audit result improved, while later delays suggest the process still deserves close monitoring.",
       "evidence": [
-        "Recurring Findings  \u2014 Bank reconciliations",
-        "2016-17 Audit Findings \u2014 2017-009",
-        "2018-19 Audit Findings \u2014 reconciliation",
-        "2020-21 Audit Findings \u2014 reconciliation",
-        "2022-23 Audit Findings \u2014 finding not repeated",
-        "2025 Council Evidence \u2014 deferred financial items"
+        "Recurring Findings  — Bank reconciliations",
+        "2016-17 Audit Findings — 2017-009",
+        "2018-19 Audit Findings — reconciliation",
+        "2020-21 Audit Findings — reconciliation",
+        "2022-23 Audit Findings — finding not repeated",
+        "2025 Council Evidence — deferred financial items",
+        "2026 Council Evidence — March 19 incomplete February reconciliation and later financial-report follow-up"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Cash was understated because of reconciliation errors."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Reconciliation weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Weakness affected audit reliability."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ],
@@ -1352,13 +1405,18 @@
           "2025",
           "Timeliness concern",
           "Several financial items were delayed or tabled."
+        ],
+        [
+          "Mar. 2026",
+          "Temporary delay",
+          "The February reconciliation was reported incomplete during the interim finance-staffing period."
         ]
       ],
-      "icon": "\ud83c\udfe6",
+      "icon": "🏦",
       "evidenceRecords": [
         {
           "id": "bank-reconciliations-e1",
-          "label": "Recurring Findings  \u2014 Bank reconciliations",
+          "label": "Recurring Findings  — Bank reconciliations",
           "sheet": "Recurring Findings ",
           "locator": "A10:F10",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1366,14 +1424,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A10:F10",
-          "publicLabel": "Recurring Findings  \u2014 Bank reconciliations",
+          "publicLabel": "Recurring Findings  — Bank reconciliations",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Bank reconciliations",
+          "publicTitle": "Recurring Findings — Bank reconciliations",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "bank-reconciliations-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-009",
+          "label": "2016-17 Audit Findings — 2017-009",
           "sheet": "2016-17 Audit Findings",
           "locator": "A10:I10",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1381,14 +1439,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A10:I10",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-009",
+          "publicLabel": "2016-17 Audit Findings — 2017-009",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-009",
+          "publicTitle": "2016-17 Audit Report — 2017-009",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "bank-reconciliations-e3",
-          "label": "2018-19 Audit Findings \u2014 reconciliation",
+          "label": "2018-19 Audit Findings — reconciliation",
           "sheet": "2018-19 Audit Findings",
           "locator": "Bank reconciliation row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1396,14 +1454,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Bank reconciliation row",
-          "publicLabel": "2018-19 Audit Findings \u2014 reconciliation",
+          "publicLabel": "2018-19 Audit Findings — reconciliation",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 reconciliation",
+          "publicTitle": "2018-19 Audit Report — reconciliation",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "bank-reconciliations-e4",
-          "label": "2020-21 Audit Findings \u2014 reconciliation",
+          "label": "2020-21 Audit Findings — reconciliation",
           "sheet": "2020-21 Audit Findings",
           "locator": "Bank reconciliation row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1411,14 +1469,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Bank reconciliation row",
-          "publicLabel": "2020-21 Audit Findings \u2014 reconciliation",
+          "publicLabel": "2020-21 Audit Findings — reconciliation",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 reconciliation",
+          "publicTitle": "2020-21 Audit Report — reconciliation",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "bank-reconciliations-e5",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1426,14 +1484,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "bank-reconciliations-e6",
-          "label": "2025 Council Evidence \u2014 deferred financial items",
+          "label": "2025 Council Evidence — deferred financial items",
           "sheet": "2025 Council Evidence",
           "locator": "Deferred financial items",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1441,30 +1499,45 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "Deferred financial items",
-          "publicLabel": "2025 Council Evidence \u2014 deferred financial items",
+          "publicLabel": "2025 Council Evidence — deferred financial items",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 deferred financial items",
+          "publicTitle": "2025 City Council Record — deferred financial items",
           "publicDescription": "City Council public record supporting this topic."
+        },
+        {
+          "id": "bank-reconciliations-e7",
+          "label": "2026 Council Evidence — reconciliation and financial-report follow-up",
+          "sheet": "2026 Council Evidence",
+          "locator": "A12:I16",
+          "workbook": "Lincoln_Audit_Master_Workbook_2026_Updated.xlsx",
+          "type": "City Council record",
+          "database": "public records",
+          "section": "2026 Council Evidence",
+          "reference": "A12:I16",
+          "publicLabel": "2026 Council Evidence — Reconciliation and financial-report follow-up",
+          "publicType": "City Council Record",
+          "publicTitle": "2026 City Council Record — Reconciliation and financial-report follow-up",
+          "publicDescription": "Council records documenting a temporary reconciliation delay and later reporting activity."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Cash was understated because of reconciliation errors."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Reconciliation weakness continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Weakness affected audit reliability."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ]
@@ -1479,10 +1552,15 @@
           "year": "2025",
           "title": "Timeliness questions returned",
           "detail": "Some financial statements, cash balances, reconciliations, and payables were delayed or tabled in public meetings."
+        },
+        {
+          "year": "2026",
+          "title": "Reconciliation delay during staffing transition",
+          "detail": "The February reconciliation was reported incomplete in March. The February financial report was later presented and approved, but the minutes do not state the reconciliation completion date."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
-      "latestDocumentedUpdate": "2025",
+      "latestCompletedAudit": "2022–23",
+      "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "bank accounts",
         "bank records",
@@ -1503,36 +1581,36 @@
       "risk": "Medium",
       "summary": "Earlier audits found missing support for assets, vehicle titles, expenditures, and accounting adjustments.",
       "whyItMatters": "Good records show what was purchased, who approved it, who owns it, and how it was recorded.",
-      "whatImproved": "The finding was not repeated in 2022\u201323. Later records show stronger purchasing, contract, disposition, and archiving practices.",
+      "whatImproved": "The finding was not repeated in 2022–23. Later records show stronger purchasing, contract, disposition, and archiving practices.",
       "whatRemains": "The public records cannot verify that every historical gap was resolved or every current transaction file is complete.",
-      "fact": "The 2016\u201317 audit cited missing support for $97,900 of additions and titles for $207,492 of vehicle additions.",
+      "fact": "The 2016–17 audit cited missing support for $97,900 of additions and titles for $207,492 of vehicle additions.",
       "interpretation": "Policies and visible procedures are stronger, but completeness is ultimately a transaction-level question.",
       "evidence": [
-        "Recurring Findings  \u2014 Supporting documentation / capital assets",
-        "2016-17 Audit Findings \u2014 2017-005",
-        "2018-19 Audit Findings \u2014 supporting documentation",
-        "2020-21 Audit Findings \u2014 supporting documentation",
-        "2022-23 Audit Findings \u2014 finding not repeated",
-        "2025 Council Evidence \u2014 procurement, disposition, contracts, and archiving"
+        "Recurring Findings  — Supporting documentation / capital assets",
+        "2016-17 Audit Findings — 2017-005",
+        "2018-19 Audit Findings — supporting documentation",
+        "2020-21 Audit Findings — supporting documentation",
+        "2022-23 Audit Findings — finding not repeated",
+        "2025 Council Evidence — procurement, disposition, contracts, and archiving"
       ],
       "timeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Asset support and vehicle titles were missing."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Documentation issues continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Documentation issues continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ],
@@ -1542,11 +1620,11 @@
           "Policies and contract controls are visible in Council records."
         ]
       ],
-      "icon": "\ud83d\udcc1",
+      "icon": "📁",
       "evidenceRecords": [
         {
           "id": "documentation-e1",
-          "label": "Recurring Findings  \u2014 Supporting documentation / capital assets",
+          "label": "Recurring Findings  — Supporting documentation / capital assets",
           "sheet": "Recurring Findings ",
           "locator": "A6:F6",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1554,14 +1632,14 @@
           "database": "public records",
           "section": "Recurring Findings ",
           "reference": "A6:F6",
-          "publicLabel": "Recurring Findings  \u2014 Supporting documentation / capital assets",
+          "publicLabel": "Recurring Findings  — Supporting documentation / capital assets",
           "publicType": "Public Record",
-          "publicTitle": "Recurring Findings \u2014 Supporting documentation / capital assets",
+          "publicTitle": "Recurring Findings — Supporting documentation / capital assets",
           "publicDescription": "Public record supporting this topic."
         },
         {
           "id": "documentation-e2",
-          "label": "2016-17 Audit Findings \u2014 2017-005",
+          "label": "2016-17 Audit Findings — 2017-005",
           "sheet": "2016-17 Audit Findings",
           "locator": "A6:I6",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1569,14 +1647,14 @@
           "database": "public records",
           "section": "2016-17 Audit Findings",
           "reference": "A6:I6",
-          "publicLabel": "2016-17 Audit Findings \u2014 2017-005",
+          "publicLabel": "2016-17 Audit Findings — 2017-005",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2016-17 Audit Report \u2014 2017-005",
+          "publicTitle": "2016-17 Audit Report — 2017-005",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "documentation-e3",
-          "label": "2018-19 Audit Findings \u2014 supporting documentation",
+          "label": "2018-19 Audit Findings — supporting documentation",
           "sheet": "2018-19 Audit Findings",
           "locator": "Supporting documentation row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1584,14 +1662,14 @@
           "database": "public records",
           "section": "2018-19 Audit Findings",
           "reference": "Supporting documentation row",
-          "publicLabel": "2018-19 Audit Findings \u2014 supporting documentation",
+          "publicLabel": "2018-19 Audit Findings — supporting documentation",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2018-19 Audit Report \u2014 supporting documentation",
+          "publicTitle": "2018-19 Audit Report — supporting documentation",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "documentation-e4",
-          "label": "2020-21 Audit Findings \u2014 supporting documentation",
+          "label": "2020-21 Audit Findings — supporting documentation",
           "sheet": "2020-21 Audit Findings",
           "locator": "Supporting documentation row",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1599,14 +1677,14 @@
           "database": "public records",
           "section": "2020-21 Audit Findings",
           "reference": "Supporting documentation row",
-          "publicLabel": "2020-21 Audit Findings \u2014 supporting documentation",
+          "publicLabel": "2020-21 Audit Findings — supporting documentation",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2020-21 Audit Report \u2014 supporting documentation",
+          "publicTitle": "2020-21 Audit Report — supporting documentation",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "documentation-e5",
-          "label": "2022-23 Audit Findings \u2014 finding not repeated",
+          "label": "2022-23 Audit Findings — finding not repeated",
           "sheet": "2022-23 Audit Findings",
           "locator": "Finding not repeated",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1614,14 +1692,14 @@
           "database": "public records",
           "section": "2022-23 Audit Findings",
           "reference": "Finding not repeated",
-          "publicLabel": "2022-23 Audit Findings \u2014 finding not repeated",
+          "publicLabel": "2022-23 Audit Findings — finding not repeated",
           "publicType": "Independent Audit Report",
-          "publicTitle": "2022-23 Audit Report \u2014 finding not repeated",
+          "publicTitle": "2022-23 Audit Report — finding not repeated",
           "publicDescription": "Independent audit record supporting this topic."
         },
         {
           "id": "documentation-e6",
-          "label": "2025 Council Evidence \u2014 procurement, disposition, contracts, and archiving",
+          "label": "2025 Council Evidence — procurement, disposition, contracts, and archiving",
           "sheet": "2025 Council Evidence",
           "locator": "Procurement, disposition, contracts, and archiving",
           "workbook": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1629,30 +1707,30 @@
           "database": "public records",
           "section": "2025 Council Evidence",
           "reference": "Procurement, disposition, contracts, and archiving",
-          "publicLabel": "2025 Council Evidence \u2014 procurement, disposition, contracts, and archiving",
+          "publicLabel": "2025 Council Evidence — procurement, disposition, contracts, and archiving",
           "publicType": "City Council Record",
-          "publicTitle": "2025 City Council Record \u2014 procurement, disposition, contracts, and archiving",
+          "publicTitle": "2025 City Council Record — procurement, disposition, contracts, and archiving",
           "publicDescription": "City Council public record supporting this topic."
         }
       ],
       "auditTimeline": [
         [
-          "2016\u201317",
+          "2016–17",
           "Finding reported",
           "Asset support and vehicle titles were missing."
         ],
         [
-          "2018\u201319",
+          "2018–19",
           "Repeated",
           "Documentation issues continued."
         ],
         [
-          "2020\u201321",
+          "2020–21",
           "Repeated",
           "Documentation issues continued."
         ],
         [
-          "2022\u201323",
+          "2022–23",
           "Not repeated",
           "Evidence of improvement."
         ]
@@ -1669,7 +1747,7 @@
           "detail": "Public records show added contract review, purchasing controls, disposition procedures, and archiving practices."
         }
       ],
-      "latestCompletedAudit": "2022\u201323",
+      "latestCompletedAudit": "2022–23",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "missing records",
@@ -1685,57 +1763,57 @@
   ],
   "overviewTimeline": [
     {
-      "year": "2016\u201317",
+      "year": "2016–17",
       "status": "Serious concerns",
       "tone": "concern",
       "summary": "Auditors reported several major weaknesses in financial controls, records, approvals, and year-end reporting."
     },
     {
-      "year": "2018\u201319",
+      "year": "2018–19",
       "status": "Many problems repeated",
       "tone": "concern",
       "summary": "Several earlier findings appeared again, showing that important fixes were not yet complete."
     },
     {
-      "year": "2020\u201321",
+      "year": "2020–21",
       "status": "Some improvement",
       "tone": "progress",
       "summary": "Some findings disappeared, but major weaknesses in year-end reporting and fraud-risk planning remained."
     },
     {
-      "year": "2022\u201323",
+      "year": "2022–23",
       "status": "Clear improvement",
       "tone": "improved",
       "summary": "Many older findings were not repeated. Two major findings still remained."
     },
     {
-      "year": "2024\u201325",
+      "year": "2024–26",
       "status": "Corrective work continued",
       "tone": "progress",
-      "summary": "Council records show new policies, staffing changes, purchasing controls, and fraud-prevention planning."
+      "summary": "Council records show continued audit-related policy work, fraud-risk planning, utility-collection follow-up, staffing continuity efforts, and ongoing financial reporting."
     }
   ],
   "auditOverview": [
     {
-      "year": "2016\u201317",
+      "year": "2016–17",
       "status": "Serious concerns",
       "tone": "concern",
       "summary": "Auditors reported major weaknesses in controls, records, approvals, and year-end reporting."
     },
     {
-      "year": "2018\u201319",
+      "year": "2018–19",
       "status": "Many findings repeated",
       "tone": "concern",
       "summary": "Several earlier findings appeared again, showing that important fixes were not yet complete."
     },
     {
-      "year": "2020\u201321",
+      "year": "2020–21",
       "status": "Some improvement",
       "tone": "progress",
       "summary": "Some findings disappeared, while major reporting and fraud-risk weaknesses remained."
     },
     {
-      "year": "2022\u201323",
+      "year": "2022–23",
       "status": "Clear improvement",
       "tone": "improved",
       "summary": "Many older findings were not repeated. This is the latest completed independent audit included here."
@@ -1753,12 +1831,18 @@
       "status": "Additional implementation",
       "tone": "progress",
       "summary": "Public records show purchasing changes, fraud-policy work, staffing changes, budget activity, and continued financial-process updates."
+    },
+    {
+      "year": "2026",
+      "status": "Audit follow-up remained active",
+      "tone": "progress",
+      "summary": "Council records document continued fraud-risk work, monthly audit-status reporting, utility-collection planning, and financial-report follow-up during a finance-office transition."
     }
   ],
   "searchGuides": {
     "missing money": {
       "title": "Looking for information about missing money?",
-      "answer": "Auditors reported money-related records they could not fully verify. In the 2018\u201319 audit, three tested clerk-of-court fee items totaling $3,180 could not be traced to the City's general fund. In the 2020\u201321 audit, auditors identified $14,052 in court fees they could not trace. Auditors also could not test millions of dollars in utility collections because supporting records were missing or had been deleted. These findings do not prove theft, but they do mean the available records did not fully account for or verify certain money.",
+      "answer": "Auditors reported money-related records they could not fully verify. In the 2018–19 audit, three tested clerk-of-court fee items totaling $3,180 could not be traced to the City's general fund. In the 2020–21 audit, auditors identified $14,052 in court fees they could not trace. Auditors also could not test millions of dollars in utility collections because supporting records were missing or had been deleted. These findings do not prove theft, but they do mean the available records did not fully account for or verify certain money.",
       "questionIds": [
         "fraud",
         "trust",
@@ -1814,7 +1898,7 @@
   "audits": [
     {
       "id": "2016-17",
-      "years": "2016\u201317",
+      "years": "2016–17",
       "theme": "Where the story begins",
       "cardSummary": "Auditors reported 10 problems involving financial records, approvals, utility billing, bank records, and other basic safeguards.",
       "oneSentence": "Auditors found several serious weaknesses in how the City tracked money, approved spending, kept records, and prepared financial information.",
@@ -1838,7 +1922,7 @@
       "leadership": {
         "periods": [
           {
-            "label": "During the 2016\u201317 audit period",
+            "label": "During the 2016–17 audit period",
             "mayor": "Gerald Wise",
             "council": [],
             "note": "A complete council list for this period is still being verified from archived meeting minutes."
@@ -1848,7 +1932,7 @@
     },
     {
       "id": "2018-19",
-      "years": "2018\u201319",
+      "years": "2018–19",
       "theme": "Problems continued",
       "cardSummary": "Auditors again reported 10 problems. Missing records and bank differences made parts of the City's finances impossible to fully verify.",
       "oneSentence": "Many earlier problems continued, and auditors could not give an opinion on the City's 2019 financial statements because reliable evidence was not available.",
@@ -1873,7 +1957,7 @@
       "leadership": {
         "periods": [
           {
-            "label": "During the 2018\u201319 audit period",
+            "label": "During the 2018–19 audit period",
             "mayor": "Gerald Wise",
             "council": [],
             "note": "A complete council list for this period is still being verified from archived meeting minutes."
@@ -1883,7 +1967,7 @@
     },
     {
       "id": "2020-21",
-      "years": "2020\u201321",
+      "years": "2020–21",
       "theme": "Some progress, serious gaps remained",
       "cardSummary": "Auditors reported 8 problems. Some parts of the audit improved, while missing support and money that could not be traced remained concerns.",
       "oneSentence": "The audit showed partial improvement, but the City still had serious problems with records, financial checks, court fees, and bank matching.",
@@ -1897,7 +1981,7 @@
         "Auditors could not trace $14,052 in court fees to the general fund.",
         "The City's accounting records were $208,089 higher than the reconciled bank cash."
       ],
-      "whatChangedNext": "By the 2022\u201323 audit, several long-running problems were no longer reported as findings.",
+      "whatChangedNext": "By the 2022–23 audit, several long-running problems were no longer reported as findings.",
       "searchAliases": [
         "2020 audit",
         "2021 audit",
@@ -1922,7 +2006,7 @@
     },
     {
       "id": "2022-23",
-      "years": "2022\u201323",
+      "years": "2022–23",
       "theme": "Clear improvement, with new concerns",
       "cardSummary": "Auditors reported 6 problems. Several older problems disappeared, while new issues involved fund transfers, debt rules, conflicts, and accounting entries.",
       "oneSentence": "The latest completed audit showed real improvement, but it also found six problems that still needed attention.",
