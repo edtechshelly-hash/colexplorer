@@ -1,25 +1,26 @@
 {
   "meta": {
-    "version": "4.1",
-    "source": "Lincoln Audit Explorer Resident Answer Library v4.1",
-    "answerCount": 26,
-    "readyCount": 17,
+    "version": "4.2",
+    "source": "Lincoln Audit Explorer Resident Answer Library v4.2",
+    "answerCount": 27,
+    "readyCount": 18,
     "latestFollowUpYear": "2026"
   },
   "answers": [
     {
       "id": "RQ-001",
       "question": "Was money missing?",
-      "shortAnswer": "Auditors reported some money-related amounts they could not fully trace or test, but they did not conclude that theft occurred.",
-      "whyPeopleAsk": "When records are missing or money cannot be traced through the available paperwork, people naturally wonder whether money disappeared.",
-      "recordsShow": "The audits identified court-fee amounts that could not be traced to the general fund and utility collections that could not be fully tested because supporting records were unavailable.",
-      "whyItMatters": "Public money should be supported by records that show where it came from, where it went, and how it was recorded.",
-      "recordsDoNotEstablish": "The audits did not determine that someone stole the money.",
+      "shortAnswer": "There is no single verified total of “missing money.” The audits reported several different kinds of problems: $3,180 in sampled court-fee items that could not be traced to the General Fund, a projected potential error of $3,857, $118,634 remaining in a bank-reconciliation difference after proposed adjustments, and millions of dollars in utility collections that auditors could not test because supporting records were unavailable.",
+      "whyPeopleAsk": "When people hear that money could not be traced, verified, or reconciled, they naturally want one total amount.",
+      "recordsShow": "The audits reported different financial-record problems that should not be added together as if they were one missing-money total. These included court fees that could not be traced, bank-reconciliation differences, wrong-period checks, already-cleared checks still listed as outstanding, and utility collections that could not be tested because records were missing.",
+      "whyItMatters": "Each amount describes a different accounting or documentation problem. Clear records are needed to show what happened to public money and whether financial reports are accurate.",
+      "recordsDoNotEstablish": "The audits did not conclude that the listed amounts were stolen or permanently lost, and they did not identify one combined total of missing money.",
       "relatedQuestions": [
+        "RQ-009",
+        "RQ-002",
         "RQ-003",
         "RQ-004",
-        "RQ-006",
-        "RQ-007"
+        "RQ-006"
       ],
       "relatedTopics": [
         "Utility records",
@@ -30,7 +31,8 @@
         "missing money",
         "money missing",
         "unaccounted money",
-        "where did the money go",
+        "how much money is missing",
+        "how much was missing",
         "lost money"
       ],
       "auditYears": "2016–17; 2018–19; 2020–21",
@@ -42,15 +44,16 @@
     {
       "id": "RQ-002",
       "question": "Did the City lose money?",
-      "shortAnswer": "The audits showed gaps in records and money tracking, but they did not determine a total amount the City permanently lost.",
-      "whyPeopleAsk": "Residents may hear that money could not be traced and assume it was permanently lost.",
-      "recordsShow": "Some amounts could not be traced or tested from the records available to auditors. Other findings involved accounting errors, missing support, and bank differences.",
-      "whyItMatters": "Incomplete records make it harder to know whether every transaction was recorded correctly.",
-      "recordsDoNotEstablish": "The audits did not calculate a confirmed total loss to the City.",
+      "shortAnswer": "The audits did not calculate a confirmed total amount the City permanently lost. They reported specific tracing, documentation, and reconciliation problems, including a projected $3,857 court-fee error and a $118,634 remaining bank-reconciliation difference.",
+      "whyPeopleAsk": "People may hear that money could not be traced or verified and assume it was permanently lost.",
+      "recordsShow": "The audits identified amounts that could not be traced, tested, or reconciled from the available records. They also reported bookkeeping errors, including $203,758 in wrong-period checks and $32,708 in already-cleared checks still listed as outstanding.",
+      "whyItMatters": "Poor records and reconciliation errors can reduce confidence in the financial statements even when auditors do not prove that money was permanently lost.",
+      "recordsDoNotEstablish": "The audits did not determine one confirmed loss total or conclude that all of the listed amounts represented money that disappeared.",
       "relatedQuestions": [
+        "RQ-009",
         "RQ-001",
         "RQ-003",
-        "RQ-009"
+        "RQ-004"
       ],
       "relatedTopics": [
         "Utility records",
@@ -61,7 +64,8 @@
         "lost money",
         "city lost money",
         "taxpayer loss",
-        "money gone"
+        "money gone",
+        "how much did the city lose"
       ],
       "auditYears": "2016–17; 2018–19; 2020–21",
       "evidenceStatus": "Partial",
@@ -72,15 +76,16 @@
     {
       "id": "RQ-003",
       "question": "Where did the money go?",
-      "shortAnswer": "In some cases, the available records did not provide enough proof to show exactly where certain money was recorded.",
+      "shortAnswer": "For some amounts, the audits could not determine exactly where the money was recorded because the available records were incomplete. In one sample, $3,180 in court-fee items could not be traced to the General Fund, producing a projected potential error of $3,857.",
       "whyPeopleAsk": "People want a direct explanation when auditors say money could not be traced.",
-      "recordsShow": "Auditors reported specific court-fee amounts they could not trace to the general fund and utility collections they could not fully test because records were missing.",
-      "whyItMatters": "Good records allow residents and auditors to follow money from collection through deposit and accounting.",
-      "recordsDoNotEstablish": "The audits did not identify a person who took the money or a confirmed destination for every untraced amount.",
+      "recordsShow": "The court-fee finding involved three of 30 tested items that could not be traced to the General Fund. Other findings involved utility collections that could not be tested and bank records that did not balance to the accounting records.",
+      "whyItMatters": "Public records should allow money to be followed from collection through deposit and accounting.",
+      "recordsDoNotEstablish": "The audits did not identify who took the money or prove that the projected amount was stolen.",
       "relatedQuestions": [
+        "RQ-009",
         "RQ-001",
         "RQ-004",
-        "RQ-009"
+        "RQ-006"
       ],
       "relatedTopics": [
         "Court fees",
@@ -91,7 +96,8 @@
         "where did the money go",
         "trace money",
         "follow the money",
-        "account for money"
+        "court fee money",
+        "untraced money"
       ],
       "auditYears": "2018–19; 2020–21",
       "evidenceStatus": "Verified",
@@ -102,15 +108,16 @@
     {
       "id": "RQ-004",
       "question": "Could the City account for all of its money?",
-      "shortAnswer": "Not always. Auditors identified amounts and collections that could not be fully verified from the available records.",
-      "whyPeopleAsk": "Residents expect public money to be supported by complete records.",
-      "recordsShow": "The audits reported missing utility records, court fees that could not be traced, bank differences, and financial statements that required corrections.",
+      "shortAnswer": "Not always. Auditors could not fully verify some collections and account balances. The records include a projected $3,857 court-fee error, a $118,634 remaining bank-reconciliation difference, and utility collections of $2,725,278 and $1,562,328 that could not be fully tested because supporting records were unavailable.",
+      "whyPeopleAsk": "Residents expect public money to be supported by records that allow it to be checked.",
+      "recordsShow": "The audits identified missing utility support, court-fee items that could not be traced, and bank reconciliations that did not balance to the accounting records.",
       "whyItMatters": "When records are incomplete, auditors cannot independently confirm that every amount was recorded correctly.",
-      "recordsDoNotEstablish": "This does not automatically mean money was stolen or misused.",
+      "recordsDoNotEstablish": "The utility collection totals were amounts auditors could not test, not amounts the audits declared missing or stolen.",
       "relatedQuestions": [
+        "RQ-009",
         "RQ-001",
-        "RQ-003",
-        "RQ-061"
+        "RQ-002",
+        "RQ-003"
       ],
       "relatedTopics": [
         "Financial records",
@@ -121,7 +128,8 @@
         "account for money",
         "explain money",
         "track money",
-        "verify money"
+        "verify money",
+        "how much unaccounted for"
       ],
       "auditYears": "2016–17; 2018–19; 2020–21",
       "evidenceStatus": "Verified",
@@ -132,12 +140,13 @@
     {
       "id": "RQ-006",
       "question": "Was anything stolen?",
-      "shortAnswer": "The public audit records do not conclude that money was stolen.",
-      "whyPeopleAsk": "Missing records and money that cannot be traced can sound like theft, even when the audit does not make that finding.",
-      "recordsShow": "Auditors found weak recordkeeping, missing support, untraced amounts, and weaknesses in financial safeguards.",
-      "whyItMatters": "Those weaknesses increase risk and deserve attention because they can make errors or misuse harder to detect.",
-      "recordsDoNotEstablish": "An audit finding about missing records is not the same as a criminal finding of theft.",
+      "shortAnswer": "The public audit records do not conclude that money was stolen. They report tracing, documentation, and reconciliation problems, including specific amounts, but those findings are not proof of theft.",
+      "whyPeopleAsk": "Missing records and money that cannot be traced can sound like theft, especially when dollar amounts are involved.",
+      "recordsShow": "The audits reported a projected $3,857 court-fee error, a $118,634 remaining reconciliation difference, wrong-period and already-cleared checks, and utility collections that could not be fully tested.",
+      "whyItMatters": "Weak records and financial safeguards can make errors or misuse harder to detect, even when theft is not proven.",
+      "recordsDoNotEstablish": "The audits did not identify a person who stole the money or conclude that theft occurred.",
       "relatedQuestions": [
+        "RQ-009",
         "RQ-001",
         "RQ-007",
         "RQ-017"
@@ -151,9 +160,49 @@
         "stolen money",
         "theft",
         "embezzlement",
-        "someone stole money"
+        "someone stole money",
+        "did anyone steal"
       ],
       "auditYears": "2016–17 through 2022–23",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-009",
+      "question": "How much money could auditors not account for?",
+      "shortAnswer": "There is no single verified “missing money” total. The clearest untraced amount was $3,180 in sampled court-fee items, with auditors projecting a potential error of $3,857. Other findings involved a $118,634 remaining bank-reconciliation difference and utility collections of $2,725,278 and $1,562,328 that auditors could not fully test because records were unavailable.",
+      "whyPeopleAsk": "Residents want a number when they hear that money was missing, unaccounted for, or could not be traced.",
+      "recordsShow": "The findings describe different problems. The 2018–19 audit reported three of 30 sampled court-fee items totaling $3,180 that could not be traced to the General Fund and projected a potential error of $3,857. The same audit reported a $903,194 initial bank-reconciliation difference; after $1,021,828 in proposed adjustments, $118,634 still remained. The 2016–17 and 2018–19 audits also reported utility collections of $2,725,278 and $1,562,328 that could not be fully tested because supporting records were unavailable. Earlier reconciliation errors included $203,758 in wrong-period checks and $32,708 in already-cleared checks still recorded as outstanding.",
+      "whyItMatters": "These amounts show why complete records and accurate bank matching matter. They do not all represent the same type of problem, so adding them together would give a misleading total.",
+      "recordsDoNotEstablish": "The audits did not conclude that all of these amounts were missing, stolen, or permanently lost. Some were bookkeeping differences, and the utility totals were collections auditors could not test—not amounts declared gone.",
+      "relatedQuestions": [
+        "RQ-001",
+        "RQ-002",
+        "RQ-003",
+        "RQ-004",
+        "RQ-006"
+      ],
+      "relatedTopics": [
+        "Court fees",
+        "Bank reconciliations",
+        "Utility records",
+        "Missing documentation"
+      ],
+      "searchPhrases": [
+        "how much money is missing",
+        "how much was unaccounted for",
+        "how much money could auditors not account for",
+        "missing money amount",
+        "3180",
+        "3857",
+        "118634",
+        "203758",
+        "32708",
+        "court fee money"
+      ],
+      "auditYears": "2016–17; 2018–19",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
