@@ -303,13 +303,13 @@ function renderSearch(){
         <p class="search-answer-label">Resident answer</p>
         <h2>${esc(bestAnswer.question)}</h2>
         <section class="resident-answer-short">
-          <h3>The short answer</h3>
+          <h3>Short answer</h3>
           <p>${esc(bestAnswer.shortAnswer)}</p>
         </section>
-        ${bestAnswer.whyPeopleAsk ? `<section class="resident-answer-section"><h3>Why people ask this question</h3><p>${esc(bestAnswer.whyPeopleAsk)}</p></section>` : ""}
-        ${bestAnswer.recordsShow ? `<section class="resident-answer-section records-section"><h3>What we found in the public records</h3><p>${esc(bestAnswer.recordsShow)}</p></section>` : ""}
-        ${bestAnswer.whyItMatters ? `<section class="resident-answer-section matters-section"><h3>Why this matters</h3><p>${esc(bestAnswer.whyItMatters)}</p></section>` : ""}
-        ${bestAnswer.recordsDoNotEstablish ? `<section class="resident-answer-section limits-section"><h3>What we can't say from the public records</h3><p>${esc(bestAnswer.recordsDoNotEstablish)}</p></section>` : ""}
+        ${bestAnswer.whyPeopleAsk ? `<section class="resident-answer-section"><h3>Why people ask this</h3><p>${esc(bestAnswer.whyPeopleAsk)}</p></section>` : ""}
+        ${bestAnswer.recordsShow ? `<section class="resident-answer-section records-section"><h3>What the public records show</h3><p>${esc(bestAnswer.recordsShow)}</p></section>` : ""}
+        ${bestAnswer.whyItMatters ? `<section class="resident-answer-section matters-section"><h3>Why it matters</h3><p>${esc(bestAnswer.whyItMatters)}</p></section>` : ""}
+        ${bestAnswer.recordsDoNotEstablish ? `<section class="resident-answer-section limits-section"><h3>What the records do not establish</h3><p>${esc(bestAnswer.recordsDoNotEstablish)}</p></section>` : ""}
         ${bestAnswer.auditYears ? `<p class="resident-answer-years"><strong>Audit years:</strong> ${esc(bestAnswer.auditYears)}</p>` : ""}
         ${!bestAnswer.readyForApp ? `<p class="answer-review-note">This answer is still being reviewed and may be refined as additional evidence is mapped.</p>` : ""}
       </article>`;
@@ -569,7 +569,7 @@ function renderTopicPage(id){
 
     <section class="topic-snapshot-grid">
       <article>
-        <span class="snapshot-kicker">Why this matters</span>
+        <span class="snapshot-kicker">Why it matters</span>
         <h2>Why should residents care?</h2>
         <p>${esc(t.whyItMatters)}</p>
       </article>
@@ -687,8 +687,8 @@ function renderTopicPage(id){
     </section>
 
     <div class="topic-footer-note">
-      <strong>Evidence rule</strong>
-      <p>The public records preserves the evidence references used by this page. Residents are encouraged to review the original public records as well.</p>
+      <strong>Read the original public records</strong>
+      <p>This page is based on public records. You can also review the original documents for more detail.</p>
     </div>
   `;
 
