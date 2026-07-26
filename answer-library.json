@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "4.2",
+    "version": "4.3",
     "source": "Lincoln Audit Explorer Resident Answer Library v4.2",
     "answerCount": 27,
     "readyCount": 18,
@@ -10,7 +10,7 @@
     {
       "id": "RQ-001",
       "question": "Was money missing?",
-      "shortAnswer": "There is no single verified total of “missing money.” The audits reported several different kinds of problems: $3,180 in sampled court-fee items that could not be traced to the General Fund, a projected potential error of $3,857, $118,634 remaining in a bank-reconciliation difference after proposed adjustments, and millions of dollars in utility collections that auditors could not test because supporting records were unavailable.",
+      "shortAnswer": "There is no single verified total of \u201cmissing money.\u201d The audits reported several different kinds of problems: $3,180 in sampled court-fee items that could not be traced to the General Fund, a projected potential error of $3,857, $118,634 remaining in a bank-reconciliation difference after proposed adjustments, and millions of dollars in utility collections that auditors could not test because supporting records were unavailable.",
       "whyPeopleAsk": "When people hear that money could not be traced, verified, or reconciled, they naturally want one total amount.",
       "recordsShow": "The audits reported different financial-record problems that should not be added together as if they were one missing-money total. These included court fees that could not be traced, bank-reconciliation differences, wrong-period checks, already-cleared checks still listed as outstanding, and utility collections that could not be tested because records were missing.",
       "whyItMatters": "Each amount describes a different accounting or documentation problem. Clear records are needed to show what happened to public money and whether financial reports are accurate.",
@@ -35,7 +35,7 @@
         "how much was missing",
         "lost money"
       ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
+      "auditYears": "2016\u201317; 2018\u201319; 2020\u201321",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -67,7 +67,7 @@
         "money gone",
         "how much did the city lose"
       ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
+      "auditYears": "2016\u201317; 2018\u201319; 2020\u201321",
       "evidenceStatus": "Partial",
       "answerStatus": "Drafted",
       "plainLanguageReview": "Needs Review",
@@ -99,7 +99,7 @@
         "court fee money",
         "untraced money"
       ],
-      "auditYears": "2018–19; 2020–21",
+      "auditYears": "2018\u201319; 2020\u201321",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -131,7 +131,7 @@
         "verify money",
         "how much unaccounted for"
       ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
+      "auditYears": "2016\u201317; 2018\u201319; 2020\u201321",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -163,7 +163,7 @@
         "someone stole money",
         "did anyone steal"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -172,11 +172,11 @@
     {
       "id": "RQ-009",
       "question": "How much money could auditors not account for?",
-      "shortAnswer": "There is no single verified “missing money” total. The clearest untraced amount was $3,180 in sampled court-fee items, with auditors projecting a potential error of $3,857. Other findings involved a $118,634 remaining bank-reconciliation difference and utility collections of $2,725,278 and $1,562,328 that auditors could not fully test because records were unavailable.",
+      "shortAnswer": "There is no single verified \u201cmissing money\u201d total. The clearest untraced amount was $3,180 in sampled court-fee items, with auditors projecting a potential error of $3,857. Other findings involved a $118,634 remaining bank-reconciliation difference and utility collections of $2,725,278 and $1,562,328 that auditors could not fully test because records were unavailable.",
       "whyPeopleAsk": "Residents want a number when they hear that money was missing, unaccounted for, or could not be traced.",
-      "recordsShow": "The findings describe different problems. The 2018–19 audit reported three of 30 sampled court-fee items totaling $3,180 that could not be traced to the General Fund and projected a potential error of $3,857. The same audit reported a $903,194 initial bank-reconciliation difference; after $1,021,828 in proposed adjustments, $118,634 still remained. The 2016–17 and 2018–19 audits also reported utility collections of $2,725,278 and $1,562,328 that could not be fully tested because supporting records were unavailable. Earlier reconciliation errors included $203,758 in wrong-period checks and $32,708 in already-cleared checks still recorded as outstanding.",
+      "recordsShow": "The findings describe different problems. The 2018\u201319 audit reported three of 30 sampled court-fee items totaling $3,180 that could not be traced to the General Fund and projected a potential error of $3,857. The same audit reported a $903,194 initial bank-reconciliation difference; after $1,021,828 in proposed adjustments, $118,634 still remained. The 2016\u201317 and 2018\u201319 audits also reported utility collections of $2,725,278 and $1,562,328 that could not be fully tested because supporting records were unavailable. Earlier reconciliation errors included $203,758 in wrong-period checks and $32,708 in already-cleared checks still recorded as outstanding.",
       "whyItMatters": "These amounts show why complete records and accurate bank matching matter. They do not all represent the same type of problem, so adding them together would give a misleading total.",
-      "recordsDoNotEstablish": "The audits did not conclude that all of these amounts were missing, stolen, or permanently lost. Some were bookkeeping differences, and the utility totals were collections auditors could not test—not amounts declared gone.",
+      "recordsDoNotEstablish": "The audits did not conclude that all of these amounts were missing, stolen, or permanently lost. Some were bookkeeping differences, and the utility totals were collections auditors could not test\u2014not amounts declared gone.",
       "relatedQuestions": [
         "RQ-001",
         "RQ-002",
@@ -202,7 +202,7 @@
         "32708",
         "court fee money"
       ],
-      "auditYears": "2016–17; 2018–19",
+      "auditYears": "2016\u201317; 2018\u201319",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -231,7 +231,7 @@
         "dishonest employees",
         "fraud found"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -240,7 +240,7 @@
     {
       "id": "RQ-010",
       "question": "Could this happen again?",
-      "shortAnswer": "Some risk remains unless the City keeps strong records, divides financial duties, and checks that its safeguards are working. Public records from 2026 show continued follow-up, but they also document a temporary bank-reconciliation delay during a finance-office transition.",
+      "shortAnswer": "Some risk remains unless the City keeps strong records, divides financial duties, and checks that its safeguards are working. Public records from 2026 show continued follow-up, but they also document a temporary bank-reconciliation delay during a finance-office transition. Public records through July 2026 show the City continuing routine financial oversight while the next annual audit is in progress.",
       "whyPeopleAsk": "Residents want to know whether earlier improvements will last through staffing, software, and process changes.",
       "recordsShow": "Later audits showed that several findings were no longer repeated. In 2026, Council records documented continued fraud-risk-assessment work, monthly audit-status reporting, finance-office staffing transitions, and an incomplete February bank reconciliation that was followed by later financial-report approvals.",
       "whyItMatters": "Ongoing follow-up is encouraging, but only a later independent audit can confirm whether the City's corrective actions are working consistently.",
@@ -260,7 +260,7 @@
         "can this happen again",
         "still at risk"
       ],
-      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
+      "auditYears": "2016\u201317 through 2022\u201323; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -318,7 +318,7 @@
         "why didn't anyone notice",
         "caught sooner"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Partial",
       "answerStatus": "Drafted",
       "plainLanguageReview": "Needs Review",
@@ -360,7 +360,7 @@
       "question": "What happened after the audit?",
       "shortAnswer": "Public records show continued audit follow-up into 2026, including fraud-risk-assessment work, monthly audit-status reporting, finance-office staffing changes, utility-collection planning, and continued financial reporting.",
       "whyPeopleAsk": "Residents want to know whether the audit led to action after the report was issued.",
-      "recordsShow": "Council records from 2024–2026 document policy, staffing, purchasing, budgeting, and financial-process changes. In January 2026, the mayor requested monthly audit-status updates and Council members reported continued fraud-risk-assessment work. Later records document a planned third-party collections process and ongoing financial-report activity.",
+      "recordsShow": "Council records from 2024\u20132026 document policy, staffing, purchasing, budgeting, and financial-process changes. In January 2026, the mayor requested monthly audit-status updates and Council members reported continued fraud-risk-assessment work. Later records document a planned third-party collections process and ongoing financial-report activity.",
       "whyItMatters": "Corrective actions show that audit findings remained an active public concern, while future independent audits provide the strongest evidence that the changes worked.",
       "recordsDoNotEstablish": "Council actions and staff reports do not replace independent audit testing and do not by themselves prove that every finding was fully resolved.",
       "relatedQuestions": [
@@ -380,7 +380,7 @@
         "did they act",
         "follow up"
       ],
-      "auditYears": "2016–2026",
+      "auditYears": "2016\u20132026",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -464,7 +464,7 @@
         "bad audit",
         "audit opinion"
       ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
+      "auditYears": "2016\u201317; 2018\u201319; 2020\u201321",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -492,7 +492,7 @@
         "too many problems",
         "why so many"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -520,7 +520,7 @@
         "same problem again",
         "not fixed"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -531,7 +531,7 @@
       "question": "Has the City improved?",
       "shortAnswer": "Yes. Later audits reported fewer findings, and public records from 2026 show that audit-related follow-up continued, although only a future independent audit can confirm whether all corrective actions were effective.",
       "whyPeopleAsk": "Residents want a clear answer about whether conditions improved after years of repeated findings.",
-      "recordsShow": "Completed audits declined from 10 findings in 2016–17 and 2018–19, to 8 in 2020–21, and 6 in 2022–23. Public records from 2026 also document continued fraud-risk-assessment work, monthly audit-status reporting, utility-collection planning, and financial-office continuity efforts.",
+      "recordsShow": "Completed audits declined from 10 findings in 2016\u201317 and 2018\u201319, to 8 in 2020\u201321, and 6 in 2022\u201323. Public records from 2026 also document continued fraud-risk-assessment work, monthly audit-status reporting, utility-collection planning, and financial-office continuity efforts.",
       "whyItMatters": "Fewer findings and continued corrective work are signs of progress, but lasting improvement should be confirmed through later independent audit results.",
       "recordsDoNotEstablish": "The 2026 follow-up records are not a new audit and do not prove that every safeguard is operating effectively.",
       "relatedQuestions": [
@@ -550,7 +550,7 @@
         "progress",
         "city doing better"
       ],
-      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
+      "auditYears": "2016\u201317 through 2022\u201323; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -609,7 +609,7 @@
         "utility bill",
         "bill increase"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Partial",
       "answerStatus": "Drafted",
       "plainLanguageReview": "Needs Evidence",
@@ -638,7 +638,7 @@
         "utility bill wrong",
         "billing error"
       ],
-      "auditYears": "2016–17; 2018–19",
+      "auditYears": "2016\u201317; 2018\u201319",
       "evidenceStatus": "Partial",
       "answerStatus": "Drafted",
       "plainLanguageReview": "Needs Evidence",
@@ -649,7 +649,7 @@
       "question": "Why was the Utility Fund mentioned so often?",
       "shortAnswer": "Utility operations appeared repeatedly because auditors had trouble verifying some billing, collection, transfer, and accounting records. In 2026, Council records also documented work toward a third-party process for delinquent accounts.",
       "whyPeopleAsk": "Residents may not understand why utility money appears in several audits and later follow-up records.",
-      "recordsShow": "Earlier audits reported missing utility support, limits on audit opinions, and utility-related accounting concerns. The finding was not repeated in 2022–23. In February 2026, the administration reported reviewing collection-agency quotes and moving toward a third-party collections process.",
+      "recordsShow": "Earlier audits reported missing utility support, limits on audit opinions, and utility-related accounting concerns. The finding was not repeated in 2022\u201323. In February 2026, the administration reported reviewing collection-agency quotes and moving toward a third-party collections process.",
       "whyItMatters": "Utility payments are a major source of City revenue and should be billed, collected, deposited, and reported through reliable procedures.",
       "recordsDoNotEstablish": "The 2026 minutes document planning and selection work, but they do not document implementation results or prove that every collection control was operating effectively.",
       "relatedQuestions": [
@@ -668,7 +668,7 @@
         "sewer money",
         "why utility"
       ],
-      "auditYears": "2016–17 through 2022–23; 2026 follow-up",
+      "auditYears": "2016\u201317 through 2022\u201323; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -727,7 +727,7 @@
         "checks and balances",
         "one person doing everything"
       ],
-      "auditYears": "2016–17 through 2020–21",
+      "auditYears": "2016\u201317 through 2020\u201321",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
@@ -754,7 +754,7 @@
         "who was in charge",
         "leadership"
       ],
-      "auditYears": "2016–17 through 2022–23",
+      "auditYears": "2016\u201317 through 2022\u201323",
       "evidenceStatus": "Partial",
       "answerStatus": "Drafted",
       "plainLanguageReview": "Needs Review",
@@ -783,7 +783,7 @@
         "resolved",
         "corrected"
       ],
-      "auditYears": "2016–2026",
+      "auditYears": "2016\u20132026",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
       "plainLanguageReview": "Passed",
