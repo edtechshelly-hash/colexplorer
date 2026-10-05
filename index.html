@@ -3,871 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lincoln Budget Timeline</title>
-  <meta name="description" content="Explore major 2026 Lincoln City Council decisions that may shape the 2027 budget.">
+  <meta name="description" content="Explore Lincoln audit findings in plain language, with traceable supporting evidence.">
+  <title>Lincoln Audit Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
-    :root {
-      --bg:#f4f7f8;
-      --panel:#ffffff;
-      --text:#182126;
-      --muted:#5c6970;
-      --border:#d8e1e5;
-      --accent:#9C6B00;
-      --accent-dark:#7A5300;
-      --accent-soft:#F8F3E5;
-      --shadow:0 10px 28px rgba(20,42,48,.08);
-
-      --people-bg:#eaf1fb; --people-fg:#244f86;
-      --budget-bg:#f8f0da; --budget-fg:#7a5300;
-      --infra-bg:#eaf5ec; --infra-fg:#2e6f40;
-      --safety-bg:#e9eef7; --safety-fg:#1f3c5b;
-      --contracts-bg:#f0edf8; --contracts-fg:#5b3f86;
-      --future-bg:#eef0f2; --future-fg:#586168;
-      --fleet-bg:#f3eee8; --fleet-fg:#6b4f35;
+    .site-header{
+      position:relative !important;
+      background:#fffdf8 !important;
+      border-bottom:1px solid #d9e2de !important;
+      box-shadow:0 4px 18px rgba(23,54,49,.08) !important;
     }
-
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body {
-      margin:0;
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.55;
+    .header-inner{
+      min-height:96px !important;
+      padding:1.15rem 1.5rem !important;
     }
-    .wrap { max-width:1080px; margin:0 auto; padding:0 16px 48px; }
-
-    .hero {
-      background:linear-gradient(135deg,var(--accent-dark),var(--accent));
-      color:white;
-      margin:0 -16px 24px;
-      padding:34px 16px 30px;
+    .brand{
+      gap:.95rem !important;
     }
-    .hero-inner { max-width:1080px; margin:0 auto; }
-    .eyebrow {
-      font-size:.82rem;
-      letter-spacing:.04em;
-      text-transform:uppercase;
-      opacity:.85;
-      margin-bottom:12px;
+    .brand-mark{
+      width:62px !important;
+      height:62px !important;
+      border-radius:18px !important;
+      font-size:1.65rem !important;
     }
-    h1 {
-      font-size:clamp(2rem,5vw,3.5rem);
-      line-height:1.05;
-      margin:0;
-      max-width:850px;
-      letter-spacing:-.03em;
+    .brand-copy{
+      display:flex !important;
+      flex-direction:column !important;
+      justify-content:center !important;
     }
-    .hero p {
-      max-width:780px;
-      margin:14px 0 0;
-      color:rgba(255,255,255,.92);
-      font-size:1.02rem;
+    .brand-title{
+      font-size:2rem !important;
+      line-height:1 !important;
+      letter-spacing:-.03em !important;
+      color:#18322f !important;
     }
-
-    .controls {
-      margin-top:22px;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:16px;
-      box-shadow:var(--shadow);
+    .brand-tagline{
+      display:block !important;
+      margin-top:.35rem !important;
+      font-size:1rem !important;
+      color:#5c6d69 !important;
     }
-    .controls-grid {
-      display:grid;
-      gap:14px;
+    .hero-inner{
+      padding-top:4.3rem !important;
+      padding-bottom:4.5rem !important;
     }
-    .section-title { margin:0 0 4px; font-size:1.2rem; }
-    .section-sub { margin:0; color:var(--muted); font-size:.92rem; }
-    label {
-      display:block;
-      font-weight:700;
-      font-size:.9rem;
-      margin-bottom:6px;
+    .hero h1{
+      max-width:760px !important;
+      font-size:clamp(2.25rem,5vw,4.1rem) !important;
+      margin-bottom:.85rem !important;
     }
-    input {
-      width:100%;
-      padding:13px 14px;
-      border:1px solid var(--border);
-      border-radius:12px;
-      font-size:1rem;
-      color:var(--text);
-      background:#fff;
+    .hero-copy{
+      margin-bottom:1.6rem !important;
     }
-    input:focus {
-      outline:3px solid rgba(156,107,0,.18);
-      border-color:var(--accent);
+    .hero-question-heading{
+      margin:0 0 1rem !important;
+      font-size:clamp(1.3rem,2vw,1.75rem) !important;
+      color:#ffffff !important;
+      line-height:1.2 !important;
     }
-
-    .filters { display:flex; flex-wrap:wrap; gap:8px; }
-    button {
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:8px 12px;
-      background:#fff;
-      color:var(--text);
-      font-size:.88rem;
-      cursor:pointer;
-      transition:.15s ease;
-    }
-    button:hover { border-color:var(--accent); transform:translateY(-1px); }
-    button.active { background:var(--accent); color:white; border-color:var(--accent); }
-
-    .timeline {
-      position:relative;
-      margin:28px 0 0 15px;
-      padding-left:30px;
-      border-left:3px solid var(--accent);
-    }
-    .entry {
-      position:relative;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:18px;
-      margin-bottom:18px;
-      box-shadow:var(--shadow);
-    }
-    .entry::before {
-      content:"";
-      position:absolute;
-      left:-40px;
-      top:26px;
-      width:14px;
-      height:14px;
-      border-radius:50%;
-      background:var(--accent);
-      box-shadow:0 0 0 5px var(--bg);
-    }
-    .entry-top {
-      display:flex;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-bottom:10px;
-    }
-    .date { font-weight:800; }
-    .category {
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      border-radius:999px;
-      padding:4px 9px;
-      font-size:.78rem;
-      font-weight:700;
-    }
-    .cat-people { background:var(--people-bg); color:var(--people-fg); }
-    .cat-budget { background:var(--budget-bg); color:var(--budget-fg); }
-    .cat-infra { background:var(--infra-bg); color:var(--infra-fg); }
-    .cat-safety { background:var(--safety-bg); color:var(--safety-fg); }
-    .cat-contracts { background:var(--contracts-bg); color:var(--contracts-fg); }
-    .cat-future { background:var(--future-bg); color:var(--future-fg); }
-    .cat-fleet { background:var(--fleet-bg); color:var(--fleet-fg); }
-
-    .status {
-      display:inline-block;
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:3px 8px;
-      font-size:.76rem;
-      color:var(--muted);
-    }
-    .action { margin:0; font-size:1rem; }
-    .money-highlight { color:var(--accent-dark); font-weight:800; }
-
-    details {
-      margin-top:14px;
-      border-top:1px solid var(--border);
-      padding-top:12px;
-    }
-    summary {
-      cursor:pointer;
-      font-weight:800;
-      color:var(--accent-dark);
-      list-style:none;
-    }
-    summary::-webkit-details-marker { display:none; }
-    summary::before {
-      content:"▶";
-      display:inline-block;
-      margin-right:8px;
-      font-size:.78rem;
-      transition:transform .15s ease;
-    }
-    details[open] summary::before { transform:rotate(90deg); }
-    details[open] summary .show-label { display:none; }
-    details:not([open]) summary .hide-label { display:none; }
-
-    .detail-grid {
-      display:grid;
-      gap:10px;
-      margin-top:12px;
-    }
-    .detail-box {
-      background:#f8fafb;
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:12px;
-    }
-    .detail-box strong {
-      display:block;
-      margin-bottom:4px;
-      font-size:.86rem;
-    }
-
-    .callout {
-      margin-top:26px;
-      background:var(--accent-soft);
-      border:1px solid #E4D3A5;
-      border-left:6px solid var(--accent);
-      border-radius:16px;
-      padding:18px;
-    }
-    .callout h2 { margin:0 0 8px; font-size:1.15rem; }
-    .callout p { margin:0; }
-
-
-    .legend {
-      margin-top:24px;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:16px;
-      padding:14px 16px;
-      box-shadow:var(--shadow);
-    }
-    .legend-title { font-weight:800; margin-bottom:10px; }
-    .legend-items { display:flex; flex-wrap:wrap; gap:10px 14px; }
-    .legend-item { display:flex; align-items:center; gap:8px; font-size:.88rem; color:var(--muted); }
-    .legend-badge {
-      display:inline-block;
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:4px 9px;
-      font-size:.78rem;
-      color:var(--muted);
-      background:#fff;
-      font-weight:700;
-      white-space:nowrap;
-    }
-
-
-    .snapshot {
-      margin-top:24px;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:18px;
-      box-shadow:var(--shadow);
-    }
-    .snapshot h2 {
-      margin:0 0 6px;
-      font-size:1.25rem;
-    }
-    .snapshot-intro {
-      margin:0 0 16px;
-      color:var(--muted);
-      font-size:.93rem;
-    }
-    .prelim-badge {
-      display:inline-block;
-      margin-bottom:10px;
-      padding:4px 9px;
-      border-radius:999px;
-      background:#fff4d6;
-      color:#7A5300;
-      border:1px solid #e7cf8a;
-      font-size:.78rem;
-      font-weight:800;
-    }
-    .prairie-spotlight {
-      background:#fffaf0;
-      border:1px solid #e5d1a4;
-      border-left:6px solid var(--accent);
-      border-radius:16px;
-      padding:16px;
-      margin-bottom:16px;
-    }
-    .prairie-spotlight h3 {
-      margin:0 0 8px;
-      font-size:1.08rem;
-    }
-    .prairie-grid {
-      display:grid;
-      gap:10px;
-      margin-top:12px;
-    }
-    .prairie-metric {
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:12px;
-    }
-    .prairie-metric .label {
-      color:var(--muted);
-      font-size:.8rem;
-    }
-    .prairie-metric .value {
-      font-size:1.18rem;
-      font-weight:800;
-      margin-top:3px;
-    }
-    .budget-groups {
-      display:grid;
-      gap:12px;
-    }
-    .budget-group {
-      border:1px solid var(--border);
-      border-radius:14px;
-      background:#fff;
-      overflow:hidden;
-    }
-    .budget-group summary {
-      padding:14px 16px;
-      color:var(--text);
-      font-weight:800;
-      cursor:pointer;
-      list-style:none;
-      border:0;
-      margin:0;
-    }
-    .budget-group summary::-webkit-details-marker { display:none; }
-    .budget-group summary::before {
-      content:"▶";
-      display:inline-block;
-      margin-right:8px;
-      font-size:.75rem;
-      color:var(--accent-dark);
-      transition:transform .15s ease;
-    }
-    .budget-group[open] summary::before { transform:rotate(90deg); }
-    .budget-group-body {
-      border-top:1px solid var(--border);
-      padding:12px 16px 15px;
-    }
-    .budget-group-body ul {
-      margin:0;
-      padding-left:20px;
-    }
-    .budget-group-body li {
-      margin:6px 0;
-    }
-    .budget-note {
-      margin-top:12px;
-      color:var(--muted);
-      font-size:.84rem;
-    }
-    @media(min-width:760px) {
-      .prairie-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .budget-groups { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    }
-
-
-    .deep-dive {
-      margin-top:24px;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:18px;
-      box-shadow:var(--shadow);
-    }
-    .deep-dive h2 { margin:0 0 6px; font-size:1.25rem; }
-    .deep-dive-intro { margin:0 0 16px; color:var(--muted); font-size:.93rem; }
-    .budget-doc-links {
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin:0 0 16px;
-    }
-    .budget-doc-link {
-      display:inline-block;
-      text-decoration:none;
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:8px 12px;
-      background:#fff;
-      font-size:.86rem;
-      font-weight:700;
-    }
-    .budget-doc-link:hover { border-color:var(--accent); }
-    .compare-wrap {
-      overflow-x:auto;
-      border:1px solid var(--border);
-      border-radius:14px;
-      background:#fff;
-    }
-    .compare-table {
-      width:100%;
-      min-width:720px;
-      border-collapse:collapse;
-    }
-    .compare-table th,
-    .compare-table td {
-      padding:11px 12px;
-      text-align:right;
-      border-bottom:1px solid var(--border);
-      vertical-align:top;
-    }
-    .compare-table th:first-child,
-    .compare-table td:first-child { text-align:left; }
-    .compare-table thead th {
-      background:#f8fafb;
-      font-size:.82rem;
-    }
-    .compare-table tbody tr:last-child td { border-bottom:0; }
-    .prelim-col { background:#fffaf0; }
-    .change-notes {
-      display:grid;
-      gap:10px;
-      margin-top:14px;
-    }
-    .change-note {
-      border:1px solid var(--border);
-      border-radius:13px;
-      padding:12px 14px;
-      background:#fff;
-    }
-    .change-note strong { display:block; margin-bottom:3px; }
-    .change-note p { margin:0; color:var(--muted); font-size:.88rem; }
-    .comparison-caution {
-      margin-top:12px;
-      padding:11px 13px;
-      border-radius:12px;
-      background:#f8fafb;
-      color:var(--muted);
-      font-size:.84rem;
-    }
-    @media(min-width:760px) {
-      .change-notes { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    }
-
-    .footnotes {
-      margin-top:18px;
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:16px;
-      padding:16px;
-      color:var(--muted);
-      font-size:.85rem;
-    }
-    .footnotes p { margin:0 0 10px; }
-    .footnotes p:last-child { margin-bottom:0; }
-    .empty {
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:16px;
-      padding:16px;
-    }
-
-    @media(min-width:760px) {
-      .hero { padding:54px 24px 48px; margin:0 -24px 28px; }
-      .controls-grid { grid-template-columns:1.1fr 1fr; align-items:end; }
-      .detail-grid { grid-template-columns:1fr 1fr; }
-      .wrap { padding-left:24px; padding-right:24px; }
-    }
-
-    @media(max-width:640px) {
-      .controls {
-        position:sticky;
-        top:8px;
-        z-index:10;
-      }
-      .filters {
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        padding-bottom:2px;
-      }
-      .filters button { white-space:nowrap; }
+    @media(max-width:600px){
+      .header-inner{min-height:80px !important;padding:.9rem 1rem !important}
+      .brand-mark{width:50px !important;height:50px !important;font-size:1.35rem !important}
+      .brand-title{font-size:1.45rem !important}
+      .brand-tagline{font-size:.84rem !important}
+      .hero-inner{padding-top:3.2rem !important}
     }
   </style>
+
 </head>
 <body>
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Lincoln Budget Timeline</div>
-      <h1>2026 Budget Timeline</h1>
-      <p>Major council decisions that may influence Lincoln's 2027 budget. Search the timeline or browse by category, then open any item to see its financial impact and why it matters.</p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Lincoln Audit Explorer home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-copy"><strong class="brand-title">Lincoln Audit Explorer</strong><small class="brand-tagline">City audits explained clearly.</small></span>
+      </a>
+      <button id="aboutButton" class="header-button">About this tool</button>
     </div>
-  </div>
+  </header>
 
-  <main class="wrap">
-
-    <section class="legend" aria-label="Timeline status legend">
-      <div class="legend-title">Status guide</div>
-      <div class="legend-items">
-        <div class="legend-item">
-          <span class="legend-badge">✅ Approved</span>
-          <span>Council approved the action.</span>
-        </div>
-        <div class="legend-item">
-          <span class="legend-badge">📅 Scheduled</span>
-          <span>A documented future budget milestone.</span>
-        </div>
-        <div class="legend-item">
-          <span class="legend-badge">❓ Outcome Unknown</span>
-          <span>Discussion is documented, but a final action could not be verified.</span>
-        </div>
+  <main id="main">
+    <div id="homeView">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">A public guide for Lincoln residents</p>
+        <h1>Understand what Lincoln&#8217;s audits found.</h1>
+        <p class="hero-copy">Start with a question. Get a clear answer backed by the audit evidence.</p>
+        <h2 class="hero-question-heading">What would you like to know?</h2>
+        <p class="hero-question-instruction">Choose any question to explore the evidence.</p>
+        <div id="heroQuestionGrid" class="hero-question-grid"></div>
+        <a class="hero-text-link" href="#timelineSection">See the full story over time ↓</a>
       </div>
     </section>
 
-
-    <section class="snapshot" aria-labelledby="prelim-budget-title">
-      <span class="prelim-badge">2027 Working Preliminary Budget</span>
-      <h2 id="prelim-budget-title">What the newest budget documents show</h2>
-      <p class="snapshot-intro">These figures are proposed 2027 budget amounts from the working preliminary budget. They are not presented here as final adopted figures.</p>
-
-      <div class="prairie-spotlight">
-        <h3>💰 Prairie Dog Fund Spotlight</h3>
-        <p>The working preliminary budget shows a large Prairie Dog Fund balance and a proposed transfer out, while no 2027 infrastructure-project expenditure is listed on the fund worksheet.</p>
-        <div class="prairie-grid">
-          <div class="prairie-metric">
-            <div class="label">Projected 2027 beginning balance</div>
-            <div class="value">$3,292,727.39</div>
-          </div>
-          <div class="prairie-metric">
-            <div class="label">Proposed 2027 transfer out</div>
-            <div class="value">$123,632.96</div>
-          </div>
-          <div class="prairie-metric">
-            <div class="label">Projected 2027 year-end balance</div>
-            <div class="value">$3,169,094.43</div>
-          </div>
-        </div>
-        <p class="budget-note">The same worksheet estimates $71,920.37 in state-treasurer revenue and $40,000 in interest for 2027.</p>
-      </div>
-
-      <div class="budget-groups">
-        <details class="budget-group">
-          <summary>🏗️ Buildings & Major Capital</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li><strong>$1.75 million</strong> listed for a purchase in the Building & Maintenance Fund.</li>
-              <li><strong>$1 million</strong> listed for a building.</li>
-              <li><strong>$50,000</strong> in engineering fees.</li>
-              <li>Total proposed appropriations for this fund: <strong>$2.8 million</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>💧 Wastewater Treatment Plant</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li><strong>$22.2 million</strong> bond revenue is shown for 2027.</li>
-              <li><strong>$29,262,126.84</strong> in project costs is proposed.</li>
-              <li>The worksheet shows a projected beginning balance of <strong>$7,062,126.84</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🚧 Highway / Public Works</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Salaries: <strong>$75,000 → $121,000</strong>.</li>
-              <li>Health insurance: <strong>$13,000 → $32,400</strong>.</li>
-              <li>Repairs & parts: <strong>$15,000 → $60,000</strong>.</li>
-              <li>Machine/equipment: <strong>$40,000</strong>.</li>
-              <li>Tar/mastic equipment: <strong>$110,000</strong>.</li>
-              <li>Chip seal tar: <strong>$55,000</strong>.</li>
-              <li>Curb repair: <strong>$16,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🚓 Public Safety</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Police wages: <strong>$470,000 → $519,250</strong>.</li>
-              <li>Health insurance: <strong>$73,000 → $116,811</strong>.</li>
-              <li>Equipment: <strong>$40,000 → $72,000</strong>.</li>
-              <li>Vehicle maintenance: <strong>$12,500 → $20,000</strong>.</li>
-              <li>Vehicle allowance: <strong>$58,000 → $25,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🚰 Water Fund</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Salaries: <strong>$140,000 → $292,000</strong>.</li>
-              <li>Health insurance: <strong>$42,000 → $85,000</strong>.</li>
-              <li>Repairs & maintenance: <strong>$20,000 → $100,000</strong>.</li>
-              <li>Engineering/legal fees: <strong>$16,000</strong>.</li>
-              <li>Engineer setup: <strong>$5,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🛠️ Sewer Fund</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Salaries: <strong>$134,000 → $191,000</strong>.</li>
-              <li>Health insurance: <strong>$25,000 → $54,200</strong>.</li>
-              <li>Engineering: <strong>$16,000</strong>.</li>
-              <li>Engineer setup: <strong>$5,000</strong>.</li>
-              <li>Jetter system: <strong>$30,000</strong>.</li>
-              <li>Sewer camera: <strong>$5,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🚛 Garbage Fund</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Roll-off truck: <strong>$60,000</strong>.</li>
-              <li>New grapple: <strong>$10,000</strong>.</li>
-              <li>Salaries: <strong>$57,400 → $81,000</strong>.</li>
-              <li>Health insurance: <strong>$11,500 → $23,500</strong>.</li>
-              <li>Engineering fees: <strong>$16,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>👥 General Fund & Compensation</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>General Fund final appropriation shown: <strong>$1,668,511</strong>.</li>
-              <li>Estimated levy: <strong>$1,434,337.42</strong>, or about <strong>66.25 mills</strong>.</li>
-              <li>Engineering professional fees are shown at <strong>$46,000</strong> for 2027 after a much higher 2026 estimate.</li>
-              <li>Clerk of Court wages are listed at <strong>$36,000</strong>.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>🌳 Planning, Forestry & Economic Development</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Planning & Zoning: <strong>$32,000</strong> total proposed appropriations, including $10,000 engineer fees and $5,000 engineer setup.</li>
-              <li>Forestry: <strong>$33,500</strong> total proposed appropriations, including a $10,000 air curtain burner and $10,000 Dream Project.</li>
-              <li>Economic Development: <strong>$30,200</strong> total proposed appropriations.</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="budget-group">
-          <summary>💡 Street Lights & Other Utility Funds</summary>
-          <div class="budget-group-body">
-            <ul>
-              <li>Street Lights Fund: <strong>$67,100</strong> total proposed appropriations.</li>
-              <li>Street poles: <strong>$8,000</strong>.</li>
-              <li>Storm Sewer Maintenance: <strong>$10,000</strong> proposed repairs.</li>
-              <li>Sewer Backup Fund shows no proposed expenditures and a projected year-end balance of <strong>$81,801.68</strong>.</li>
-            </ul>
-          </div>
-        </details>
-      </div>
-    </section>
-
-
-    <section class="deep-dive" aria-labelledby="deep-dive-title">
-      <span class="prelim-badge">3-Year Budget Comparison</span>
-      <h2 id="deep-dive-title">Want to dig deeper? Compare 2025, 2026 and the 2027 preliminary budget</h2>
-      <p class="deep-dive-intro">This section puts comparable headline figures side by side so residents can see where the budget is changing. The 2025 and 2026 columns are adopted budgets; the 2027 column is the current working preliminary budget. For the original budget documents, use the City of Lincoln's official document library.</p>
-
-      <div class="budget-doc-links" aria-label="Official budget documents">
-        <a class="budget-doc-link" href="https://www.cityoflincolnnd.com/document-library" target="_blank" rel="noopener">🏛️ View official budget documents on the City of Lincoln website</a>
-      </div>
-
-      <div class="compare-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Budget measure</th>
-              <th>2025 Final</th>
-              <th>2026 Final</th>
-              <th class="prelim-col">2027 Preliminary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>General Fund appropriation</strong></td>
-              <td>$1,690,125</td>
-              <td>$1,732,974.29</td>
-              <td class="prelim-col">$1,668,511</td>
-            </tr>
-            <tr>
-              <td><strong>General Fund amount levied</strong></td>
-              <td>$1,302,014.17</td>
-              <td>$1,376,885</td>
-              <td class="prelim-col">$1,434,337.42</td>
-            </tr>
-            <tr>
-              <td><strong>Estimated mills</strong></td>
-              <td>72.23</td>
-              <td>68.74</td>
-              <td class="prelim-col">66.25</td>
-            </tr>
-            <tr>
-              <td><strong>Police Department wages</strong></td>
-              <td>$494,000</td>
-              <td>$455,306.25</td>
-              <td class="prelim-col">$519,250</td>
-            </tr>
-            <tr>
-              <td><strong>General Fund engineering professional fees</strong></td>
-              <td>$150,000</td>
-              <td>$160,000*</td>
-              <td class="prelim-col">$46,000</td>
-            </tr>
-            <tr>
-              <td><strong>Prairie Dog Fund — infrastructure project appropriation</strong></td>
-              <td>$1,997,556.92</td>
-              <td>$1,997,556.92</td>
-              <td class="prelim-col">$0 listed; $123,632.96 transfer out</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="change-notes">
-        <div class="change-note">
-          <strong>💰 Levy continues to rise</strong>
-          <p>The General Fund levy increases from about $1.30 million in 2025 to $1.38 million in 2026 and $1.43 million in the 2027 preliminary budget, even while the estimated mill rate declines.</p>
-        </div>
-        <div class="change-note">
-          <strong>👮 Police wages change direction</strong>
-          <p>The budgeted PD wage line fell from $494,000 in 2025 to $455,306.25 in 2026, then rises to $519,250 in the 2027 preliminary budget.</p>
-        </div>
-        <div class="change-note">
-          <strong>🏗️ Engineering is a major comparison point</strong>
-          <p>The adopted 2026 budget began with $160,000 for General Fund engineering professional fees, but the council later amended that line to $332,000. The 2027 preliminary General Fund line is $46,000, with additional engineering amounts appearing in other funds.</p>
-        </div>
-        <div class="change-note">
-          <strong>🌾 Prairie Dog Fund structure changes</strong>
-          <p>The 2025 and 2026 budgets each showed a $1,997,556.92 infrastructure-project appropriation. The 2027 preliminary worksheet instead shows no infrastructure-project expenditure and lists a $123,632.96 transfer out.</p>
-        </div>
-      </div>
-
-      <div class="comparison-caution">
-        <strong>Comparison note:</strong> Budget structure and account placement change from year to year. For example, some 2027 legal and engineering costs are shown in different funds or categories, so not every department total is directly comparable. This table focuses on lines that can be traced across the documents and flags important structural changes.
-      </div>
-    </section>
-
-    <section class="controls">
-      <div class="controls-grid">
+    <section class="section audit-year-section" id="auditYearSection">
+      <div class="section-heading">
         <div>
-          <h2 class="section-title">Explore the timeline</h2>
-          <p class="section-sub">Search the timeline or browse by category.</p>
+          <p class="eyebrow">Audit year summaries</p>
+          <h2>What happened in each audit?</h2>
         </div>
+        <p>Choose an audit to see the main story in clear, everyday language.</p>
+      </div>
+      <div class="audit-period-note">
+        <strong>Why are the years grouped?</strong>
+        <span>Each audit covers two calendar years: 2016–17, then 2018–19, then 2020–21, and then 2022–23. No calendar year is skipped.</span>
+      </div>
+      <div id="auditYearGrid" class="audit-year-grid"></div>
+    </section>
+
+    <section class="section compact-section" id="timelineSection">
+      <div class="section-heading">
         <div>
-          <label for="searchInput">Search the timeline</label>
-          <input id="searchInput" type="search" placeholder="Search engineering, wages, police, sewer...">
+          <p class="eyebrow">Independent audit history</p>
+          <h2>What changed across the completed audits?</h2>
+        </div>
+        <p>The latest completed independent audit included here covers 2022–23.</p>
+      </div>
+      <div id="auditOverviewTimeline" class="overview-timeline audit-overview-timeline"></div>
+
+      <div class="post-audit-overview">
+        <div class="section-heading post-audit-heading">
+          <div>
+            <p class="eyebrow">After the latest audit</p>
+            <h2>What do later public records show?</h2>
+          </div>
+          <p>These are documented updates, not new audit results.</p>
+        </div>
+        <div id="documentedUpdatesOverview" class="documented-updates-overview"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="topicsSection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Explore the findings</p>
+          <h2>Browse by topic</h2>
+        </div>
+        <div class="filters" aria-label="Filter topics">
+          <button class="filter active" data-filter="All">All topics</button>
+          <button class="filter" data-filter="Ongoing">Still needs attention</button>
+          <button class="filter" data-filter="Improved">Improved</button>
+          <button class="filter" data-filter="Mixed">Mixed</button>
         </div>
       </div>
-      <div style="margin-top:14px">
-        <label>Browse by category</label>
-        <div class="filters" id="filters"></div>
+      <div id="topicGrid" class="topic-grid"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <h3>No matching results</h3>
+        <p>Try a broader word or clear the status filter.</p>
       </div>
     </section>
 
-    <section class="timeline" id="timeline" aria-live="polite"></section>
-
-
-    <section class="callout">
-      <h2>New from the August 6 agenda packet</h2>
-      <p>The packet adds three significant items to watch: a proposed <strong>$28,468.32</strong> Insurance Reserve Fund transfer, a proposed <strong>$52,885.47</strong> police vehicle purchase, and repair/replacement options for the 2019 Toolcat ranging from about <strong>$6,000 to $68,319</strong>. These are marked <strong>Outcome Unknown</strong> until final council action is verified.</p>
+    <section class="search-section">
+      <div>
+        <p class="eyebrow">Looking for something specific?</p>
+        <h2>What are you wondering about?</h2>
+        <p>Use everyday words. Try <strong>missing money</strong>, <strong>fraud</strong>, <strong>utility bills</strong>, or <strong>did they fix it?</strong></p>
+      </div>
+      <div class="search-wrap">
+        <label for="searchInput">Search questions and topics</label>
+        <div class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Try “missing money” or ask a question">
+          <button id="clearSearch" aria-label="Clear search">×</button>
+        </div>
+      </div>
+      <div id="searchResults" class="search-results" hidden>
+        <div id="searchGuide"></div>
+        <h3>Search results</h3>
+        <div id="questionGrid" class="question-grid"></div>
+        <div id="searchTopicGrid" class="topic-grid"></div>
+      </div>
     </section>
 
-    <section class="callout">
-      <h2>Why this timeline matters</h2>
-      <p>Personnel, engineering, capital, fleet, and fund-transfer decisions can affect the city's broader financial plan. The timeline separates verified approvals from proposals and items whose final outcome still needs to be confirmed.</p>
+    <section class="method">
+      <div>
+        <p class="eyebrow">How to read this site</p>
+        <h2>Facts and interpretation stay separate.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span class="method-icon fact-icon">F</span><h3>Documented fact</h3><p>What an audit report, council record, or evidence-database entry directly states.</p></article>
+        <article><span class="method-icon interpretation-icon">I</span><h3>Supported interpretation</h3><p>A careful explanation based on the documented pattern. It is not an auditor conclusion.</p></article>
+        <article><span class="method-icon question-icon">?</span><h3>Open question</h3><p>Something the available records do not yet answer.</p></article>
+      </div>
     </section>
+    </div>
 
-    <section class="footnotes">
-      <p><strong>About the figures:</strong> The “known dollar actions” figure combines different kinds of financial activity, including a pension transfer, capital purchases, contracts, an over-budget amount, a fund transfer, and increased budget authority. It should not be described as a total of new spending.</p>
-      <p><strong>Source base:</strong> City of Lincoln 2026 council meeting records, the July 23, 2026 meeting transcript, the August 6, 2026 agenda packet, the 2025 Annual Budget, the 2026 Final Budget, and the 2027 Working Preliminary Budget. Amounts marked “not stated” were not quantified in the records reviewed.</p>
-    </section>
+    <section id="pageView" class="page-view" hidden aria-live="polite"></section>
   </main>
 
-  <script>
-    const events = [{"date": "2026-01-22", "display": "January 22", "category": "Personnel & Compensation", "action": "Approved the Utilities and Wastewater Treatment Facility Supervisor position and continued work on the Bold Minds wage study.", "impact": "Ongoing personnel costs; total amount not stated.", "why": "Started staffing and compensation changes that continued throughout 2026.", "amount": null, "status": "Approved"}, {"date": "2026-02-05", "display": "February 5", "category": "Budget & Finance", "action": "Approved transferring $346,551.91 from the former Employee Pension account to NDPERS.", "impact": "$346,551.91 transfer.", "why": "A significant movement of city funds related to employee retirement obligations. This was a transfer, not new spending.", "amount": 346551.91, "status": "Approved"}, {"date": "2026-02-05", "display": "February 5", "category": "Personnel & Compensation", "action": "Restructured the Clerk of Court position into a Police Administrative Specialist position funded through the Police Department wage budget.", "impact": "Ongoing salary and benefit costs; total amount not stated.", "why": "Changed the city staffing structure and how personnel costs are assigned.", "amount": null, "status": "Approved"}, {"date": "2026-02-05", "display": "February 5", "category": "Capital & Infrastructure", "action": "Approved the purchase of 26 LED streetlights.", "impact": "$6,500 one-time purchase.", "why": "A capital improvement that may also affect future energy and maintenance costs.", "amount": 6500, "status": "Approved"}, {"date": "2026-02-19", "display": "February 19", "category": "Capital & Infrastructure", "action": "Approved a Terracon geotechnical engineering contract for the regional wastewater facility.", "impact": "$14,450 contract.", "why": "Continued design and site work for one of the city's largest infrastructure projects.", "amount": 14450, "status": "Approved"}, {"date": "2026-03-05", "display": "March 5", "category": "Public Safety", "action": "Approved a Police Department emergency generator, contingent on grant reimbursement.", "impact": "$130,337.62 project; up to $110,000 expected from grant funding.", "why": "A major emergency-operations investment. The expected local share was about $20,337.62 before any additional costs.", "amount": 130337.62, "status": "Approved"}, {"date": "2026-03-05", "display": "March 5", "category": "Contracts & Operations", "action": "Approved a new information technology services agreement with Corporate Technologies.", "impact": "Ongoing contract cost; amount not stated in the meeting record reviewed.", "why": "Creates a continuing operating expense for city technology services.", "amount": null, "status": "Approved"}, {"date": "2026-04-09", "display": "April 9", "category": "Personnel & Compensation", "action": "Approved transferring an administrative position from the City Office to the Police Department.", "impact": "Departmental personnel-budget reallocation.", "why": "Shifted staffing resources without necessarily adding a new city employee.", "amount": null, "status": "Approved"}, {"date": "2026-04-23", "display": "April 23", "category": "Personnel & Compensation", "action": "Adopted the Bold Minds small-city minimum wage ranges, effective July 1, 2026.", "impact": "Ongoing payroll impact; total amount not stated.", "why": "Established new minimum pay ranges across city positions.", "amount": null, "status": "Approved"}, {"date": "2026-04-23", "display": "April 23", "category": "Personnel & Compensation", "action": "Directed development of a citywide step-and-grade compensation system.", "impact": "Long-term payroll impact still being developed.", "why": "Created the framework later used for the proposed 2027 compensation structure.", "amount": null, "status": "Directed"}, {"date": "2026-04-23", "display": "April 23", "category": "Personnel & Compensation", "action": "Confirmed the Utilities and Wastewater Treatment Facility Supervisor position effective April 1.", "impact": "Ongoing personnel cost.", "why": "Put the supervisory staffing change into effect during 2026.", "amount": null, "status": "Approved"}, {"date": "2026-06-04", "display": "June 4", "category": "Personnel & Compensation", "action": "Reported hiring a temporary Public Works employee through a staffing agency.", "impact": "Temporary personnel expense; amount not stated.", "why": "Added a short-term staffing cost to support city operations.", "amount": null, "status": "Reported"}, {"date": "2026-06-30", "display": "June 30", "category": "Fleet & Public Works", "action": "Council discussed bidding approval and purchase limits for 2009 and 2015 Peterbilt 320 garbage trucks during a special meeting.", "impact": "Purchase amount and final council action could not be verified from the meeting records reviewed.", "why": "Fleet replacement can represent a significant capital expense. The available record documents discussion of the proposed purchase but does not show a final approval.", "amount": null, "status": "Outcome Unknown"}, {"date": "2026-07-09", "display": "July 9", "category": "Budget & Finance", "action": "Engineering fees were reported $5,617.54 over budget as of June 30, prompting the council to create an Engineering Budget Committee.", "impact": "$5,617.54 over budget at that point.", "why": "The committee was created to review the budget deficiency and recommend solutions. This led directly to the July 23 fund transfer and budget amendment.", "amount": 5617.54, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Budget & Finance", "action": "Transferred $171,235.08 from Account 511 to the General Fund Professional Fees account to cover the 2026 engineering budget deficiency.", "impact": "$171,235.08 transfer.", "why": "A major midyear transfer used to cover engineering costs beyond the adopted budget. The committee reported that costs had already exceeded budget midway through the year.", "amount": 171235.08, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Budget & Finance", "action": "Amended the 2026 budget by increasing engineering professional fees from $160,000 to $332,000.", "impact": "$172,000 increase in budget authority.", "why": "More than doubled the engineering line item during the fiscal year. Council discussion indicated engineering expenses could effectively double by year-end without operational changes.", "amount": 172000, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Personnel & Compensation", "action": "Approved a new seven-grade compensation structure for implementation with the 2027 budget.", "impact": "Long-term payroll impact; exact total not provided in the transcript.", "why": "The structure was based on wage analysis and was described as a framework the council would review annually rather than a permanent schedule.", "amount": null, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Personnel & Compensation", "action": "Approved applying the new compensation structure to the City Auditor position, retroactive to April 1, 2026.", "impact": "Retroactive 2026 wage adjustment; amount not stated.", "why": "This was one of two positions receiving retroactive implementation of the new compensation structure before the full 2027 plan takes effect.", "amount": null, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Personnel & Compensation", "action": "Approved the Police Sergeant position's placement in the new compensation structure, retroactive to April 1, 2026.", "impact": "Retroactive 2026 wage adjustment; amount not stated.", "why": "This was one of two positions receiving retroactive implementation of the new compensation structure before the full 2027 plan takes effect.", "amount": null, "status": "Approved"}, {"date": "2026-07-23", "display": "July 23", "category": "Future Consideration", "action": "Discussed reducing future engineering costs through better project billing, routing more routine work through the Public Works Director, shifting technical work in-house, and possibly hiring an in-house city engineer.", "impact": "Future budget impact unknown; no action taken.", "why": "These ideas could change how engineering costs are assigned and whether the city relies more on employees or outside consultants. No final action was taken.", "amount": null, "status": "Discussion"}, {"date": "2026-07-23", "display": "July 23", "category": "Future Consideration", "action": "Authorized gathering more information about a possible city property purchase, with preliminary discussion of roughly $1.8 million to $2.7 million for the full area.", "impact": "Potential future capital commitment; no purchase approved.", "why": "Shows a significant possible future spending decision that was not yet part of an adopted purchase.", "amount": null, "status": "Information gathering"}, {"date": "2026-08-06", "display": "August 6", "category": "Budget & Finance", "action": "Agenda documentation proposed transferring $28,468.32 from the Insurance Reserve Fund to General Fund cash and closing Fund 211.", "impact": "Proposed $28,468.32 fund transfer. Workers’ compensation and liability insurance line items would move to the General Fund.", "why": "This would change where the city accounts for insurance costs and eliminate the separate Insurance Reserve Fund. The agenda packet documents the recommendation, but final council action has not yet been verified from minutes.", "amount": 28468.32, "status": "Outcome Unknown"}, {"date": "2026-08-06", "display": "August 6", "category": "Public Safety", "action": "Agenda documentation requested approval to purchase a 2027 Ford Interceptor for the Police Department.", "impact": "Proposed purchase: $52,885.47. The memo states the purchase was included in the approved 2026 budget.", "why": "This is a significant fleet expenditure. The packet contains a suggested approval motion, but final council action has not yet been verified from minutes.", "amount": 52885.47, "status": "Outcome Unknown"}, {"date": "2026-08-06", "display": "August 6", "category": "Fleet & Public Works", "action": "Council was presented options for the 2019 Toolcat: repair it, replace it with trade-in, or purchase new without a trade.", "impact": "Repair: about $6,000. New with trade-in: $38,318. New without trade: $68,319. The memo states remaining 2026 Highway and Sewer budget funds were sufficient to cover a new purchase.", "why": "The packet documents the available options and funding capacity, but the suggested action was to discuss and decide a motion. A final outcome has not yet been verified.", "amount": null, "status": "Outcome Unknown"}, {"date": "2026-08-06", "display": "August 6", "category": "Budget & Finance", "action": "City Administrator report identified September 17, 2026 as the 2027 final budget hearing date.", "impact": "No direct expenditure.", "why": "This establishes the next major public milestone in the 2027 budget process.", "amount": null, "status": "Scheduled"}];
-    const icons = {"Personnel & Compensation": "👥", "Budget & Finance": "💰", "Capital & Infrastructure": "🏗️", "Public Safety": "🚓", "Contracts & Operations": "🖥️", "Future Consideration": "🔎", "Fleet & Public Works": "🚛"};
-    const categoryClasses = {"Personnel & Compensation": "cat-people", "Budget & Finance": "cat-budget", "Capital & Infrastructure": "cat-infra", "Public Safety": "cat-safety", "Contracts & Operations": "cat-contracts", "Future Consideration": "cat-future", "Fleet & Public Works": "cat-fleet"};
-    const categories = ["All", ...new Set(events.map(e => e.category))];
-    let activeCategory = "All";
+  <footer>
+    <div>
+      <strong>Lincoln Audit Explorer</strong>
+      <p>Helping residents understand what the City's audits found.</p>
+    </div>
+    <div style="display:flex;gap:.75rem;align-items:center;"><a href="methodology.html" style="color:white;text-decoration:none;font-weight:700;">Sources &amp; Methods</a><button id="footerAbout">About this tool</button></div>
+  
+    <div class="site-disclaimer">
+      <div class="site-disclaimer-inner">
+        <p><strong>Independent public information project.</strong> Lincoln Audit Explorer is not affiliated with, endorsed by, or approved by the City of Lincoln.</p>
+      </div>
+    </div>
+    </footer>
+    
 
-    const filters = document.getElementById("filters");
-    const timeline = document.getElementById("timeline");
-    const searchInput = document.getElementById("searchInput");
+  <dialog id="aboutDialog" class="about-dialog">
+    <button class="dialog-close" data-close aria-label="Close">×</button>
+    <p class="eyebrow">About this project</p>
+    <h2>What this tool does—and does not do</h2>
+    <p>This site helps Lincoln residents understand the City's audits and the public records related to them using plain-language explanations, timelines, and topic guides.</p>
+    
+    <p></p>
 
-    function emphasizeMoney(text) {
-      return text.replace(/\$[\d,]+(?:\.\d{2})?|\$\d+K|\$\d+(?:\.\d+)? million/gi, match => `<span class="money-highlight">${match}</span>`);
-    }
+    <h3>Review the original public records</h3>
+    <p>You are encouraged to review the original public records, including independent audit reports, City Council agendas, meeting packets, approved minutes, ordinances, financial reports, and video recordings of City Council meetings available on the City's public website.</p>
 
-    function renderFilters() {
-      filters.innerHTML = "";
-      categories.forEach(category => {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = category;
-        if (category === activeCategory) button.classList.add("active");
-        button.addEventListener("click", () => {
-          activeCategory = category;
-          renderFilters();
-          renderTimeline();
-        });
-        filters.appendChild(button);
-      });
-    }
+    <h3>Project independence</h3>
+    <p>Lincoln Audit Explorer is an independent public information project. It is not affiliated with, endorsed by, or approved by the City of Lincoln or any government agency.</p>
+    <h3>Important limitation</h3>
+    <p>Council minutes can document discussion and action, but they do not automatically prove that an audit finding was corrected or that a control worked. Later audit testing is stronger evidence of effectiveness.</p>
+    <h3>Reading labels</h3>
+    <p><strong>Documented fact</strong> means the record directly supports the statement. <strong>Supported interpretation</strong> means the conclusion is based on documented evidence but is not itself an auditor’s conclusion.</p>
+  </dialog>
 
-    function renderTimeline() {
-      const q = searchInput.value.trim().toLowerCase();
-      const filtered = events.filter(e => {
-        const categoryMatch = activeCategory === "All" || e.category === activeCategory;
-        const text = `${e.display} ${e.category} ${e.action} ${e.impact} ${e.why} ${e.status}`.toLowerCase();
-        return categoryMatch && (!q || text.includes(q));
-      });
-
-      
-      timeline.innerHTML = "";
-
-      if (!filtered.length) {
-        timeline.innerHTML = '<div class="empty">No timeline entries match this search.</div>';
-        return;
-      }
-
-      filtered.forEach(e => {
-        const article = document.createElement("article");
-        article.className = "entry";
-        const icon = icons[e.category] || "•";
-        const categoryClass = categoryClasses[e.category] || "cat-future";
-        article.innerHTML = `
-          <div class="entry-top">
-            <span class="date">${e.display}</span>
-            <span class="category ${categoryClass}">${icon} ${e.category}</span>
-            <span class="status">${e.status === "Approved" ? "✅ " : e.status === "Pending" ? "⏳ " : e.status === "Outcome Unknown" ? "❓ " : e.status === "Scheduled" ? "📅 " : ""}${e.status}</span>
-          </div>
-          <p class="action">${emphasizeMoney(e.action)}</p>
-          <details>
-            <summary>
-              <span class="show-label">View financial impact</span>
-              <span class="hide-label">Hide details</span>
-            </summary>
-            <div class="detail-grid">
-              <div class="detail-box">
-                <strong>Financial impact</strong>
-                <div>${emphasizeMoney(e.impact)}</div>
-              </div>
-              <div class="detail-box">
-                <strong>Why it matters</strong>
-                <div>${e.why}</div>
-              </div>
-            </div>
-          </details>
-        `;
-        timeline.appendChild(article);
-      });
-    }
-
-    searchInput.addEventListener("input", renderTimeline);
-    renderFilters();
-    renderTimeline();
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

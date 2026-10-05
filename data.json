@@ -2,10 +2,10 @@
   "meta": {
     "title": "Lincoln Audit Explorer",
     "subtitle": "A plain-language guide to what Lincoln's audits found, what improved, and what still needs attention.",
-    "coverage": "Public audit and City records organized in the public records for 2016–2026",
-    "updated": "July 26, 2026",
+    "coverage": "Public audit and City records organized in the public records for 2016–2025",
+    "updated": "July 11, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "4.3",
+    "version": "4.1",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
@@ -1791,10 +1791,6 @@
       "status": "Corrective work continued",
       "tone": "progress",
       "summary": "Council records show continued audit-related policy work, fraud-risk planning, utility-collection follow-up, staffing continuity efforts, and ongoing financial reporting."
-    },
-    {
-      "year": "2026",
-      "event": "2024 annual audit underway; council continued financial oversight, approved additional investments, and considered engineering budget amendments."
     }
   ],
   "auditOverview": [
@@ -1840,7 +1836,7 @@
       "year": "2026",
       "status": "Audit follow-up remained active",
       "tone": "progress",
-      "summary": "Public records show the City continued financial oversight, monitored audit progress, approved financial reports, managed investments, and addressed budget issues while the next annual audit was underway. The next independent audit report has not yet been released."
+      "summary": "Council records document continued fraud-risk work, monthly audit-status reporting, utility-collection planning, and financial-report follow-up during a finance-office transition."
     }
   ],
   "searchGuides": {
