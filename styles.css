@@ -1820,3 +1820,31 @@ dialog::backdrop{background:rgba(11,33,31,.68);backdrop-filter:blur(4px)}
  .compact-intro p{font-size:.91rem}
  .explorer-panel .section{padding-top:1.6rem;padding-bottom:1.8rem}
 }
+
+
+/* V5.3.1 accessibility fix: question cards now sit on a light background.
+   Override legacy white-on-dark hero styles only in the answers panel. */
+#explorer-answers .hero-question-card {
+  background: #ffffff;
+  border: 1px solid #b9cbc5;
+  color: #18322f;
+}
+#explorer-answers .hero-question-card strong { color: #18322f; }
+#explorer-answers .hero-question-card > span {
+  color: #344b47;
+  opacity: 1;
+}
+#explorer-answers .hero-question-card .hero-card-cta,
+#explorer-answers .hero-question-card .hero-card-cta span {
+  color: #0a4547 !important;
+  opacity: 1;
+  font-weight: 800;
+}
+#explorer-answers .hero-question-card:hover {
+  background: #edf4f0;
+  border-color: #0f5a5c;
+}
+#explorer-answers .hero-question-card:focus-visible {
+  outline: 3px solid #0f5a5c;
+  outline-offset: 3px;
+}
