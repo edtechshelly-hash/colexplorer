@@ -549,7 +549,7 @@ function renderAuditPage(id){
       <p>${esc(a.whatChangedNext)}</p>
     </section>
 
-    <section class="answer-section audit-leadership-section">
+    ${a.leadership?.periods?.length ? `<section class="answer-section audit-leadership-section">
       <details class="leadership-details">
         <summary>
           <span>
@@ -558,7 +558,7 @@ function renderAuditPage(id){
           <span class="details-arrow" aria-hidden="true">⌄</span>
         </summary>
         <div class="leadership-content">
-          ${(a.leadership.periods || []).map(period=>`
+          ${(a.leadership?.periods || []).map(period=>`
             <article class="leadership-period">
               <h3>${esc(period.label)}</h3>
               <div class="leadership-grid">
@@ -576,7 +576,7 @@ function renderAuditPage(id){
             </article>`).join("")}
         </div>
       </details>
-    </section>
+    </section>` : ""}
 
     <section class="answer-section related-section">
       <h2>Keep following the story</h2>
@@ -585,6 +585,8 @@ function renderAuditPage(id){
         ${next ? `<button data-page-audit="${esc(next.id)}"><span>Next audit →</span><strong>${esc(next.years)}</strong></button>` : ""}
       </div>
     </section>
+
+    ${a.id === "2024" ? `<p class="v5-source"><strong>Original source:</strong> City of Lincoln, 2024 independent audit, Finding 2024-001 (printed pp. 46–47), Corrective Action Plan (p. 48), and Schedule of Prior Year Findings (pp. 49–51). The report is available through the City of Lincoln website.</p>` : ""}
 
     <div class="public-records-note">
       <strong>About this summary</strong>
@@ -679,7 +681,7 @@ function renderTopicPage(id){
             </div>
           </li>`).join("")}
       </ol>
-      <p class="v5-source">2024 source: <a href="evidence/lincoln_2024_audit.pdf#page=47" target="_blank" rel="noopener">2024 audit findings (printed pp. 46–47)</a> and <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">prior-finding follow-up (printed pp. 49–51)</a>. A finding not repeated is not automatic proof it was fixed.</p>
+      <p class="v5-source">2024 source: City of Lincoln 2024 audit, Finding 2024-001 (printed pp. 46–47), and Schedule of Prior Year Findings (printed pp. 49–51). A finding not repeated is not automatic proof it was fixed.</p>
     </section>
 
     <section class="post-audit-updates-section">
