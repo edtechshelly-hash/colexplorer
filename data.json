@@ -2080,22 +2080,20 @@
     {
       "id": "2024",
       "years": "2024",
-      "theme": "Fewer findings, but a repeat accounting weakness",
-      "cardSummary": "The 2024 audit reported one repeat problem: auditors still had to correct the financial statements. The City reported completing work on five of six earlier findings. No federal award findings were reported.",
-      "oneSentence": "The 2024 audit reported one repeat accounting weakness; the City said five of six earlier fixes were in place.",
+      "theme": "What the auditors found and what the City reported fixing",
+      "cardSummary": "Auditors gave the financial statements an unmodified opinion and reported one repeat material weakness. The City reported completing five of six earlier corrective actions.",
+      "oneSentence": "Auditors gave the City's financial statements an unmodified opinion and reported one repeat material weakness in how the statements were prepared.",
       "findingCount": 1,
-      "opinionPlain": "Auditors issued unmodified opinions on the financial statements and on compliance for the major federal program. A clean opinion does not mean no weaknesses were found.",
-      "whyItMattered": "Auditors needed to propose important corrections to the financial statements. The City reported completing five earlier fixes, but the same financial-reporting weakness appeared again.",
+      "opinionPlain": "The auditors gave the City's financial statements an unmodified opinion. This means they concluded the statements fairly showed the City's finances under the accounting rules used for the audit. People sometimes call this a clean opinion. The auditors also reported a problem with how the statements were prepared.",
+      "whyItMattered": "The City uses financial statements to report its financial activity and balances. Auditors found that these statements needed corrections during the audit. They also identified a weakness in the City's process for preparing and checking them. Accurate financial records help residents understand how the City manages public money.",
       "keyPoints": [
-        "One financial-statement finding, 2024-001 (material audit adjustments), classified as a repeat material weakness (p. 46).",
-        "Auditors proposed adjustments, which management approved and included in the audited statements (p. 46).",
-        "In the City’s prior-finding schedule, five of six 2023 findings are marked “Fully Implemented.” The financial-statement adjustment finding is marked “Not Implemented” (pp. 49–51).",
-        "Management stated the adjustments were implemented at the time of the audit; the corrective action plan lists anticipated completion in 2025 (p. 48).",
-        "No federal award findings or questioned costs were reported (p. 47).",
-        "Auditors issued unmodified financial-statement and major federal program compliance opinions (pp. 2–3, 42–45).",
-        "The audit disclosed a restatement of 2023 comparative balances related to investment and fund reclassifications (p. 19)."
+        "The financial statements received an unmodified opinion. The auditors concluded they were fairly presented under the accounting rules used for the audit (pp. 2–3).",
+        "The auditors reported one repeat material weakness, Finding 2024-001. The financial statements needed corrections during the audit (pp. 46–47).",
+        "A material weakness means an important error might not be prevented or found in time by the City's financial reporting checks (pp. 42–46).",
+        "The City reported that it had completed corrective actions for five of six earlier findings. It reported that the financial-statement issue was not yet implemented (pp. 49–51).",
+        "The City approved the corrections proposed during the audit and described its plan for addressing the weakness (p. 48)."
       ],
-      "whatChangedNext": "The report was issued November 16, 2026. The City said it accepted the audit corrections. The report does not independently prove that the accounting process will work without those corrections in the next audit.",
+      "whatChangedNext": "The 2024 audit was issued November 16, 2026. The City reported five earlier corrective actions as fully implemented. The financial-statement issue remained and was reported again as Finding 2024-001.",
       "searchAliases": [
         "2024 audit",
         "latest audit",

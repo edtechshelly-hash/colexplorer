@@ -533,7 +533,7 @@ function renderAuditPage(id){
     </section>
 
     <section class="answer-section audit-why-card">
-      <h2>Why did this matter?</h2>
+      <h2>${a.id === "2024" ? "What does this finding mean for residents?" : "Why did this matter?"}</h2>
       <p>${esc(a.whyItMattered)}</p>
     </section>
 
