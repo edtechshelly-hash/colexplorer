@@ -1,13 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Lincoln audit findings in plain language, with traceable supporting evidence.">
-  <title>Lincoln Audit Explorer</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Explore Lincoln audit findings in plain language, with traceable supporting evidence." name="description"/>
+<title>Lincoln Audit Explorer</title>
+<link href="styles.css" rel="stylesheet"/>
+<style>
     .site-header{
       position:relative !important;
       background:#fffdf8 !important;
@@ -70,182 +70,160 @@
       .hero-inner{padding-top:3.2rem !important}
     }
   </style>
-
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#" aria-label="Lincoln Audit Explorer home">
-        <span class="brand-mark" aria-hidden="true">L</span>
-        <span class="brand-copy"><strong class="brand-title">Lincoln Audit Explorer</strong><small class="brand-tagline">City audits explained clearly.</small></span>
-      </a>
-      <button id="aboutButton" class="header-button">About this tool</button>
-    </div>
-  </header>
-
-  <main id="main">
-    <div id="homeView">
-    <section class="hero v5-hero">
-      <div class="hero-inner">
-        <p class="eyebrow">A public guide for Lincoln residents</p>
-        <h1>Lincoln’s Audit Story: From Findings to Progress</h1>
-        <p class="hero-copy">What did auditors find? What changed? What still needs work? Follow the records from the first audits through 2024.</p>
-        <a class="v5-primary-link" href="#storySection">Follow the audit story ↓</a>
-        <a class="v5-secondary-link" href="#questionsSection">Or explore a question</a>
-      </div>
-    </section>
-
-    <section class="section v5-latest" id="latestAuditSection" aria-labelledby="latestHeading">
-      <div class="section-heading"><div><p class="eyebrow">Latest completed audit · 2024</p><h2 id="latestHeading">Where things stand</h2></div><p>The audit covers 2024. The report was issued in November 2026.</p></div>
-      <div class="v5-summary-grid">
-        <article class="v5-stat"><strong>5 of 6</strong><span>Earlier findings the City reported as fully implemented</span></article>
-        <article class="v5-stat"><strong>1</strong><span>Repeat material weakness reported by the auditors in 2024</span></article>
-      </div>
-      <p class="v5-plain"><strong>In everyday words:</strong> The City reported making changes for five earlier problems. Auditors still found that the financial statements needed corrections. They called that a <strong>material weakness</strong> in financial reporting.</p>
-      <p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=47" target="_blank" rel="noopener">2024 audit, finding 2024-001 (printed p. 46)</a> and <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">prior findings schedule (printed pp. 49–51)</a>. The five reported fixes are the City’s statuses, not independent proof that each fix works.</p>
-      <button class="v5-inline-action" data-audit="2024">Read the 2024 audit summary →</button>
-    </section>
-
-    <section class="section v5-story" id="storySection" aria-labelledby="storyHeading">
-      <div class="section-heading"><div><p class="eyebrow">Follow the records</p><h2 id="storyHeading">The audit story, one chapter at a time</h2></div><p>Start with the earliest audit and see how the findings changed.</p></div>
-      <div id="v5StoryChapters" class="v5-chapters"></div>
-      <p class="v5-source">These chapter summaries describe what each audit reported. A problem not appearing in a later report does not, by itself, prove it was fixed.</p>
-    </section>
-
-    <section class="section v5-progress" id="progressSection" aria-labelledby="progressHeading">
-      <div class="section-heading"><div><p class="eyebrow">Follow-up on earlier findings</p><h2 id="progressHeading">What did the City say it fixed?</h2></div><p>The 2024 audit lists the City’s status for six findings from the 2022–23 audit.</p></div>
-      <div class="v5-summary-grid v5-progress-stats"><article class="v5-stat"><strong>5</strong><span>Reported fully implemented</span></article><article class="v5-stat"><strong>1</strong><span>Reported not implemented</span></article></div>
-      <div id="v5FindingProgress" class="v5-findings"></div>
-      <p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">2024 audit, Schedule of Prior Year Findings, printed pp. 49–51</a>. These are the statuses reported by the City. The auditors separately reported a repeat material weakness in 2024.</p>
-    </section>
-
-    <section class="section v5-questions" id="questionsSection">
-      <div class="section-heading"><div><p class="eyebrow">Questions and answers</p><h2>What would you like to know?</h2></div><p>Choose a question for a plain-language answer and its supporting records.</p></div>
-      <div id="heroQuestionGrid" class="hero-question-grid"></div>
-    </section>
-
-    <section class="section audit-year-section" id="auditYearSection">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Audit year summaries</p>
-          <h2>What happened in each audit?</h2>
-        </div>
-        <p>Choose an audit to see the main story in clear, everyday language.</p>
-      </div>
-      <div class="audit-period-note">
-        <strong>Why are the years grouped?</strong>
-        <span>The first four reports each cover two years: 2016–17, 2018–19, 2020–21, and 2022–23. The latest report covers 2024 only. No calendar year is skipped.</span>
-      </div>
-      <div id="auditYearGrid" class="audit-year-grid"></div>
-    </section>
-
-    <section class="section compact-section" id="timelineSection">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Independent audit history</p>
-          <h2>What changed across the completed audits?</h2>
-        </div>
-        <p>The latest completed independent audit included here covers 2024.</p>
-      </div>
-      <div id="auditOverviewTimeline" class="overview-timeline audit-overview-timeline"></div>
-
-
-    </section>
-
-    <section class="section section-muted" id="topicsSection">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Explore the findings</p>
-          <h2>Browse by topic</h2>
-        </div>
-        <div class="filters" aria-label="Filter topics">
-          <button class="filter active" data-filter="All">All topics</button>
-          <button class="filter" data-filter="Ongoing">Still needs attention</button>
-          <button class="filter" data-filter="Improved">Improved</button>
-          <button class="filter" data-filter="Mixed">Mixed</button>
-        </div>
-      </div>
-      <div id="topicGrid" class="topic-grid"></div>
-      <div id="emptyState" class="empty-state" hidden>
-        <h3>No matching results</h3>
-        <p>Try a broader word or clear the status filter.</p>
-      </div>
-    </section>
-
-    <section class="search-section">
-      <div>
-        <p class="eyebrow">Looking for something specific?</p>
-        <h2>What are you wondering about?</h2>
-        <p>Use everyday words. Try <strong>financial statements</strong>, <strong>material weakness</strong>, <strong>utility records</strong>, or <strong>what did the City report fixing?</strong></p>
-      </div>
-      <div class="search-wrap">
-        <label for="searchInput">Search questions and topics</label>
-        <div class="search-box">
-          <span aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" placeholder="Try “financial statements” or ask a question">
-          <button id="clearSearch" aria-label="Clear search">×</button>
-        </div>
-      </div>
-      <div id="searchResults" class="search-results" hidden>
-        <div id="searchGuide"></div>
-        <h3>Search results</h3>
-        <div id="questionGrid" class="question-grid"></div>
-        <div id="searchTopicGrid" class="topic-grid"></div>
-      </div>
-    </section>
-
-    <section class="method">
-      <div>
-        <p class="eyebrow">How to read this site</p>
-        <h2>Facts and interpretation stay separate.</h2>
-      </div>
-      <div class="method-grid">
-        <article><span class="method-icon fact-icon">F</span><h3>Documented fact</h3><p>What an audit report, council record, or evidence-database entry directly states.</p></article>
-        <article><span class="method-icon interpretation-icon">I</span><h3>Supported interpretation</h3><p>A careful explanation based on the documented pattern. It is not an auditor conclusion.</p></article>
-        <article><span class="method-icon question-icon">?</span><h3>Open question</h3><p>Something the available records do not yet answer.</p></article>
-      </div>
-    </section>
-    </div>
-
-    <section id="pageView" class="page-view" hidden aria-live="polite"></section>
-  </main>
-
-  <footer>
-    <div>
-      <strong>Lincoln Audit Explorer</strong>
-      <p>Helping residents understand what the City's audits found.</p>
-    </div>
-    <div style="display:flex;gap:.75rem;align-items:center;"><a href="methodology.html" style="color:white;text-decoration:none;font-weight:700;">Sources &amp; Methods</a><button id="footerAbout">About this tool</button></div>
-  
-    <div class="site-disclaimer">
-      <div class="site-disclaimer-inner">
-        <p><strong>Independent public information project.</strong> Lincoln Audit Explorer is not affiliated with, endorsed by, or approved by the City of Lincoln.</p>
-      </div>
-    </div>
-    </footer>
-    
-
-  <dialog id="aboutDialog" class="about-dialog">
-    <button class="dialog-close" data-close aria-label="Close">×</button>
-    <p class="eyebrow">About this project</p>
-    <h2>What this tool does—and does not do</h2>
-    <p>This site helps Lincoln residents understand the City's audits and the public records related to them using plain-language explanations, timelines, and topic guides.</p>
-    
-    <p></p>
-
-    <h3>Review the original public records</h3>
-    <p>You are encouraged to review the original public records, including independent audit reports, City Council agendas, meeting packets, approved minutes, ordinances, financial reports, and video recordings of City Council meetings available on the City's public website.</p>
-
-    <h3>Project independence</h3>
-    <p>Lincoln Audit Explorer is an independent public information project. It is not affiliated with, endorsed by, or approved by the City of Lincoln or any government agency.</p>
-    <h3>Important limitation</h3>
-    <p>Council minutes can document discussion and action, but they do not automatically prove that an audit finding was corrected or that a control worked. Later audit testing is stronger evidence of effectiveness.</p>
-    <h3>Reading labels</h3>
-    <p><strong>Documented fact</strong> means the record directly supports the statement. <strong>Supported interpretation</strong> means the conclusion is based on documented evidence but is not itself an auditor’s conclusion.</p>
-  </dialog>
-
-  <script src="app.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Lincoln Audit Explorer home" class="brand" href="#">
+<span aria-hidden="true" class="brand-mark">L</span>
+<span class="brand-copy"><strong class="brand-title">Lincoln Audit Explorer</strong><small class="brand-tagline">City audits explained clearly.</small></span>
+</a>
+<button class="header-button" id="aboutButton">About this tool</button>
+</div>
+</header>
+<main id="main">
+<div id="homeView">
+<section aria-labelledby="compactTitle" class="compact-intro">
+<div class="compact-intro-inner"><p class="eyebrow">A public guide for Lincoln residents</p>
+<h1 id="compactTitle">Lincoln’s Audit Story</h1>
+<p class="compact-subtitle">From Findings to Progress · 2016–2024</p>
+<p>See what auditors found, what the City reported changing, and what still needs work. Choose where you want to start.</p></div>
+</section>
+<nav aria-label="Explore the audits" class="explorer-nav"><div aria-label="Explore a section" class="explorer-nav-inner" role="group">
+<button aria-controls="explorer-story" class="explorer-tab" data-panel="story" type="button">The Story<span>Follow the years</span></button>
+<button aria-controls="explorer-progress" class="explorer-tab" data-panel="progress" type="button">The Progress<span>See what changed</span></button>
+<button aria-controls="explorer-answers" class="explorer-tab" data-panel="answers" type="button">Find Answers<span>Search questions</span></button>
+<button aria-controls="explorer-sources" class="explorer-tab" data-panel="sources" type="button">The Sources<span>Check the records</span></button>
+</div></nav>
+<div aria-label="Latest audit overview" class="explorer-panel" id="explorer-overview">
+<section class="compact-welcome section"><p class="eyebrow">Start exploring</p><h2>What would you like to learn?</h2><p>Pick one of the four sections above. You can switch sections at any time without scrolling through the whole website.</p></section>
+<section aria-labelledby="latestHeading" class="section v5-latest" id="latestAuditSection">
+<div class="section-heading"><div><p class="eyebrow">Latest completed audit · 2024</p><h2 id="latestHeading">Where things stand</h2></div><p>The audit covers 2024. The report was issued in November 2026.</p></div>
+<div class="v5-summary-grid">
+<article class="v5-stat"><strong>5 of 6</strong><span>Earlier findings the City reported as fully implemented</span></article>
+<article class="v5-stat"><strong>1</strong><span>Repeat material weakness reported by the auditors in 2024</span></article>
+</div>
+<p class="v5-plain"><strong>In everyday words:</strong> The City reported making changes for five earlier problems. Auditors still found that the financial statements needed corrections. They called that a <strong>material weakness</strong> in financial reporting.</p>
+<p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=47" rel="noopener" target="_blank">2024 audit, finding 2024-001 (printed p. 46)</a> and <a href="evidence/lincoln_2024_audit.pdf#page=50" rel="noopener" target="_blank">prior findings schedule (printed pp. 49–51)</a>. The five reported fixes are the City’s statuses, not independent proof that each fix works.</p>
+<button class="v5-inline-action" data-audit="2024">Read the 2024 audit summary →</button>
+</section></div>
+<div aria-labelledby="storyHeading" class="explorer-panel" hidden="" id="explorer-story"><section aria-labelledby="storyHeading" class="section v5-story" id="storySection">
+<div class="section-heading"><div><p class="eyebrow">Follow the records</p><h2 id="storyHeading">The audit story, one chapter at a time</h2></div><p>Start with the earliest audit and see how the findings changed.</p></div>
+<div class="v5-chapters" id="v5StoryChapters"></div>
+<p class="v5-source">These chapter summaries describe what each audit reported. A problem not appearing in a later report does not, by itself, prove it was fixed.</p>
+</section><section class="section audit-year-section" id="auditYearSection">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Audit year summaries</p>
+<h2>What happened in each audit?</h2>
+</div>
+<p>Choose an audit to see the main story in clear, everyday language.</p>
+</div>
+<div class="audit-period-note">
+<strong>Why are the years grouped?</strong>
+<span>The first four reports each cover two years: 2016–17, 2018–19, 2020–21, and 2022–23. The latest report covers 2024 only. No calendar year is skipped.</span>
+</div>
+<div class="audit-year-grid" id="auditYearGrid"></div>
+</section><section class="section compact-section" id="timelineSection">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Independent audit history</p>
+<h2>What changed across the completed audits?</h2>
+</div>
+<p>The latest completed independent audit included here covers 2024.</p>
+</div>
+<div class="overview-timeline audit-overview-timeline" id="auditOverviewTimeline"></div>
+</section></div>
+<div aria-labelledby="progressHeading" class="explorer-panel" hidden="" id="explorer-progress"><p class="compact-qualification">The six follow-up statuses below are reported by the City in the 2024 audit. Other topic labels summarize longer histories and are not independent auditor ratings.</p><section aria-labelledby="progressHeading" class="section v5-progress" id="progressSection">
+<div class="section-heading"><div><p class="eyebrow">Follow-up on earlier findings</p><h2 id="progressHeading">What did the City say it fixed?</h2></div><p>The 2024 audit lists the City’s status for six findings from the 2022–23 audit.</p></div>
+<div class="v5-summary-grid v5-progress-stats"><article class="v5-stat"><strong>5</strong><span>Reported fully implemented</span></article><article class="v5-stat"><strong>1</strong><span>Reported not implemented</span></article></div>
+<div class="v5-findings" id="v5FindingProgress"></div>
+<p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=50" rel="noopener" target="_blank">2024 audit, Schedule of Prior Year Findings, printed pp. 49–51</a>. These are the statuses reported by the City. The auditors separately reported a repeat material weakness in 2024.</p>
+</section><section class="section section-muted" id="topicsSection">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Explore the findings</p>
+<h2>Browse by topic</h2>
+</div>
+<div aria-label="Filter topics" class="filters">
+<button class="filter active" data-filter="All">All topics</button>
+<button class="filter" data-filter="Ongoing">Still needs attention</button>
+<button class="filter" data-filter="Improved">Improved</button>
+<button class="filter" data-filter="Mixed">Mixed</button>
+</div>
+</div>
+<div class="topic-grid" id="topicGrid"></div>
+<div class="empty-state" hidden="" id="emptyState">
+<h3>No matching results</h3>
+<p>Try a broader word or clear the status filter.</p>
+</div>
+</section></div>
+<div class="explorer-panel" hidden="" id="explorer-answers"><h2 class="sr-only">Find answers</h2><section class="section v5-questions" id="questionsSection">
+<div class="section-heading"><div><p class="eyebrow">Questions and answers</p><h2>What would you like to know?</h2></div><p>Choose a question for a plain-language answer and its supporting records.</p></div>
+<div class="hero-question-grid" id="heroQuestionGrid"></div>
+</section><section class="search-section">
+<div>
+<p class="eyebrow">Looking for something specific?</p>
+<h2>What are you wondering about?</h2>
+<p>Use everyday words. Try <strong>financial statements</strong>, <strong>material weakness</strong>, <strong>utility records</strong>, or <strong>what did the City report fixing?</strong></p>
+</div>
+<div class="search-wrap">
+<label for="searchInput">Search questions and topics</label>
+<div class="search-box">
+<span aria-hidden="true">⌕</span>
+<input id="searchInput" placeholder="Try “financial statements” or ask a question" type="search"/>
+<button aria-label="Clear search" id="clearSearch">×</button>
+</div>
+</div>
+<div class="search-results" hidden="" id="searchResults">
+<div id="searchGuide"></div>
+<h3>Search results</h3>
+<div class="question-grid" id="questionGrid"></div>
+<div class="topic-grid" id="searchTopicGrid"></div>
+</div>
+</section></div>
+<div class="explorer-panel" hidden="" id="explorer-sources"><section class="section compact-source-intro"><p class="eyebrow">Original records</p><h2>Check the sources</h2><p>Each audit summary and detailed answer includes source references. You can also read how this site uses public records.</p><p><a class="compact-source-link" href="methodology.html">Read Sources &amp; Methods →</a></p></section><section class="method">
+<div>
+<p class="eyebrow">How to read this site</p>
+<h2>Facts and interpretation stay separate.</h2>
+</div>
+<div class="method-grid">
+<article><span class="method-icon fact-icon">F</span><h3>Documented fact</h3><p>What an audit report, council record, or evidence-database entry directly states.</p></article>
+<article><span class="method-icon interpretation-icon">I</span><h3>Supported interpretation</h3><p>A careful explanation based on the documented pattern. It is not an auditor conclusion.</p></article>
+<article><span class="method-icon question-icon">?</span><h3>Open question</h3><p>Something the available records do not yet answer.</p></article>
+</div>
+</section></div>
+</div>
+<section aria-live="polite" class="page-view" hidden="" id="pageView"></section>
+</main>
+<footer>
+<div>
+<strong>Lincoln Audit Explorer</strong>
+<p>Helping residents understand what the City's audits found.</p>
+</div>
+<div style="display:flex;gap:.75rem;align-items:center;"><a href="methodology.html" style="color:white;text-decoration:none;font-weight:700;">Sources &amp; Methods</a><button id="footerAbout">About this tool</button></div>
+<div class="site-disclaimer">
+<div class="site-disclaimer-inner">
+<p><strong>Independent public information project.</strong> Lincoln Audit Explorer is not affiliated with, endorsed by, or approved by the City of Lincoln.</p>
+</div>
+</div>
+</footer>
+<dialog class="about-dialog" id="aboutDialog">
+<button aria-label="Close" class="dialog-close" data-close="">×</button>
+<p class="eyebrow">About this project</p>
+<h2>What this tool does—and does not do</h2>
+<p>This site helps Lincoln residents understand the City's audits and the public records related to them using plain-language explanations, timelines, and topic guides.</p>
+<p></p>
+<h3>Review the original public records</h3>
+<p>You are encouraged to review the original public records, including independent audit reports, City Council agendas, meeting packets, approved minutes, ordinances, financial reports, and video recordings of City Council meetings available on the City's public website.</p>
+<h3>Project independence</h3>
+<p>Lincoln Audit Explorer is an independent public information project. It is not affiliated with, endorsed by, or approved by the City of Lincoln or any government agency.</p>
+<h3>Important limitation</h3>
+<p>Council minutes can document discussion and action, but they do not automatically prove that an audit finding was corrected or that a control worked. Later audit testing is stronger evidence of effectiveness.</p>
+<h3>Reading labels</h3>
+<p><strong>Documented fact</strong> means the record directly supports the statement. <strong>Supported interpretation</strong> means the conclusion is based on documented evidence but is not itself an auditor’s conclusion.</p>
+</dialog>
+<script src="app.js"></script>
 </body>
 </html>

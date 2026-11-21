@@ -49,6 +49,15 @@ function bind(){
   document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>b.closest("dialog").close()));
   document.querySelectorAll("dialog").forEach(d=>d.addEventListener("click",e=>{if(e.target===d)d.close()}));
 
+  document.querySelectorAll(".explorer-tab").forEach(button=>button.addEventListener("click",()=>{
+    go(`section/${button.dataset.panel}`);
+    if(location.hash === `#section/${button.dataset.panel}`) showSection(button.dataset.panel);
+  }));
+  document.querySelector(".brand").addEventListener("click",event=>{
+    event.preventDefault();
+    if(location.hash) location.hash = "";
+    else showHome();
+  });
   window.addEventListener("hashchange", handleRoute);
 }
 
@@ -56,7 +65,25 @@ function go(route){
   location.hash = route;
 }
 
+function showSection(name="overview"){
+  const valid=["overview","story","progress","answers","sources"];
+  if(!valid.includes(name)) name="overview";
+  document.querySelectorAll(".explorer-panel").forEach(panel=>{
+    panel.hidden = panel.id !== `explorer-${name}`;
+  });
+  document.querySelectorAll(".explorer-tab").forEach(button=>{
+    const selected=button.dataset.panel===name;
+    button.classList.toggle("is-active",selected);
+    button.setAttribute("aria-pressed",String(selected));
+  });
+  $("#homeView").hidden=false;
+  $("#pageView").hidden=true;
+  document.title="Lincoln Audit Explorer";
+  window.scrollTo({top:0,behavior:"instant"});
+}
+
 function showHome(){
+  showSection("overview");
   $("#homeView").hidden = false;
   $("#pageView").hidden = true;
   document.title = "Lincoln Audit Explorer";
@@ -71,6 +98,7 @@ function handleRoute(){
   }
 
   const [type,id] = route.split("/");
+  if(type === "section") return showSection(id);
   if(type === "question") return renderQuestionPage(id);
   if(type === "topic") return renderTopicPage(id);
   if(type === "audit") return renderAuditPage(id);
