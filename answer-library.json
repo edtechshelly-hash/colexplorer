@@ -1,193 +1,14 @@
 {
   "meta": {
-    "version": "4.1",
-    "source": "Lincoln Audit Explorer Resident Answer Library v4.1",
-    "answerCount": 26,
-    "readyCount": 17,
-    "latestFollowUpYear": "2026"
+    "version": "5.2",
+    "source": "V4.4 updated to remove resident-facing missing-money, theft, fraud accusation, and criminal-charge questions; historical findings retained",
+    "answerCount": 23,
+    "readyCount": 16,
+    "latestFollowUpYear": "2026",
+    "latestAuditYear": "2024",
+    "latestAuditReportDate": "2026-11-16"
   },
   "answers": [
-    {
-      "id": "RQ-001",
-      "question": "Was money missing?",
-      "shortAnswer": "Auditors reported some money-related amounts they could not fully trace or test, but they did not conclude that theft occurred.",
-      "whyPeopleAsk": "When records are missing or money cannot be traced through the available paperwork, people naturally wonder whether money disappeared.",
-      "recordsShow": "The audits identified court-fee amounts that could not be traced to the general fund and utility collections that could not be fully tested because supporting records were unavailable.",
-      "whyItMatters": "Public money should be supported by records that show where it came from, where it went, and how it was recorded.",
-      "recordsDoNotEstablish": "The audits did not determine that someone stole the money.",
-      "relatedQuestions": [
-        "RQ-003",
-        "RQ-004",
-        "RQ-006",
-        "RQ-007"
-      ],
-      "relatedTopics": [
-        "Utility records",
-        "Bank matching",
-        "Fraud-risk planning"
-      ],
-      "searchPhrases": [
-        "missing money",
-        "money missing",
-        "unaccounted money",
-        "where did the money go",
-        "lost money"
-      ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
-      "evidenceStatus": "Verified",
-      "answerStatus": "Complete",
-      "plainLanguageReview": "Passed",
-      "readyForApp": true
-    },
-    {
-      "id": "RQ-002",
-      "question": "Did the City lose money?",
-      "shortAnswer": "The audits showed gaps in records and money tracking, but they did not determine a total amount the City permanently lost.",
-      "whyPeopleAsk": "Residents may hear that money could not be traced and assume it was permanently lost.",
-      "recordsShow": "Some amounts could not be traced or tested from the records available to auditors. Other findings involved accounting errors, missing support, and bank differences.",
-      "whyItMatters": "Incomplete records make it harder to know whether every transaction was recorded correctly.",
-      "recordsDoNotEstablish": "The audits did not calculate a confirmed total loss to the City.",
-      "relatedQuestions": [
-        "RQ-001",
-        "RQ-003",
-        "RQ-009"
-      ],
-      "relatedTopics": [
-        "Utility records",
-        "Bank matching",
-        "Financial records"
-      ],
-      "searchPhrases": [
-        "lost money",
-        "city lost money",
-        "taxpayer loss",
-        "money gone"
-      ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
-    },
-    {
-      "id": "RQ-003",
-      "question": "Where did the money go?",
-      "shortAnswer": "In some cases, the available records did not provide enough proof to show exactly where certain money was recorded.",
-      "whyPeopleAsk": "People want a direct explanation when auditors say money could not be traced.",
-      "recordsShow": "Auditors reported specific court-fee amounts they could not trace to the general fund and utility collections they could not fully test because records were missing.",
-      "whyItMatters": "Good records allow residents and auditors to follow money from collection through deposit and accounting.",
-      "recordsDoNotEstablish": "The audits did not identify a person who took the money or a confirmed destination for every untraced amount.",
-      "relatedQuestions": [
-        "RQ-001",
-        "RQ-004",
-        "RQ-009"
-      ],
-      "relatedTopics": [
-        "Court fees",
-        "Utility collections",
-        "Bank matching"
-      ],
-      "searchPhrases": [
-        "where did the money go",
-        "trace money",
-        "follow the money",
-        "account for money"
-      ],
-      "auditYears": "2018–19; 2020–21",
-      "evidenceStatus": "Verified",
-      "answerStatus": "Complete",
-      "plainLanguageReview": "Passed",
-      "readyForApp": true
-    },
-    {
-      "id": "RQ-004",
-      "question": "Could the City account for all of its money?",
-      "shortAnswer": "Not always. Auditors identified amounts and collections that could not be fully verified from the available records.",
-      "whyPeopleAsk": "Residents expect public money to be supported by complete records.",
-      "recordsShow": "The audits reported missing utility records, court fees that could not be traced, bank differences, and financial statements that required corrections.",
-      "whyItMatters": "When records are incomplete, auditors cannot independently confirm that every amount was recorded correctly.",
-      "recordsDoNotEstablish": "This does not automatically mean money was stolen or misused.",
-      "relatedQuestions": [
-        "RQ-001",
-        "RQ-003",
-        "RQ-061"
-      ],
-      "relatedTopics": [
-        "Financial records",
-        "Utility records",
-        "Bank matching"
-      ],
-      "searchPhrases": [
-        "account for money",
-        "explain money",
-        "track money",
-        "verify money"
-      ],
-      "auditYears": "2016–17; 2018–19; 2020–21",
-      "evidenceStatus": "Verified",
-      "answerStatus": "Complete",
-      "plainLanguageReview": "Passed",
-      "readyForApp": true
-    },
-    {
-      "id": "RQ-006",
-      "question": "Was anything stolen?",
-      "shortAnswer": "The public audit records do not conclude that money was stolen.",
-      "whyPeopleAsk": "Missing records and money that cannot be traced can sound like theft, even when the audit does not make that finding.",
-      "recordsShow": "Auditors found weak recordkeeping, missing support, untraced amounts, and weaknesses in financial safeguards.",
-      "whyItMatters": "Those weaknesses increase risk and deserve attention because they can make errors or misuse harder to detect.",
-      "recordsDoNotEstablish": "An audit finding about missing records is not the same as a criminal finding of theft.",
-      "relatedQuestions": [
-        "RQ-001",
-        "RQ-007",
-        "RQ-017"
-      ],
-      "relatedTopics": [
-        "Fraud risk",
-        "Missing records",
-        "Financial safeguards"
-      ],
-      "searchPhrases": [
-        "stolen money",
-        "theft",
-        "embezzlement",
-        "someone stole money"
-      ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Verified",
-      "answerStatus": "Complete",
-      "plainLanguageReview": "Passed",
-      "readyForApp": true
-    },
-    {
-      "id": "RQ-007",
-      "question": "Did the audit find fraud?",
-      "shortAnswer": "The audits did not conclude that fraud occurred, but they repeatedly found weaknesses in fraud-risk planning and financial safeguards.",
-      "whyPeopleAsk": "Residents often use the word fraud when they hear about missing records or money that could not be traced.",
-      "recordsShow": "Auditors reported that the City had not completed a full fraud-risk assessment and identified weaknesses in documentation and review procedures.",
-      "whyItMatters": "Fraud-risk planning helps a city identify where misuse could occur and what safeguards should be in place.",
-      "recordsDoNotEstablish": "The audit records summarized here do not document an auditor finding that fraud occurred.",
-      "relatedQuestions": [
-        "RQ-006",
-        "RQ-010",
-        "RQ-075"
-      ],
-      "relatedTopics": [
-        "Fraud-risk planning",
-        "Financial safeguards"
-      ],
-      "searchPhrases": [
-        "fraud",
-        "corruption",
-        "dishonest employees",
-        "fraud found"
-      ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Verified",
-      "answerStatus": "Complete",
-      "plainLanguageReview": "Passed",
-      "readyForApp": true
-    },
     {
       "id": "RQ-010",
       "question": "Could this happen again?",
@@ -198,7 +19,6 @@
       "recordsDoNotEstablish": "The 2026 Council records are follow-up evidence, not a new independent audit, and they do not guarantee that a problem cannot happen again.",
       "relatedQuestions": [
         "RQ-031",
-        "RQ-033",
         "RQ-100"
       ],
       "relatedTopics": [
@@ -218,95 +38,6 @@
       "readyForApp": true
     },
     {
-      "id": "RQ-011",
-      "question": "Who fixes these problems?",
-      "shortAnswer": "City staff and leaders are responsible for carrying out corrective actions, while later audits can test whether the problems were actually resolved.",
-      "whyPeopleAsk": "Audit reports identify problems, but residents may not know who acts on them.",
-      "recordsShow": "Public records can document policy changes, staffing changes, new procedures, and other actions taken after an audit.",
-      "whyItMatters": "Fixing a finding usually requires both day-to-day staff work and oversight from City leadership.",
-      "recordsDoNotEstablish": "The audit alone may not assign one person responsibility for every corrective action.",
-      "relatedQuestions": [
-        "RQ-019",
-        "RQ-020",
-        "RQ-091"
-      ],
-      "relatedTopics": [
-        "Corrective actions",
-        "City administration",
-        "Council oversight"
-      ],
-      "searchPhrases": [
-        "who fixes it",
-        "who is responsible for fixing",
-        "corrective action"
-      ],
-      "auditYears": "All audit periods",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Evidence",
-      "readyForApp": false
-    },
-    {
-      "id": "RQ-013",
-      "question": "Why wasn't this caught sooner?",
-      "shortAnswer": "Some problems were found only after auditors tested records, compared accounts, and reviewed whether financial safeguards were working.",
-      "whyPeopleAsk": "Repeated findings can make residents wonder why earlier checks did not identify or correct the problem.",
-      "recordsShow": "The audits reported weak review procedures, missing documentation, delayed bank matching, and too few people handling too many financial duties.",
-      "whyItMatters": "Independent review matters because it can identify problems that routine daily processes miss.",
-      "recordsDoNotEstablish": "The records do not always explain exactly when each problem began or why every earlier check failed.",
-      "relatedQuestions": [
-        "RQ-071",
-        "RQ-073",
-        "RQ-078"
-      ],
-      "relatedTopics": [
-        "Oversight",
-        "Bank matching",
-        "Dividing duties"
-      ],
-      "searchPhrases": [
-        "why not caught",
-        "why didn't anyone notice",
-        "caught sooner"
-      ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
-    },
-    {
-      "id": "RQ-017",
-      "question": "Was anyone charged with a crime?",
-      "shortAnswer": "The public audit records summarized in this project do not document criminal charges resulting from the audit findings.",
-      "whyPeopleAsk": "People may assume serious audit findings automatically lead to criminal cases.",
-      "recordsShow": "Independent audits review financial statements, records, and safeguards. They are not criminal investigations.",
-      "whyItMatters": "It is important to separate financial-control findings from criminal conclusions.",
-      "recordsDoNotEstablish": "This answer is limited to the public audit and related records included in the project.",
-      "relatedQuestions": [
-        "RQ-006",
-        "RQ-007",
-        "RQ-016"
-      ],
-      "relatedTopics": [
-        "Audit scope",
-        "Fraud",
-        "Public records"
-      ],
-      "searchPhrases": [
-        "anyone charged",
-        "jail",
-        "arrested",
-        "crime",
-        "criminal charges"
-      ],
-      "auditYears": "All audit periods",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Evidence",
-      "readyForApp": false
-    },
-    {
       "id": "RQ-018",
       "question": "What happened after the audit?",
       "shortAnswer": "Public records show continued audit follow-up into 2026, including fraud-risk-assessment work, monthly audit-status reporting, finance-office staffing changes, utility-collection planning, and continued financial reporting.",
@@ -316,9 +47,7 @@
       "recordsDoNotEstablish": "Council actions and staff reports do not replace independent audit testing and do not by themselves prove that every finding was fully resolved.",
       "relatedQuestions": [
         "RQ-031",
-        "RQ-037",
-        "RQ-091",
-        "RQ-098"
+        "RQ-091"
       ],
       "relatedTopics": [
         "Corrective actions",
@@ -346,9 +75,7 @@
       "whyItMatters": "Audits help residents and leaders understand whether financial information can be relied on and where processes need improvement.",
       "recordsDoNotEstablish": "Auditors do not check every transaction or guarantee that every problem will be found.",
       "relatedQuestions": [
-        "RQ-023",
-        "RQ-025",
-        "RQ-113"
+        "RQ-025"
       ],
       "relatedTopics": [
         "Audit basics"
@@ -373,9 +100,7 @@
       "whyItMatters": "Findings help identify specific areas that need attention.",
       "recordsDoNotEstablish": "A finding does not automatically mean fraud, theft, or a crime occurred.",
       "relatedQuestions": [
-        "RQ-026",
-        "RQ-029",
-        "RQ-030"
+        "RQ-029"
       ],
       "relatedTopics": [
         "Audit basics",
@@ -401,8 +126,6 @@
       "whyItMatters": "A qualified opinion identifies an important limit on the auditors' confidence in part of the financial information.",
       "recordsDoNotEstablish": "It does not mean every part of the City's finances was wrong.",
       "relatedQuestions": [
-        "RQ-030",
-        "RQ-061",
         "RQ-049"
       ],
       "relatedTopics": [
@@ -430,7 +153,6 @@
       "whyItMatters": "One weak process can affect several parts of financial reporting at the same time.",
       "recordsDoNotEstablish": "The number of findings alone does not show how serious each one was.",
       "relatedQuestions": [
-        "RQ-026",
         "RQ-029",
         "RQ-071"
       ],
@@ -458,9 +180,7 @@
       "whyItMatters": "Repeat findings help residents track whether corrective actions are producing lasting results.",
       "recordsDoNotEstablish": "A repeated finding does not by itself explain why the fix took longer than expected.",
       "relatedQuestions": [
-        "RQ-031",
-        "RQ-033",
-        "RQ-040"
+        "RQ-031"
       ],
       "relatedTopics": [
         "Recurring findings",
@@ -485,11 +205,7 @@
       "recordsShow": "Completed audits declined from 10 findings in 2016–17 and 2018–19, to 8 in 2020–21, and 6 in 2022–23. Public records from 2026 also document continued fraud-risk-assessment work, monthly audit-status reporting, utility-collection planning, and financial-office continuity efforts.",
       "whyItMatters": "Fewer findings and continued corrective work are signs of progress, but lasting improvement should be confirmed through later independent audit results.",
       "recordsDoNotEstablish": "The 2026 follow-up records are not a new audit and do not prove that every safeguard is operating effectively.",
-      "relatedQuestions": [
-        "RQ-032",
-        "RQ-033",
-        "RQ-035"
-      ],
+      "relatedQuestions": [],
       "relatedTopics": [
         "Audit history",
         "Progress"
@@ -508,94 +224,6 @@
       "readyForApp": true
     },
     {
-      "id": "RQ-041",
-      "question": "Will this affect my taxes?",
-      "shortAnswer": "The audits do not directly state that these findings will raise property taxes.",
-      "whyPeopleAsk": "Residents often connect financial problems with higher taxes.",
-      "recordsShow": "Most findings involved records, accounting, approvals, financial safeguards, and compliance rather than a direct decision to change tax rates.",
-      "whyItMatters": "Weak financial processes can create costs or risks, but tax changes are separate public decisions made through the budget process.",
-      "recordsDoNotEstablish": "The audit findings alone do not predict whether future taxes will increase or decrease.",
-      "relatedQuestions": [
-        "RQ-043",
-        "RQ-044",
-        "RQ-051"
-      ],
-      "relatedTopics": [
-        "Taxes",
-        "Budget",
-        "Financial processes"
-      ],
-      "searchPhrases": [
-        "taxes",
-        "property taxes",
-        "taxes go up",
-        "taxpayer"
-      ],
-      "auditYears": "All audit periods",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Evidence",
-      "readyForApp": false
-    },
-    {
-      "id": "RQ-042",
-      "question": "Will this affect my water bill?",
-      "shortAnswer": "The audits do not directly state that the findings caused water or sewer rates to change.",
-      "whyPeopleAsk": "Utility records appeared often in the audits, so residents may worry about their bills.",
-      "recordsShow": "The findings involved utility billing records, collections, fund transfers, and financial reporting.",
-      "whyItMatters": "Problems with utility records matter because they affect how confidently the City can support and report utility money.",
-      "recordsDoNotEstablish": "The audit findings alone do not establish that an individual resident's bill was incorrect.",
-      "relatedQuestions": [
-        "RQ-047",
-        "RQ-048",
-        "RQ-049"
-      ],
-      "relatedTopics": [
-        "Utility billing",
-        "Utility Fund"
-      ],
-      "searchPhrases": [
-        "water bill",
-        "sewer bill",
-        "utility bill",
-        "bill increase"
-      ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Evidence",
-      "readyForApp": false
-    },
-    {
-      "id": "RQ-047",
-      "question": "Could my utility bill have been wrong?",
-      "shortAnswer": "The audits identified missing or unavailable utility records, but they did not conclude that a particular resident's bill was wrong.",
-      "whyPeopleAsk": "Missing billing records naturally raise questions about bill accuracy.",
-      "recordsShow": "Auditors could not fully test certain utility collections because supporting records were unavailable or had been deleted.",
-      "whyItMatters": "Complete records help verify that bills, collections, and deposits are accurate.",
-      "recordsDoNotEstablish": "The audit did not identify individual customers who were overbilled or underbilled.",
-      "relatedQuestions": [
-        "RQ-042",
-        "RQ-049",
-        "RQ-061"
-      ],
-      "relatedTopics": [
-        "Utility billing",
-        "Missing records"
-      ],
-      "searchPhrases": [
-        "wrong water bill",
-        "overcharged",
-        "utility bill wrong",
-        "billing error"
-      ],
-      "auditYears": "2016–17; 2018–19",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Evidence",
-      "readyForApp": false
-    },
-    {
       "id": "RQ-049",
       "question": "Why was the Utility Fund mentioned so often?",
       "shortAnswer": "Utility operations appeared repeatedly because auditors had trouble verifying some billing, collection, transfer, and accounting records. In 2026, Council records also documented work toward a third-party process for delinquent accounts.",
@@ -603,11 +231,7 @@
       "recordsShow": "Earlier audits reported missing utility support, limits on audit opinions, and utility-related accounting concerns. The finding was not repeated in 2022–23. In February 2026, the administration reported reviewing collection-agency quotes and moving toward a third-party collections process.",
       "whyItMatters": "Utility payments are a major source of City revenue and should be billed, collected, deposited, and reported through reliable procedures.",
       "recordsDoNotEstablish": "The 2026 minutes document planning and selection work, but they do not document implementation results or prove that every collection control was operating effectively.",
-      "relatedQuestions": [
-        "RQ-042",
-        "RQ-047",
-        "RQ-053"
-      ],
+      "relatedQuestions": [],
       "relatedTopics": [
         "Utility Fund",
         "Utility records",
@@ -626,36 +250,6 @@
       "readyForApp": true
     },
     {
-      "id": "RQ-051",
-      "question": "Where does City money come from?",
-      "shortAnswer": "City money can come from property taxes, utility payments, grants, permits, fees, and other local revenue.",
-      "whyPeopleAsk": "Audit reports refer to many funds and revenue sources without explaining them in everyday language.",
-      "recordsShow": "Different sources of money may be kept in separate funds and used for different purposes.",
-      "whyItMatters": "Knowing where money comes from helps residents understand which services and financial records an audit finding relates to.",
-      "recordsDoNotEstablish": "This general explanation does not show the exact amount received from each source in a particular year.",
-      "relatedQuestions": [
-        "RQ-052",
-        "RQ-053",
-        "RQ-054"
-      ],
-      "relatedTopics": [
-        "City revenue",
-        "Funds",
-        "Budget"
-      ],
-      "searchPhrases": [
-        "where city money comes from",
-        "revenue",
-        "taxes and fees",
-        "city income"
-      ],
-      "auditYears": "General background",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
-    },
-    {
       "id": "RQ-071",
       "question": "Why wasn't someone checking?",
       "shortAnswer": "The audits found that too few people sometimes handled financial duties that should have been divided and independently reviewed.",
@@ -663,11 +257,7 @@
       "recordsShow": "Auditors repeatedly reported problems with dividing incompatible financial duties and with independent review.",
       "whyItMatters": "Separating duties makes it harder for one mistake or misuse to go unnoticed.",
       "recordsDoNotEstablish": "A small staff can make perfect separation difficult, but other review procedures can reduce the risk.",
-      "relatedQuestions": [
-        "RQ-072",
-        "RQ-073",
-        "RQ-076"
-      ],
+      "relatedQuestions": [],
       "relatedTopics": [
         "Dividing duties",
         "Independent review"
@@ -685,44 +275,18 @@
       "readyForApp": true
     },
     {
-      "id": "RQ-081",
-      "question": "Who was serving during these audits?",
-      "shortAnswer": "The audit-year pages list the mayor and documented City Council members serving during each audit period.",
-      "whyPeopleAsk": "Residents may want historical context about who held public leadership roles at the time.",
-      "recordsShow": "Audit reports and public meeting records identify officials serving during the audit periods.",
-      "whyItMatters": "Leadership information helps place the records in time without changing what the audit itself found.",
-      "recordsDoNotEstablish": "Listing a person's name does not establish that the person caused or knew about a finding.",
-      "relatedQuestions": [
-        "RQ-082",
-        "RQ-084"
-      ],
-      "relatedTopics": [
-        "Leadership context"
-      ],
-      "searchPhrases": [
-        "who was mayor",
-        "city council",
-        "who was in charge",
-        "leadership"
-      ],
-      "auditYears": "2016–17 through 2022–23",
-      "evidenceStatus": "Partial",
-      "answerStatus": "Drafted",
-      "plainLanguageReview": "Needs Review",
-      "readyForApp": false
-    },
-    {
       "id": "RQ-091",
       "question": "Did the City fix this?",
-      "shortAnswer": "Several earlier findings were no longer repeated in later audits, and 2026 public records show continued corrective work. Some issues still require future independent audit testing.",
+      "shortAnswer": "The City reported fixing five of the six problems from the previous audit. One remained: auditors still had to suggest important corrections to the financial statements in 2024.",
       "whyPeopleAsk": "Residents want to know whether the City's actions actually resolved the problems.",
-      "recordsShow": "Later audits show that several earlier findings disappeared. Council records from 2026 document continued fraud-risk-assessment work, monthly audit-status reporting, finance-office continuity efforts, and utility-collection planning. They also document a temporary February bank-reconciliation delay during the staffing transition.",
+      "recordsShow": "The 2024 audit includes the City’s follow-up list on pages 49–51. It marks five earlier findings “Fully Implemented” and the financial-statement adjustment finding “Not Implemented.” The 2024 audit also reports that adjustment problem again as Finding 2024-001 (p. 46).",
       "whyItMatters": "The clearest evidence of a fix is both documented corrective action and a later independent audit that does not repeat the finding.",
-      "recordsDoNotEstablish": "The 2026 records do not constitute a new audit and do not confirm that every corrective action was fully effective.",
+      "recordsDoNotEstablish": "The City’s status report does not independently prove that every fix was tested and works permanently. The audit does not establish that the remaining weakness has been fixed.",
       "relatedQuestions": [
-        "RQ-031",
-        "RQ-032",
-        "RQ-098"
+        "RQ-105",
+        "RQ-102",
+        "RQ-101",
+        "RQ-100"
       ],
       "relatedTopics": [
         "Corrective actions",
@@ -743,15 +307,15 @@
     {
       "id": "RQ-100",
       "question": "What should residents watch in future audits?",
-      "shortAnswer": "Residents should watch whether recurring findings disappear, whether bank reconciliations and financial reports stay timely, and whether a future audit confirms that fraud-risk and utility-collection improvements are working.",
+      "shortAnswer": "The next audit should show whether the City can prepare accurate financial statements without auditors having to suggest major corrections. Residents can also watch whether the five fixes the City reported continue to work.",
       "whyPeopleAsk": "The most recent completed audit does not show whether every later corrective action lasted.",
-      "recordsShow": "The audit history shows improvement in several areas. In 2026, Council records documented continued fraud-risk work and monthly audit-status reporting, but also a temporary reconciliation delay and a later tabled financial report.",
+      "recordsShow": "The 2024 audit repeated the financial-statement adjustment weakness (p. 46). The City’s prior-year findings schedule marked five older issues “Fully Implemented” and the adjustment issue “Not Implemented” (pp. 49–51).",
       "whyItMatters": "Future audits can independently test whether newer policies, staffing arrangements, and procedures continue to work over time.",
       "recordsDoNotEstablish": "Routine Council approvals or planned procedures do not by themselves prove that an audit finding is resolved.",
       "relatedQuestions": [
-        "RQ-010",
-        "RQ-031",
-        "RQ-098"
+        "RQ-105",
+        "RQ-102",
+        "RQ-091"
       ],
       "relatedTopics": [
         "Future audits",
@@ -767,6 +331,236 @@
       "auditYears": "Future audits; 2026 follow-up",
       "evidenceStatus": "Verified",
       "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-101",
+      "question": "What did the new 2024 audit find?",
+      "shortAnswer": "The 2024 audit reported one financial-statement finding: a repeat material weakness because auditors had to propose material adjustments to the City’s financial statements. Auditors issued unmodified opinions and reported no federal award findings.",
+      "whyPeopleAsk": "Residents want to know what the newly released audit changes about the City’s financial oversight.",
+      "recordsShow": "Finding 2024-001 says the adjustments were approved by management and reflected in the financial statements (p. 46). The corrective action plan says the adjustments were implemented during the audit (p. 48). The federal award findings section reports no issues (p. 47).",
+      "whyItMatters": "The distinction between corrected statements and effective day-to-day controls helps residents understand both progress and remaining risks.",
+      "recordsDoNotEstablish": "A clean audit opinion does not establish that every internal control worked or that the repeat material weakness was resolved.",
+      "relatedQuestions": [
+        "RQ-102",
+        "RQ-103"
+      ],
+      "relatedTopics": [
+        "Financial reporting",
+        "Audit adjustments",
+        "Internal controls"
+      ],
+      "searchPhrases": [
+        "2024 audit",
+        "new audit",
+        "latest audit",
+        "2024-001",
+        "2026 audit released"
+      ],
+      "auditYears": "2022–23; 2024",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-102",
+      "question": "Did the 2024 audit show the problems were fixed?",
+      "shortAnswer": "The City reported that it had completed fixes for five of the six problems from the previous audit. But it marked the financial-statement problem “Not Implemented,” and auditors reported that problem again in 2024.",
+      "whyPeopleAsk": "Residents want to know what the newly released audit changes about the City’s financial oversight.",
+      "recordsShow": "In the City’s Schedule of Prior Year Findings (pp. 49–51), five findings are marked “Fully Implemented”: utility transfers, bond rules, fraud risk assessment, conflict-of-interest procedures, and improper journal entries. The audit-adjustment finding is marked “Not Implemented.” The 2024 audit again reported a material weakness for financial-statement adjustments (p. 46).",
+      "whyItMatters": "Five reported fixes are progress. The remaining problem means the City still needed help making important corrections to its financial statements.",
+      "recordsDoNotEstablish": "These follow-up statuses were provided in the City’s schedule. They are not proof that an independent auditor separately tested every fix and found it effective.",
+      "relatedQuestions": [
+        "RQ-105",
+        "RQ-101",
+        "RQ-103",
+        "RQ-091"
+      ],
+      "relatedTopics": [
+        "Financial reporting",
+        "Audit adjustments",
+        "Internal controls"
+      ],
+      "searchPhrases": [
+        "fixed",
+        "resolved",
+        "repeat finding",
+        "audit improvements",
+        "2024 material weakness"
+      ],
+      "auditYears": "2022–23; 2024",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-103",
+      "question": "Was the 2024 audit clean?",
+      "shortAnswer": "The auditors issued unmodified opinions on the 2024 financial statements and on compliance for the major federal program. They also reported one repeat material weakness in financial reporting. Both statements are true.",
+      "whyPeopleAsk": "Residents want to know what the newly released audit changes about the City’s financial oversight.",
+      "recordsShow": "The financial-statement opinion appears on pages 2–3; the major federal program compliance opinion is on pages 42–43; Finding 2024-001 is on page 46.",
+      "whyItMatters": "The distinction between corrected statements and effective day-to-day controls helps residents understand both progress and remaining risks.",
+      "recordsDoNotEstablish": "An unmodified opinion does not mean auditors found no weaknesses or that every transaction was tested.",
+      "relatedQuestions": [
+        "RQ-101",
+        "RQ-102"
+      ],
+      "relatedTopics": [
+        "Financial reporting",
+        "Audit adjustments",
+        "Internal controls"
+      ],
+      "searchPhrases": [
+        "clean audit",
+        "unmodified opinion",
+        "2024 audit opinion",
+        "federal compliance"
+      ],
+      "auditYears": "2022–23; 2024",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-105",
+      "question": "Which audit problems did the City say it fixed?",
+      "shortAnswer": "In the 2024 audit, the City said it had put fixes in place for five of the six problems from the previous audit. It said one problem was not fixed: auditors still had to help correct the financial statements.",
+      "whyPeopleAsk": "People want to know what actually changed after earlier audits found problems.",
+      "recordsShow": "The City’s follow-up schedule lists five findings as “Fully Implemented”: utility fund transfers (2023-001), bond requirements (2023-002), fraud risk assessment (2023-004), conflict-of-interest procedures (2023-005), and improper accounting entries (2023-006). It lists audit adjustments (2023-003) as “Not Implemented” (2024 audit, pp. 49–51). The 2024 audit again found a material weakness involving audit adjustments (p. 46).",
+      "whyItMatters": "This gives residents a clear way to see both progress and the problem that still needs attention.",
+      "recordsDoNotEstablish": "These are the statuses reported by the City in its follow-up schedule. They do not prove that an independent auditor separately checked that every fix works over time.",
+      "relatedQuestions": [
+        "RQ-102",
+        "RQ-091",
+        "RQ-101",
+        "RQ-100"
+      ],
+      "relatedTopics": [
+        "Audit follow-up",
+        "2023 findings",
+        "2024 audit"
+      ],
+      "searchPhrases": [
+        "which problems fixed",
+        "five of six",
+        "prior findings",
+        "2023-001",
+        "2023-002",
+        "2023-003",
+        "2023-004",
+        "2023-005",
+        "2023-006",
+        "fully implemented",
+        "not implemented",
+        "what was resolved"
+      ],
+      "auditYears": "2022–23; 2024",
+      "evidenceStatus": "Verified",
+      "answerStatus": "Complete",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-2024-1",
+      "question": "What did the 2024 audit find?",
+      "shortAnswer": "The auditors reported one repeat material weakness. The City’s financial statements needed corrections during the audit. The auditors also gave unmodified opinions on the financial statements.",
+      "recordsShow": "Finding 2024-001 describes adjustments proposed by auditors and approved by the City. The audit lists no federal award findings (printed pp. 46–47).",
+      "recordsDoNotEstablish": "An unmodified opinion does not mean the auditors found no weaknesses. The auditors did not express an opinion on whether the City’s internal controls were effective.",
+      "auditYears": "2024",
+      "searchPhrases": [
+        "latest audit",
+        "new audit",
+        "2024 audit",
+        "audit results",
+        "material weakness"
+      ],
+      "relatedTopics": [
+        "Financial statements",
+        "2024 audit"
+      ],
+      "whyPeopleAsk": "This question helps explain what the audit report actually says.",
+      "whyItMatters": "Residents can compare the finding with the original report.",
+      "relatedQuestions": [],
+      "evidenceStatus": "Verified against the 2024 report for 2024 statements; earlier audit context needs source recheck",
+      "answerStatus": "Reviewed",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-2024-2",
+      "question": "Which earlier audit findings did the City report fixing?",
+      "shortAnswer": "In the 2024 audit’s follow-up section, the City marked five of six earlier findings fully implemented. It marked the financial-statement adjustment finding not implemented.",
+      "recordsShow": "The Schedule of Prior Year Findings lists the City’s status for six findings from the previous audit (printed pp. 49–51). The auditors reported a repeat financial-reporting material weakness as 2024-001.",
+      "recordsDoNotEstablish": "The City’s follow-up labels do not mean auditors gave an opinion that all five fixes will keep working.",
+      "auditYears": "2022–23 and 2024",
+      "searchPhrases": [
+        "fixed findings",
+        "progress",
+        "five of six",
+        "prior findings",
+        "what changed"
+      ],
+      "relatedTopics": [
+        "Audit progress",
+        "Corrective actions"
+      ],
+      "whyPeopleAsk": "This question helps explain what the audit report actually says.",
+      "whyItMatters": "Residents can compare the finding with the original report.",
+      "relatedQuestions": [],
+      "evidenceStatus": "Verified against the 2024 report for 2024 statements; earlier audit context needs source recheck",
+      "answerStatus": "Reviewed",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-2024-3",
+      "question": "What does a material weakness mean?",
+      "shortAnswer": "It means there is a reasonable chance that a major mistake in financial reporting might not be prevented or found in time. It does not by itself mean money was stolen.",
+      "recordsShow": "The auditors classified finding 2024-001 as a material weakness in the City’s financial reporting controls (printed pp. 40–41 and 46).",
+      "recordsDoNotEstablish": "The auditors did not say this finding proved theft, and they did not express an opinion on whether all internal controls were effective.",
+      "auditYears": "2024",
+      "searchPhrases": [
+        "material weakness",
+        "accounting adjustments",
+        "financial controls"
+      ],
+      "relatedTopics": [
+        "Financial reporting"
+      ],
+      "whyPeopleAsk": "This question helps explain what the audit report actually says.",
+      "whyItMatters": "Residents can compare the finding with the original report.",
+      "relatedQuestions": [],
+      "evidenceStatus": "Verified against the 2024 report for 2024 statements; earlier audit context needs source recheck",
+      "answerStatus": "Reviewed",
+      "plainLanguageReview": "Passed",
+      "readyForApp": true
+    },
+    {
+      "id": "RQ-2024-4",
+      "question": "Could auditors check everything they needed to?",
+      "shortAnswer": "Earlier audits reported some records that were unavailable, which limited what auditors could check. The 2024 auditors said they had no significant difficulties completing their audit. Those are different findings from different years.",
+      "recordsShow": "Earlier audit records describe limits on testing certain utility collections. The 2024 governance communication says auditors encountered no significant difficulties completing their work (printed p. 52).",
+      "recordsDoNotEstablish": "The 2024 report does not prove that every historical missing record was recovered. It also does not say auditors could not complete the 2024 audit.",
+      "auditYears": "Earlier audits and 2024",
+      "searchPhrases": [
+        "records unavailable",
+        "auditors verify",
+        "missing documents",
+        "could not test"
+      ],
+      "relatedTopics": [
+        "Supporting records",
+        "Audit evidence"
+      ],
+      "whyPeopleAsk": "This question helps explain what the audit report actually says.",
+      "whyItMatters": "Residents can compare the finding with the original report.",
+      "relatedQuestions": [],
+      "evidenceStatus": "Verified against the 2024 report for 2024 statements; earlier audit context needs source recheck",
+      "answerStatus": "Reviewed",
       "plainLanguageReview": "Passed",
       "readyForApp": true
     }

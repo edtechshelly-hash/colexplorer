@@ -16,6 +16,7 @@ async function init(){
   ]);
   appData = await dataResponse.json();
   answerLibrary = await answerResponse.json();
+  renderV5Story();
   renderHeroQuestions();
   renderOverviewTimeline();
   renderAuditYears();
@@ -77,6 +78,36 @@ function handleRoute(){
   showHome();
 }
 
+function renderV5Story(){
+  const chapters = appData.audits || [];
+  const chapterEl = $("#v5StoryChapters");
+  if(chapterEl){
+    chapterEl.innerHTML = chapters.map((a,i)=>`
+      <article class="v5-chapter">
+        <div class="v5-chapter-index" aria-hidden="true">${i+1}</div>
+        <div class="v5-chapter-body">
+          <span class="v5-chapter-year">Chapter ${i+1} · ${esc(a.years)}</span>
+          <h3>${esc(a.theme)}</h3>
+          <p>${esc(a.oneSentence)}</p>
+          <button data-audit="${esc(a.id)}" class="v5-inline-action">Explore the ${esc(a.years)} audit →</button>
+        </div>
+      </article>`).join("");
+  }
+  const latest=chapters.find(a=>a.id==="2024");
+  const progressEl=$("#v5FindingProgress");
+  if(progressEl && latest){
+    progressEl.innerHTML=(latest.priorFindingsFollowUp||[]).map(f=>{
+      const isOpen=f.cityReportedStatus==="Not implemented";
+      return `<article class="v5-finding">
+        <div><span class="v5-finding-id">${esc(f.finding)}</span><h3>${esc(f.issue)}</h3></div>
+        <span class="v5-finding-status ${isOpen?'v5-status-open':'v5-status-done'}">${isOpen?'Not implemented':'Reported fully implemented'}</span>
+      </article>`;
+    }).join("");
+  }
+  document.querySelectorAll(".v5-inline-action[data-audit]").forEach(b=>
+    b.addEventListener("click",()=>go(`audit/${b.dataset.audit}`)));
+}
+
 function renderHeroQuestions(){
   $("#heroQuestionGrid").innerHTML = appData.questions.slice(0,6).map(q=>`
     <button class="hero-question-card" data-question="${esc(q.id)}">
@@ -116,14 +147,7 @@ function renderOverviewTimeline(){
       </div>
     </article>`).join("");
 
-  $("#documentedUpdatesOverview").innerHTML = appData.documentedUpdatesOverview.map(x=>`
-    <article class="documented-update-card">
-      <span class="documented-update-year">${esc(x.year)}</span>
-      <div>
-        <h3>${esc(x.status)}</h3>
-        <p>${esc(x.summary)}</p>
-      </div>
-    </article>`).join("");
+
 }
 
 function renderTopics(){
@@ -140,7 +164,7 @@ function topicCard(t){
   return `<button class="topic-card" data-topic="${esc(t.id)}">
     <div class="topic-top">
       <span class="status ${statusClass(t.status)}">${esc(displayStatus(t.status))}</span>
-      <span class="risk-line">${esc(t.risk)} risk</span>
+
     </div>
     <div class="topic-title-row">
       <span class="topic-icon" aria-hidden="true">${esc(t.icon || "📌")}</span>
@@ -306,9 +330,9 @@ function renderSearch(){
           <h3>Short answer</h3>
           <p>${esc(bestAnswer.shortAnswer)}</p>
         </section>
-        ${bestAnswer.whyPeopleAsk ? `<section class="resident-answer-section"><h3>Why people ask this</h3><p>${esc(bestAnswer.whyPeopleAsk)}</p></section>` : ""}
+        ${bestAnswer.whyPeopleAsk ? `<section class="resident-answer-section"><h3>Background</h3><p>${esc(bestAnswer.whyPeopleAsk)}</p></section>` : ""}
         ${bestAnswer.recordsShow ? `<section class="resident-answer-section records-section"><h3>What the public records show</h3><p>${esc(bestAnswer.recordsShow)}</p></section>` : ""}
-        ${bestAnswer.whyItMatters ? `<section class="resident-answer-section matters-section"><h3>Why it matters</h3><p>${esc(bestAnswer.whyItMatters)}</p></section>` : ""}
+        ${bestAnswer.whyItMatters ? `<section class="resident-answer-section matters-section"><h3>What this helps explain</h3><p>${esc(bestAnswer.whyItMatters)}</p></section>` : ""}
         ${bestAnswer.recordsDoNotEstablish ? `<section class="resident-answer-section limits-section"><h3>What the records do not establish</h3><p>${esc(bestAnswer.recordsDoNotEstablish)}</p></section>` : ""}
         ${bestAnswer.auditYears ? `<p class="resident-answer-years"><strong>Audit years:</strong> ${esc(bestAnswer.auditYears)}</p>` : ""}
         ${!bestAnswer.readyForApp ? `<p class="answer-review-note">This answer is still being reviewed and may be refined as additional evidence is mapped.</p>` : ""}
@@ -318,7 +342,7 @@ function renderSearch(){
       <section class="search-answer-panel search-no-answer">
         <p class="search-answer-label">No direct answer yet</p>
         <h2>We do not have a finished answer for that question yet.</h2>
-        <p class="search-answer-text">Try asking about <strong>missing money</strong>, <strong>stolen money</strong>, <strong>fraud</strong>, <strong>taxes</strong>, <strong>utility bills</strong>, <strong>qualified opinion</strong>, or <strong>whether the City improved</strong>.</p>
+        <p class="search-answer-text">Try asking about <strong>financial statements</strong>, <strong>material weakness</strong>, <strong>utility records</strong>, <strong>audit findings</strong>, or <strong>reported improvements</strong>.</p>
       </section>`;
   }
 
@@ -561,16 +585,13 @@ function renderTopicPage(id){
         <span class="status ${statusClass(t.status)}">${esc(displayStatus(t.status))}</span>
         <p>${esc(t.summary)}</p>
       </div>
-      <div class="topic-risk-panel">
-        <span>Risk level</span>
-        <strong>${esc(t.risk)}</strong>
-      </div>
+
     </section>
 
     <section class="topic-snapshot-grid">
       <article>
         <span class="snapshot-kicker">Why it matters</span>
-        <h2>Why should residents care?</h2>
+        <h2>What does this finding mean?</h2>
         <p>${esc(t.whyItMatters)}</p>
       </article>
       <article class="snapshot-improved">
@@ -630,13 +651,14 @@ function renderTopicPage(id){
             </div>
           </li>`).join("")}
       </ol>
+      <p class="v5-source">2024 source: <a href="evidence/lincoln_2024_audit.pdf#page=47" target="_blank" rel="noopener">2024 audit findings (printed pp. 46–47)</a> and <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">prior-finding follow-up (printed pp. 49–51)</a>. A finding not repeated is not automatic proof it was fixed.</p>
     </section>
 
     <section class="post-audit-updates-section">
       <div class="section-title-row">
         <div>
-          <p class="eyebrow">After the latest audit</p>
-          <h2>What do later public records show?</h2>
+          <p class="eyebrow">Other dated public records</p>
+          <h2>What actions or updates were reported?</h2>
         </div>
         <p>These updates come from public records. They are not new audit findings.</p>
       </div>
@@ -687,8 +709,8 @@ function renderTopicPage(id){
     </section>
 
     <div class="topic-footer-note">
-      <strong>Read the original public records</strong>
-      <p>This page is based on public records. You can also review the original documents for more detail.</p>
+      <strong>Evidence rule</strong>
+      <p>The public records preserves the evidence references used by this page. Residents are encouraged to review the original public records as well.</p>
     </div>
   `;
 
@@ -725,6 +747,7 @@ function renderEvidencePage(id){
         <span class="evidence-type">${esc(r.publicType || "Public Record")}</span>
         <h3>${esc(r.publicTitle || r.label)}</h3>
         <p>${esc(r.publicDescription || "Public record supporting this topic.")}</p>
+        ${r.sheet && r.locator ? `<p class="v5-source">Evidence index: ${esc(r.sheet)}, cells ${esc(r.locator)}. <a href="evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx" download>Open evidence workbook</a>. This index is not the original audit report.</p>` : ""}
       </div>
     </article>`;
 

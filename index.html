@@ -87,16 +87,43 @@
 
   <main id="main">
     <div id="homeView">
-    <section class="hero">
+    <section class="hero v5-hero">
       <div class="hero-inner">
         <p class="eyebrow">A public guide for Lincoln residents</p>
-        <h1>Understand what Lincoln&#8217;s audits found.</h1>
-        <p class="hero-copy">Start with a question. Get a clear answer backed by the audit evidence.</p>
-        <h2 class="hero-question-heading">What would you like to know?</h2>
-        <p class="hero-question-instruction">Choose any question to explore the evidence.</p>
-        <div id="heroQuestionGrid" class="hero-question-grid"></div>
-        <a class="hero-text-link" href="#timelineSection">See the full story over time ↓</a>
+        <h1>Lincoln’s Audit Story: From Findings to Progress</h1>
+        <p class="hero-copy">What did auditors find? What changed? What still needs work? Follow the records from the first audits through 2024.</p>
+        <a class="v5-primary-link" href="#storySection">Follow the audit story ↓</a>
+        <a class="v5-secondary-link" href="#questionsSection">Or explore a question</a>
       </div>
+    </section>
+
+    <section class="section v5-latest" id="latestAuditSection" aria-labelledby="latestHeading">
+      <div class="section-heading"><div><p class="eyebrow">Latest completed audit · 2024</p><h2 id="latestHeading">Where things stand</h2></div><p>The audit covers 2024. The report was issued in November 2026.</p></div>
+      <div class="v5-summary-grid">
+        <article class="v5-stat"><strong>5 of 6</strong><span>Earlier findings the City reported as fully implemented</span></article>
+        <article class="v5-stat"><strong>1</strong><span>Repeat material weakness reported by the auditors in 2024</span></article>
+      </div>
+      <p class="v5-plain"><strong>In everyday words:</strong> The City reported making changes for five earlier problems. Auditors still found that the financial statements needed corrections. They called that a <strong>material weakness</strong> in financial reporting.</p>
+      <p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=47" target="_blank" rel="noopener">2024 audit, finding 2024-001 (printed p. 46)</a> and <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">prior findings schedule (printed pp. 49–51)</a>. The five reported fixes are the City’s statuses, not independent proof that each fix works.</p>
+      <button class="v5-inline-action" data-audit="2024">Read the 2024 audit summary →</button>
+    </section>
+
+    <section class="section v5-story" id="storySection" aria-labelledby="storyHeading">
+      <div class="section-heading"><div><p class="eyebrow">Follow the records</p><h2 id="storyHeading">The audit story, one chapter at a time</h2></div><p>Start with the earliest audit and see how the findings changed.</p></div>
+      <div id="v5StoryChapters" class="v5-chapters"></div>
+      <p class="v5-source">These chapter summaries describe what each audit reported. A problem not appearing in a later report does not, by itself, prove it was fixed.</p>
+    </section>
+
+    <section class="section v5-progress" id="progressSection" aria-labelledby="progressHeading">
+      <div class="section-heading"><div><p class="eyebrow">Follow-up on earlier findings</p><h2 id="progressHeading">What did the City say it fixed?</h2></div><p>The 2024 audit lists the City’s status for six findings from the 2022–23 audit.</p></div>
+      <div class="v5-summary-grid v5-progress-stats"><article class="v5-stat"><strong>5</strong><span>Reported fully implemented</span></article><article class="v5-stat"><strong>1</strong><span>Reported not implemented</span></article></div>
+      <div id="v5FindingProgress" class="v5-findings"></div>
+      <p class="v5-source">Source: <a href="evidence/lincoln_2024_audit.pdf#page=50" target="_blank" rel="noopener">2024 audit, Schedule of Prior Year Findings, printed pp. 49–51</a>. These are the statuses reported by the City. The auditors separately reported a repeat material weakness in 2024.</p>
+    </section>
+
+    <section class="section v5-questions" id="questionsSection">
+      <div class="section-heading"><div><p class="eyebrow">Questions and answers</p><h2>What would you like to know?</h2></div><p>Choose a question for a plain-language answer and its supporting records.</p></div>
+      <div id="heroQuestionGrid" class="hero-question-grid"></div>
     </section>
 
     <section class="section audit-year-section" id="auditYearSection">
@@ -109,7 +136,7 @@
       </div>
       <div class="audit-period-note">
         <strong>Why are the years grouped?</strong>
-        <span>Each audit covers two calendar years: 2016–17, then 2018–19, then 2020–21, and then 2022–23. No calendar year is skipped.</span>
+        <span>The first four reports each cover two years: 2016–17, 2018–19, 2020–21, and 2022–23. The latest report covers 2024 only. No calendar year is skipped.</span>
       </div>
       <div id="auditYearGrid" class="audit-year-grid"></div>
     </section>
@@ -120,20 +147,11 @@
           <p class="eyebrow">Independent audit history</p>
           <h2>What changed across the completed audits?</h2>
         </div>
-        <p>The latest completed independent audit included here covers 2022–23.</p>
+        <p>The latest completed independent audit included here covers 2024.</p>
       </div>
       <div id="auditOverviewTimeline" class="overview-timeline audit-overview-timeline"></div>
 
-      <div class="post-audit-overview">
-        <div class="section-heading post-audit-heading">
-          <div>
-            <p class="eyebrow">After the latest audit</p>
-            <h2>What do later public records show?</h2>
-          </div>
-          <p>These are documented updates, not new audit results.</p>
-        </div>
-        <div id="documentedUpdatesOverview" class="documented-updates-overview"></div>
-      </div>
+
     </section>
 
     <section class="section section-muted" id="topicsSection">
@@ -160,13 +178,13 @@
       <div>
         <p class="eyebrow">Looking for something specific?</p>
         <h2>What are you wondering about?</h2>
-        <p>Use everyday words. Try <strong>missing money</strong>, <strong>fraud</strong>, <strong>utility bills</strong>, or <strong>did they fix it?</strong></p>
+        <p>Use everyday words. Try <strong>financial statements</strong>, <strong>material weakness</strong>, <strong>utility records</strong>, or <strong>what did the City report fixing?</strong></p>
       </div>
       <div class="search-wrap">
         <label for="searchInput">Search questions and topics</label>
         <div class="search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" placeholder="Try “missing money” or ask a question">
+          <input id="searchInput" type="search" placeholder="Try “financial statements” or ask a question">
           <button id="clearSearch" aria-label="Clear search">×</button>
         </div>
       </div>

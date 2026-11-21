@@ -2,22 +2,24 @@
   "meta": {
     "title": "Lincoln Audit Explorer",
     "subtitle": "A plain-language guide to what Lincoln's audits found, what improved, and what still needs attention.",
-    "coverage": "Public audit and City records organized in the public records for 2016–2025",
-    "updated": "July 11, 2026",
+    "coverage": "Independent City audit reports for 2016–2024, plus documented follow-up records through 2026",
+    "updated": "November 20, 2026",
     "disclaimer": "This public tool summarizes documented evidence from the public records. Interpretive statements are labeled and are not auditor conclusions.",
-    "version": "4.1",
+    "version": "5.2",
     "workbookFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "workbookName": "Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
     "evidenceDatabaseFile": "evidence/Lincoln_Evidence_Matrix_2016_2025_Phase2B_COMPLETE_FORMATTED.xlsx",
-    "evidenceDatabaseName": "public records"
+    "evidenceDatabaseName": "public records",
+    "latestAudit": "2024 (report dated November 16, 2026)",
+    "latestAuditSource": "evidence/lincoln_2024_audit.pdf"
   },
   "questions": [
     {
       "id": "trust",
-      "question": "Can I trust the City's finances?",
-      "shortAnswer": "The evidence shows real improvement, but not every important weakness has been fully resolved.",
-      "answer": "Later audits stopped repeating several earlier findings, including weak separation of duties, missing expenditure approvals, budgeted-cash problems, parking-ticket controls, and some documentation issues. However, the latest completed audit still found that auditors had to propose accounting entries to prepare complete financial statements. That means the overall direction improved, but residents should still expect continued oversight.",
-      "fact": "Several findings were not repeated in the 2022–23 audit.",
+      "question": "What did auditors conclude about the financial statements?",
+      "shortAnswer": "The 2024 audit shows fewer reported findings, but it still identifies a repeat material weakness in preparing accurate financial statements.",
+      "answer": "The 2024 audit issued unmodified financial-statement opinions and reported one financial-statement finding, down from six in the 2022–23 audit. The remaining finding was a repeat material weakness: auditors proposed material adjustments, which management approved and incorporated. The audit did not report federal award findings. These are meaningful differences, but they do not show that all accounting controls are now effective.",
+      "fact": "2024 audit, pp. 2–3 and 45–48: unmodified opinions, one repeat material weakness, no federal award findings.",
       "interpretation": "That is evidence of improvement, not proof that every control will continue working during staffing or system changes.",
       "topicIds": [
         "segregation",
@@ -32,10 +34,12 @@
         "city finances",
         "are the books accurate",
         "financial problems",
-        "wrong numbers"
+        "wrong numbers",
+        "2024 audit",
+        "2024 material weakness"
       ],
       "residentContext": {
-        "concern": "The audits found serious recordkeeping and financial-control problems. That is a reason to pay attention, but it is not the same as proof that money was stolen.",
+        "concern": "Earlier audits reported problems with financial records and accounting checks. The 2024 audit shows what changed and which weakness remained.",
         "meaning": "The findings were mainly about how the City tracked, checked, approved, and reported public money. They did not automatically change taxes, utility rates, or City services."
       }
     },
@@ -94,7 +98,7 @@
     },
     {
       "id": "biggest",
-      "question": "What were the biggest problems?",
+      "question": "Which problems did earlier audits report?",
       "shortAnswer": "The most serious recurring problems involved financial-statement preparation, fraud-risk planning, staff duty conflicts, and bank reconciliations.",
       "answer": "The audit-adjustment finding and fraud-risk-assessment finding continued through every completed audit cycle in the public records. Other major weaknesses included incompatible duties, incomplete approval records, missing utility-billing support, and inaccurate or delayed reconciliations.",
       "fact": "Audit adjustments and the missing fraud risk assessment recurred through the 2022–23 audit.",
@@ -113,13 +117,13 @@
         "major financial problems"
       ],
       "residentContext": {
-        "concern": "The most serious issues involved missing support, money that could not be fully traced, financial statements that needed major corrections, and weak fraud-risk planning.",
+        "concern": "Earlier audits reported missing supporting records, accounting differences, financial statement corrections, and weaknesses in financial oversight.",
         "meaning": "These issues matter because they affect how confidently residents can rely on the City's financial records and how quickly mistakes can be found."
       }
     },
     {
       "id": "still-attention",
-      "question": "What still needs attention?",
+      "question": "Which findings still need follow-up?",
       "shortAnswer": "Year-end financial reporting, fraud-risk follow-through, timely reconciliations, and controls that survive staff turnover.",
       "answer": "The public records identifies unresolved questions about whether City staff can complete the annual close without material auditor entries, whether the fraud risk assessment was completed, whether monthly reconciliations are timely and independently reviewed, and whether new finance roles clearly separate incompatible duties.",
       "fact": "Later council records show corrective activity, but the latest evidence does not establish that every new control is operating effectively.",
@@ -139,37 +143,8 @@
         "what still needs attention"
       ],
       "residentContext": {
-        "concern": "Ongoing findings deserve attention because repeated problems can continue to create risk even when no theft or fraud has been proven.",
+        "concern": "The 2024 audit still reported a repeat material weakness in preparing accurate financial statements.",
         "meaning": "Residents may want to watch whether later audits confirm that the City's newer policies and procedures are working as intended."
-      }
-    },
-    {
-      "id": "fraud",
-      "question": "Was there fraud?",
-      "shortAnswer": "The audits identified fraud risk and control weaknesses, but the public records does not document an auditor finding that fraud occurred.",
-      "answer": "A fraud risk assessment is a structured review of where fraud could happen and how the City would prevent or detect it. Auditors repeatedly found that Lincoln had not completed that assessment. This is a serious control weakness, but it is not the same as finding that someone committed fraud.",
-      "fact": "The recurring finding was the absence of an organization-wide fraud risk assessment.",
-      "interpretation": "Weak controls can increase opportunity and reduce detection, but they do not by themselves prove theft or fraud.",
-      "topicIds": [
-        "fraud-risk"
-      ],
-      "status": "No documented finding of fraud",
-      "searchAliases": [
-        "missing money",
-        "money missing",
-        "stolen money",
-        "missing funds",
-        "fraud",
-        "corruption",
-        "embezzlement",
-        "theft",
-        "where did the money go",
-        "was money stolen",
-        "dishonest employees"
-      ],
-      "residentContext": {
-        "concern": "The audits did not conclude that fraud occurred. They did report weaknesses that could make errors or misuse harder to prevent or detect.",
-        "meaning": "The key issue is whether the City has strong enough checks, records, and review procedures to protect public money and explain where it went."
       }
     },
     {
@@ -197,6 +172,27 @@
         "meaning": "For residents, this means there was an important limit on how much confidence auditors could place in that part of the City's records.",
         "money": "In this case, the issue involved utility operations. Utility money comes from water and sewer customers and is kept separate from other City money."
       }
+    },
+    {
+      "id": "prior-findings-2024",
+      "question": "Which earlier audit problems were fixed?",
+      "shortAnswer": "In the 2024 audit, the City said it had put fixes in place for five of the six problems from the previous audit. It said one problem was not fixed: auditors still had to help correct the financial statements.",
+      "answer": "The City’s follow-up schedule lists five findings as “Fully Implemented”: utility fund transfers (2023-001), bond requirements (2023-002), fraud risk assessment (2023-004), conflict-of-interest procedures (2023-005), and improper accounting entries (2023-006). It lists audit adjustments (2023-003) as “Not Implemented” (2024 audit, pp. 49–51). The 2024 audit again found a material weakness involving audit adjustments (p. 46).",
+      "fact": "The City’s follow-up schedule lists five findings as “Fully Implemented”: utility fund transfers (2023-001), bond requirements (2023-002), fraud risk assessment (2023-004), conflict-of-interest procedures (2023-005), and improper accounting entries (2023-006). It lists audit adjustments (2023-003) as “Not Implemented” (2024 audit, pp. 49–51). The 2024 audit again found a material weakness involving audit adjustments (p. 46).",
+      "interpretation": "The City reported progress on five earlier findings. The repeat accounting problem still needs attention.",
+      "topicIds": [
+        "adjustments",
+        "fraud-risk"
+      ],
+      "status": "Documented City follow-up; one repeat finding",
+      "searchAliases": [
+        "which problems fixed",
+        "five of six findings",
+        "prior year findings",
+        "fully implemented",
+        "not implemented"
+      ],
+      "residentContext": "The City’s follow-up schedule says five of six earlier problems were addressed. The accounting-adjustment issue was not."
     }
   ],
   "topics": [
@@ -206,10 +202,10 @@
       "plainTitle": "Could the City prepare complete financial statements on its own?",
       "status": "Ongoing",
       "risk": "High",
-      "summary": "Auditors had to propose entries needed to prepare complete and accurate financial statements in every completed audit cycle.",
+      "summary": "The 2024 auditors again identified a material weakness because financial statements needed audit adjustments. The City agreed to the adjustments.",
       "whyItMatters": "Residents and council members need financial statements that are complete, timely, and prepared through reliable City processes.",
       "whatImproved": "Records show audit preparation, fund corrections, staffing changes, and increased review.",
-      "whatRemains": "The latest completed audit still repeated the finding, and later records show delayed or tabled financial statements and reconciliations.",
+      "whatRemains": "The 2024 audit again reported a material weakness because auditors had to suggest important corrections to the financial statements. The City’s follow-up schedule marked the earlier version of this problem “Not Implemented” (pp. 50–51).",
       "fact": "Material weakness in 2016–17, 2018–19, 2020–21, and 2022–23.",
       "interpretation": "Corrective work is visible, but effectiveness has not yet been established by a later completed audit.",
       "evidence": [
@@ -219,7 +215,8 @@
         "2020-21 Audit Findings — audit adjustments",
         "2022-23 Audit Findings — audit adjustments",
         "2024 Council Evidence — financial statement timing",
-        "2025 Council Evidence — deferred statements, reconciliation, and finance restructuring"
+        "2025 Council Evidence — deferred statements, reconciliation, and finance restructuring",
+        "2024 Audit — Finding 2024-001 (p. 46); Corrective Action Plan (p. 48)"
       ],
       "timeline": [
         [
@@ -376,6 +373,11 @@
           "2022–23",
           "Repeated",
           "Still present in the latest completed audit."
+        ],
+        [
+          "2024",
+          "Repeated in 2024",
+          "Auditors reported finding 2024-001, a repeat material weakness. The financial statements needed audit adjustments (printed p. 46)."
         ]
       ],
       "postAuditUpdates": [
@@ -390,7 +392,7 @@
           "detail": "Records show corrections, review work, finance restructuring, and some delayed or tabled financial items."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "missing money",
@@ -404,20 +406,22 @@
         "auditors fixed the books",
         "financial statements"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46; 49–51"
     },
     {
       "id": "fraud-risk",
       "title": "Fraud risk assessment",
       "plainTitle": "Did the City formally identify where fraud could happen?",
-      "status": "Ongoing",
+      "status": "Improved",
       "risk": "High",
-      "summary": "Auditors repeatedly found that the City had not completed an organization-wide fraud risk assessment.",
+      "summary": "Earlier audits repeatedly reported that the City had not completed a citywide fraud risk assessment. In the 2024 audit follow-up, the City reported that this earlier finding was fully implemented.",
       "whyItMatters": "A formal assessment helps leaders identify opportunities for fraud and assign controls before a loss occurs.",
-      "whatImproved": "Council approved a fraud policy and assessment framework in late 2025. In January 2026, Council members reported continued work with the city office, and the mayor requested monthly audit-status updates.",
-      "whatRemains": "The public records reviewed do not include a completed fraud-risk assessment, formal conclusions, or a later independent audit confirming that the finding was resolved.",
+      "whatImproved": "The City marked the earlier fraud-risk-assessment finding fully implemented in its 2024 follow-up report.",
+      "whatRemains": "The follow-up status is reported by the City. The 2024 auditors did not give an opinion on whether internal controls were effective.",
       "fact": "Material weakness in every completed audit cycle through 2022–23.",
-      "interpretation": "The policy is a meaningful first step, but a policy is not the same as a completed and operating risk assessment.",
+      "interpretation": "The City reports that it completed the work. The audit does not independently test how well the process will work in the future.",
       "evidence": [
         "Recurring Findings  — Fraud risk assessment",
         "2016-17 Audit Findings — 2017-004",
@@ -587,6 +591,11 @@
           "2022–23",
           "Repeated",
           "Finding remained."
+        ],
+        [
+          "2024",
+          "City reported action",
+          "The City marked its earlier fraud-risk-assessment finding fully implemented in the 2024 follow-up schedule (printed pp. 49–51). This is a City-reported status."
         ]
       ],
       "postAuditUpdates": [
@@ -606,7 +615,7 @@
           "detail": "Council records document continued work with the city office and a request for monthly audit-status updates. A completed assessment is not included in the records reviewed."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "missing money",
@@ -618,7 +627,9 @@
         "fraud prevention",
         "fraud controls"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46; 49–51"
     },
     {
       "id": "segregation",
@@ -780,6 +791,11 @@
           "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate finding under this earlier topic. That alone does not verify that every control is effective."
         ]
       ],
       "postAuditUpdates": [
@@ -794,7 +810,7 @@
           "detail": "Administrative restructuring raised questions about whether duties would remain clearly separated during transitions."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "one person doing everything",
@@ -805,7 +821,9 @@
         "conflict of duties",
         "same person handling money"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     },
     {
       "id": "expenditures",
@@ -967,6 +985,11 @@
           "2022–23",
           "Not repeated",
           "Improvement continued."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate finding under this earlier topic. That alone does not establish that every expenditure was properly approved."
         ]
       ],
       "postAuditUpdates": [
@@ -981,7 +1004,7 @@
           "detail": "Public records show revised spending thresholds, legal review, competitive purchasing, and roll-call approvals."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "spending approval",
@@ -991,7 +1014,9 @@
         "purchases",
         "payables"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     },
     {
       "id": "utility-support",
@@ -1137,6 +1162,11 @@
           "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate utility-records finding. It does not independently resolve every earlier missing-record concern."
         ]
       ],
       "postAuditUpdates": [
@@ -1156,7 +1186,7 @@
           "detail": "The administration reported reviewing collection-agency quotes and moving toward selection of an agency for delinquent accounts. Implementation results are not documented."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "utility bills",
@@ -1169,7 +1199,9 @@
       ],
       "residentContext": {
         "meaning": "Utility money comes from water and sewer customers. It is used to operate and maintain those services. The audit problem was that important billing and collection records were unavailable, so auditors could not fully test the money collected."
-      }
+      },
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     },
     {
       "id": "budgeted-cash",
@@ -1331,6 +1363,11 @@
           "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate finding under this earlier topic. This does not independently verify all budget schedules."
         ]
       ],
       "postAuditUpdates": [
@@ -1345,7 +1382,7 @@
           "detail": "Council records show detailed work sessions, a public hearing, and formal budget adoption steps."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "budget",
@@ -1357,7 +1394,9 @@
       ],
       "residentContext": {
         "meaning": "City budgets estimate how much money will be available and how it will be used. Property taxes, utility payments, grants, permits, fees, and other revenue can all appear in different parts of the budget."
-      }
+      },
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     },
     {
       "id": "bank-reconciliations",
@@ -1540,6 +1579,11 @@
           "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate bank-reconciliation finding. Council updates after the audit are not independent audit opinions."
         ]
       ],
       "postAuditUpdates": [
@@ -1559,7 +1603,7 @@
           "detail": "The February reconciliation was reported incomplete in March. The February financial report was later presented and approved, but the minutes do not state the reconciliation completion date."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2026",
       "searchAliases": [
         "bank accounts",
@@ -1571,7 +1615,9 @@
         "reconciliation",
         "cash mismatch"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     },
     {
       "id": "documentation",
@@ -1733,6 +1779,11 @@
           "2022–23",
           "Not repeated",
           "Evidence of improvement."
+        ],
+        [
+          "2024",
+          "No separate 2024 finding",
+          "The 2024 report does not list a separate finding under this earlier topic. It does not confirm that every earlier missing document was recovered."
         ]
       ],
       "postAuditUpdates": [
@@ -1747,7 +1798,7 @@
           "detail": "Public records show added contract review, purchasing controls, disposition procedures, and archiving practices."
         }
       ],
-      "latestCompletedAudit": "2022–23",
+      "latestCompletedAudit": "2024",
       "latestDocumentedUpdate": "2025",
       "searchAliases": [
         "missing records",
@@ -1758,7 +1809,9 @@
         "record keeping",
         "documents"
       ],
-      "residentContext": {}
+      "residentContext": {},
+      "latestAuditSource": "evidence/lincoln_2024_audit.pdf",
+      "latestAuditSourcePages": "46–51"
     }
   ],
   "overviewTimeline": [
@@ -1791,6 +1844,12 @@
       "status": "Corrective work continued",
       "tone": "progress",
       "summary": "Council records show continued audit-related policy work, fraud-risk planning, utility-collection follow-up, staffing continuity efforts, and ongoing financial reporting."
+    },
+    {
+      "year": "2024 audit · released 2026",
+      "status": "One repeat finding",
+      "tone": "caution",
+      "summary": "The audit reported one repeat accounting weakness. The City said five earlier findings were addressed, but the financial-reporting problem remained."
     }
   ],
   "auditOverview": [
@@ -1816,7 +1875,13 @@
       "year": "2022–23",
       "status": "Clear improvement",
       "tone": "improved",
-      "summary": "Many older findings were not repeated. This is the latest completed independent audit included here."
+      "summary": "Auditors reported six findings. The next audit includes the City’s update on whether those problems were addressed."
+    },
+    {
+      "year": "2024",
+      "status": "One repeat material weakness",
+      "tone": "caution",
+      "summary": "One repeat accounting weakness was reported. The City marked five of six earlier findings as fully implemented, but marked the accounting-adjustment problem not implemented."
     }
   ],
   "documentedUpdatesOverview": [
@@ -1840,49 +1905,6 @@
     }
   ],
   "searchGuides": {
-    "missing money": {
-      "title": "Looking for information about missing money?",
-      "answer": "Auditors reported money-related records they could not fully verify. In the 2018–19 audit, three tested clerk-of-court fee items totaling $3,180 could not be traced to the City's general fund. In the 2020–21 audit, auditors identified $14,052 in court fees they could not trace. Auditors also could not test millions of dollars in utility collections because supporting records were missing or had been deleted. These findings do not prove theft, but they do mean the available records did not fully account for or verify certain money.",
-      "questionIds": [
-        "fraud",
-        "trust",
-        "biggest"
-      ],
-      "topicIds": [
-        "fraud-risk",
-        "utility-support",
-        "bank-reconciliations",
-        "segregation"
-      ]
-    },
-    "stolen money": {
-      "title": "Looking for information about stolen money?",
-      "answer": "The audits did not conclude that theft occurred. They did report court-fee amounts that could not be traced to the general fund and utility collections that could not be tested because records were unavailable. That is a serious accountability problem, but it is not the same as an auditor finding that someone stole the money.",
-      "questionIds": [
-        "fraud",
-        "trust"
-      ],
-      "topicIds": [
-        "fraud-risk",
-        "utility-support",
-        "bank-reconciliations",
-        "segregation"
-      ]
-    },
-    "corruption": {
-      "title": "Looking for information about corruption?",
-      "answer": "The records summarized here do not include an auditor conclusion that corruption occurred. They do include money-related amounts that could not be traced, collections that could not be tested, and repeated weaknesses in fraud-risk planning and financial controls.",
-      "questionIds": [
-        "fraud",
-        "trust"
-      ],
-      "topicIds": [
-        "fraud-risk",
-        "utility-support",
-        "segregation",
-        "bank-reconciliations"
-      ]
-    },
     "failed audit": {
       "title": "Looking for information about a failed audit?",
       "answer": "Audits are not simply passed or failed. Earlier audits included a qualified opinion in a specific area because supporting records were unavailable.",
@@ -2009,7 +2031,7 @@
       "years": "2022–23",
       "theme": "Clear improvement, with new concerns",
       "cardSummary": "Auditors reported 6 problems. Several older problems disappeared, while new issues involved fund transfers, debt rules, conflicts, and accounting entries.",
-      "oneSentence": "The latest completed audit showed real improvement, but it also found six problems that still needed attention.",
+      "oneSentence": "The 2022–23 audit showed real improvement, but it also found six problems that still needed attention.",
       "findingCount": 6,
       "opinionPlain": "Auditors gave clean opinions on the financial statements, meaning they had enough evidence and found the statements fairly presented under the City's accounting method.",
       "whyItMattered": "A cleaner audit opinion was an important improvement, but it did not mean every financial rule or safety check was working correctly.",
@@ -2025,7 +2047,6 @@
       "searchAliases": [
         "2022 audit",
         "2023 audit",
-        "latest audit",
         "clean audit",
         "six findings"
       ],
@@ -2055,6 +2076,87 @@
           }
         ]
       }
+    },
+    {
+      "id": "2024",
+      "years": "2024",
+      "theme": "Fewer findings, but a repeat accounting weakness",
+      "cardSummary": "The 2024 audit reported one repeat problem: auditors still had to correct the financial statements. The City reported completing work on five of six earlier findings. No federal award findings were reported.",
+      "oneSentence": "The 2024 audit reported one repeat accounting weakness; the City said five of six earlier fixes were in place.",
+      "findingCount": 1,
+      "opinionPlain": "Auditors issued unmodified opinions on the financial statements and on compliance for the major federal program. A clean opinion does not mean no weaknesses were found.",
+      "whyItMattered": "Auditors needed to propose important corrections to the financial statements. The City reported completing five earlier fixes, but the same financial-reporting weakness appeared again.",
+      "keyPoints": [
+        "One financial-statement finding, 2024-001 (material audit adjustments), classified as a repeat material weakness (p. 46).",
+        "Auditors proposed adjustments, which management approved and included in the audited statements (p. 46).",
+        "In the City’s prior-finding schedule, five of six 2023 findings are marked “Fully Implemented.” The financial-statement adjustment finding is marked “Not Implemented” (pp. 49–51).",
+        "Management stated the adjustments were implemented at the time of the audit; the corrective action plan lists anticipated completion in 2025 (p. 48).",
+        "No federal award findings or questioned costs were reported (p. 47).",
+        "Auditors issued unmodified financial-statement and major federal program compliance opinions (pp. 2–3, 42–45).",
+        "The audit disclosed a restatement of 2023 comparative balances related to investment and fund reclassifications (p. 19)."
+      ],
+      "whatChangedNext": "The report was issued November 16, 2026. The City said it accepted the audit corrections. The report does not independently prove that the accounting process will work without those corrections in the next audit.",
+      "searchAliases": [
+        "2024 audit",
+        "latest audit",
+        "new audit",
+        "2026 released audit",
+        "2024-001",
+        "audit adjustments",
+        "material weakness"
+      ],
+      "sourceFile": "evidence/lincoln_2024_audit.pdf",
+      "sourcePages": [
+        2,
+        3,
+        19,
+        45,
+        46,
+        47,
+        48,
+        53,
+        54,
+        55
+      ],
+      "priorFindingsFollowUp": [
+        {
+          "finding": "2023-001",
+          "issue": "Utility fund transfers exceeded legal limits",
+          "cityReportedStatus": "Fully implemented",
+          "plainExplanation": "The City reported that it put the recommended changes in place."
+        },
+        {
+          "finding": "2023-002",
+          "issue": "Bond requirements were not followed",
+          "cityReportedStatus": "Fully implemented",
+          "plainExplanation": "The City reported that it put the recommended changes in place."
+        },
+        {
+          "finding": "2023-003",
+          "issue": "Financial statements needed corrections",
+          "cityReportedStatus": "Not implemented",
+          "plainExplanation": "The problem continued as Finding 2024-001."
+        },
+        {
+          "finding": "2023-004",
+          "issue": "No citywide fraud risk assessment",
+          "cityReportedStatus": "Fully implemented",
+          "plainExplanation": "The City reported that it put the recommended changes in place."
+        },
+        {
+          "finding": "2023-005",
+          "issue": "Missing conflict-of-interest procedures",
+          "cityReportedStatus": "Fully implemented",
+          "plainExplanation": "The City reported that it put the recommended changes in place."
+        },
+        {
+          "finding": "2023-006",
+          "issue": "Improper accounting entries",
+          "cityReportedStatus": "Fully implemented",
+          "plainExplanation": "The City reported that it put the recommended changes in place."
+        }
+      ],
+      "priorFindingsFollowUpSource": "2024 audit, Schedule of Prior Year Findings, pp. 49–51 (status provided in City management schedule)"
     }
   ]
 }
